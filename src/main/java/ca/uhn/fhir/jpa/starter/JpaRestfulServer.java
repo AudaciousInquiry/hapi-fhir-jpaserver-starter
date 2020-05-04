@@ -36,6 +36,7 @@ import ca.uhn.fhir.rest.server.interceptor.ResponseHighlighterInterceptor;
 import ca.uhn.fhir.rest.server.interceptor.ResponseValidatingInterceptor;
 import ca.uhn.fhir.validation.IValidatorModule;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
+import com.ainq.saner.InstanceLoaderProvider;
 import java.util.HashSet;
 import java.util.TreeSet;
 import org.hl7.fhir.dstu3.model.Bundle;
@@ -103,6 +104,8 @@ public class JpaRestfulServer extends RestfulServer {
 
     registerProviders(resourceProviders.createProviders());
     registerProvider(systemProvider);
+    //registerProvider(new InstanceLoader());
+    registerProvider(appCtx.getBean("sanerLoader", InstanceLoaderProvider.class));
 
     /*
      * The conformance provider exports the supported resources, search parameters, etc for
@@ -339,7 +342,7 @@ public class JpaRestfulServer extends RestfulServer {
       config.setBundleTypesAllowedForStorage(
           Collections.unmodifiableSet(new TreeSet<>(allowedBundleTypes)));
     }
-  
+
         // Bulk Export
         if (HapiProperties.getBulkExportEnabled()) {
             registerProvider(appCtx.getBean(BulkDataExportProvider.class));
