@@ -105,7 +105,8 @@ public class JpaRestfulServer extends RestfulServer {
     registerProviders(resourceProviders.createProviders());
     registerProvider(systemProvider);
     //registerProvider(new InstanceLoader());
-    registerProvider(appCtx.getBean("sanerLoader", InstanceLoaderProvider.class));
+    InstanceLoaderProvider loader = appCtx.getBean("sanerLoader", InstanceLoaderProvider.class);
+    registerProvider(loader);
 
     /*
      * The conformance provider exports the supported resources, search parameters, etc for
@@ -348,6 +349,8 @@ public class JpaRestfulServer extends RestfulServer {
             registerProvider(appCtx.getBean(BulkDataExportProvider.class));
         }
 
+        // Initialize the loader.
+        loader.customize(this);
     }
 
 }
