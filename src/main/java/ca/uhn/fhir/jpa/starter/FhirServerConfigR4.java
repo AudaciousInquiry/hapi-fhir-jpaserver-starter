@@ -3,7 +3,8 @@ package ca.uhn.fhir.jpa.starter;
 import ca.uhn.fhir.context.ConfigurationException;
 import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
 import ca.uhn.fhir.jpa.search.DatabaseBackedPagingProvider;
-import com.ainq.saner.InstanceLoaderProvider;
+import com.ainq.saner.SanerServerCustomizer;
+import com.ainq.saner.SanerServerHelloWorldOperation;
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -56,9 +57,14 @@ public class FhirServerConfigR4 extends BaseJavaConfigR4 {
     return retVal;
   }
 
-  @Bean(name = "sanerLoader")
-  public InstanceLoaderProvider instanceLoaderProvider(){
-    return new InstanceLoaderProvider();
+  @Bean(name = "sanerHelloWorldOperation")
+  public SanerServerHelloWorldOperation instanceLoaderProvider() {
+    return new SanerServerHelloWorldOperation();
+  }
+
+  @Bean(name = "sanerServerCustomizer")
+  public SanerServerCustomizer sanerServerCustomizer() {
+    return new SanerServerCustomizer();
   }
 
   @PostConstruct
