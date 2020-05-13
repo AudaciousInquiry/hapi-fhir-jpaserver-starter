@@ -36,6 +36,7 @@ import ca.uhn.fhir.rest.server.interceptor.ResponseHighlighterInterceptor;
 import ca.uhn.fhir.rest.server.interceptor.ResponseValidatingInterceptor;
 import ca.uhn.fhir.validation.IValidatorModule;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
+import com.ainq.saner.SanerServerCsvTransformOperation;
 import com.ainq.saner.SanerServerCustomizer;
 import com.ainq.saner.SanerServerHelloWorldOperation;
 import java.util.Arrays;
@@ -108,6 +109,8 @@ public class JpaRestfulServer extends RestfulServer {
       .getBean("sanerHelloWorldOperation", SanerServerHelloWorldOperation.class);
     registerProvider(sanerHelloWorldOperation);
 
+    SanerServerCsvTransformOperation sanerServerCsvTransformOperation = appCtx.getBean("sanerCsvTransformOperation", SanerServerCsvTransformOperation.class);
+    registerProvider(sanerServerCsvTransformOperation);
     /*
      * The conformance provider exports the supported resources, search parameters, etc for
      * this server. The JPA version adds resourceProviders counts to the exported statement, so it

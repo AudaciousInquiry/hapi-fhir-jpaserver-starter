@@ -3,6 +3,7 @@ package ca.uhn.fhir.jpa.starter;
 import ca.uhn.fhir.context.ConfigurationException;
 import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
 import ca.uhn.fhir.jpa.search.DatabaseBackedPagingProvider;
+import com.ainq.saner.SanerServerCsvTransformOperation;
 import com.ainq.saner.SanerServerCustomizer;
 import com.ainq.saner.SanerServerHelloWorldOperation;
 import javax.annotation.PostConstruct;
@@ -60,6 +61,11 @@ public class FhirServerConfigR4 extends BaseJavaConfigR4 {
   @Bean(name = "sanerHelloWorldOperation")
   public SanerServerHelloWorldOperation instanceLoaderProvider() {
     return new SanerServerHelloWorldOperation();
+  }
+
+  @Bean(name = "sanerCsvTransformOperation")
+  public SanerServerCsvTransformOperation csvTransformProvider(){
+    return new SanerServerCsvTransformOperation();
   }
 
   @Bean(name = "sanerServerCustomizer")
