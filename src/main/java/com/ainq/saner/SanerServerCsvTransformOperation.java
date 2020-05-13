@@ -8,6 +8,7 @@ import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
@@ -66,18 +67,23 @@ public class SanerServerCsvTransformOperation {
   @Autowired
   private FhirContext fhirContext;
 
-  @Operation(name = "$report")
-  public MeasureReport report(
-    @OperationParam(name = "reporter", min = 1, max = 1) ReferenceParam organization,
-    @OperationParam(name = "subject", min = 1, max = 1) ReferenceParam subject,
-    @OperationParam(name = "period.start", min = 1, max = 1 ) DateParam start,
-    @OperationParam(name = "period.end", min = 1, max = 1)DateParam end,
-    @OperationParam(name = "csvfile", min = 1, max = 1) Binary csvFile,
-    @OperationParam(name = "header.name", min = 0) List<StringParam> names,
-    @OperationParam(name = "header.value", min = 0) List<TokenParam> values) {
+  @Operation(name="manualReport", manualResponse=true, manualRequest=true)
+  public void manualInputAndOutput(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) throws IOException {
+    String contentType = theServletRequest.getContentType();
+    byte[] bytes = IOUtils.toByteArray(theServletRequest.getInputStream());
 
+    System.out.println("Received call with content type {} and {} bytes " + contentType + bytes.length);
+
+    theServletResponse.setContentType(contentType);
+    theServletResponse.getOutputStream().write(bytes);
+    theServletResponse.getOutputStream().close();
+  }
+
+  @Operation(name = "$report", manualResponse=true, manualRequest=true)
+  public MeasureReport report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
+    String organization = theServletRequest.getParameter("reporter");
     if(organization != null){
-      System.out.println("DEBUG ---> got this reporter " + organization.getValue());
+      System.out.println("DEBUG ---> got this reporter " + organization);
     }else{
       System.out.println("DEBUG ---> org is null");
     }
@@ -85,9 +91,7 @@ public class SanerServerCsvTransformOperation {
     System.setProperty("javax.xml.transform.TransformerFactory",
       "net.sf.saxon.TransformerFactoryImpl");
     Resource xsltResource = resourceLoader.getResource("classpath:stateLabReportingExamples2ToFsh.xslt");
-    String csvText = "";
-    String mappingsText = "";
-    StringWriter stringWriter = new StringWriter();
+    StringWriter outWriter = new StringWriter();
       try {
         SAXTransformerFactory tFactory = new net.sf.saxon.TransformerFactoryImpl();
         javax.xml.transform.sax.TemplatesHandler templatesHandler =
@@ -119,17 +123,19 @@ public class SanerServerCsvTransformOperation {
           }
         });
 
-        //IOUtils.toString(mappingFile.getContent(), mappingsText);
-        IOUtils.toString(csvFile.getContent(), csvText);
+        //String mappingText = IOUtils.toString(mappingFile.getInputStream(), StandardCharsets.UTF_8);
+        String csvText = IOUtils.toString(theServletRequest.getInputStream(), StandardCharsets.UTF_8);
+
+
+        StreamResult result = new StreamResult( outWriter );
 
         MessageWarner mw = new MessageWarner();
         mw.setWriter(new StringWriter());
         ((TransformerImpl) transformer).getUnderlyingXsltTransformer().getUnderlyingController().setMessageEmitter(mw);
-        transformer.setParameter("mapping", mappingsText);
+        //transformer.setParameter("mapping", mappingText);
         transformer.setParameter("csvInputData", csvText);
-        transformer.transform(src, new StreamResult(stringWriter));
-
-
+        //transformer.setParameter("format", format);
+        transformer.transform(src, result);
       } catch (TransformerException e) {
         throw new SanerCsvParserException(e);
       } catch (NullPointerException e) {
@@ -137,10 +143,15 @@ public class SanerServerCsvTransformOperation {
       } catch (IOException e) {
         e.printStackTrace();
       }
+    //return new ResponseEntity(stream, HttpStatus.OK);
+    StringBuffer sb = outWriter.getBuffer();
+    String finalstring = sb.toString();
+
+    System.out.println("DEBUG ---> gonna try to turn this into a measure " + finalstring);
 
     IParser parser = fhirContext.newXmlParser();
 
-    MeasureReport mr = parser.parseResource(MeasureReport.class, stringWriter.getBuffer().toString());
+    MeasureReport mr = parser.parseResource(MeasureReport.class, finalstring);
     return mr;
   }
 
