@@ -19,7 +19,12 @@
 
     <!-- Limit the number of rows to convert, set to 0 to convert everything -->
     <xsl:param name='count' select='2000'/>
+
+    <xsl:param name='periodStart'/>
+    <xsl:param name='periodEnd'/>
+    <xsl:param name='date' select="current-dateTime()"/>
     <!-- set to the name of the mapping file
+
 
         The mapping file should have the names of the CSV file columns in the first column
         and the codes that they map to in the column row.  Headers should for the first
@@ -276,7 +281,7 @@
         <!-- Generate Instance -->
         <xsl:call-template name="createMeasureReportHeader">
             <xsl:with-param name="state" select="state/@value"/>
-            <xsl:with-param name="date" select="date/@value"/>
+            <xsl:with-param name="date" select="string($date)"/>
             <xsl:with-param name="def" select="$def"/>
             <xsl:with-param name="fips" select="fips/@value"/>
             <xsl:with-param name="body">
@@ -357,16 +362,17 @@
                  s:string(('subject.display'), ('State of ', $geoData/@Name))
                 ))"/>
             <xsl:copy-of
-                    select="s:string(('date'), (substring($date, 1, 4), '-', substring($date, 5, 2), '-', substring($date, 7, 2)))"/>
+                    select="s:string(('date'), (string($date)))"/>
             <xsl:copy-of select="s:wrap('reporter',
                 (s:string( ('reporter.reference'), ('Organization/', $state, '-DPH') ),
                  s:string(('reporter.display'), ($geoData/@Name, ' Department of Public Health'))
                 ))"/>
 
             <xsl:copy-of select="s:wrap('period',
-                (s:string(('period.start'), (substring($date, 1, 4), '-', substring($date, 5, 2), '-', substring($date, 7, 2))),
-                 s:string(('period.end'), (substring($date, 1, 4), '-', substring($date, 5, 2), '-', substring($date, 7, 2)))
-                ))"/>
+                (
+                s:string(('period.start'), $periodStart),
+                s:string(('period.end'), $periodEnd))
+                )"/>
             <xsl:copy-of select="$body"/>
         </xsl:variable>
         <xsl:copy-of

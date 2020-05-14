@@ -6,6 +6,7 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -82,11 +83,14 @@ public class SanerServerCsvTransformOperation {
   @Operation(name = "$report", manualResponse=true, manualRequest=true)
   public MeasureReport report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
     String organization = theServletRequest.getParameter("reporter");
-    if(organization != null){
-      System.out.println("DEBUG ---> got this reporter " + organization);
-    }else{
-      System.out.println("DEBUG ---> org is null");
-    }
+    String subject = theServletRequest.getParameter("subject");
+    String periodStart = theServletRequest.getParameter("period.start");
+    String periodEnd = theServletRequest.getParameter("period.end");
+
+    //create date param using start and end
+
+    DateParam dateParamStart = new DateParam(periodStart);
+    DateParam dateParamEnd = new DateParam(periodEnd);
 
     System.setProperty("javax.xml.transform.TransformerFactory",
       "net.sf.saxon.TransformerFactoryImpl");
@@ -135,6 +139,8 @@ public class SanerServerCsvTransformOperation {
         //transformer.setParameter("mapping", mappingText);
         transformer.setParameter("csvInputData", csvText);
         //transformer.setParameter("format", format);
+        transformer.setParameter("periodStart", periodStart);
+        transformer.setParameter("periodEnd", periodEnd);
         transformer.transform(src, result);
       } catch (TransformerException e) {
         throw new SanerCsvParserException(e);
@@ -152,6 +158,7 @@ public class SanerServerCsvTransformOperation {
     IParser parser = fhirContext.newXmlParser();
 
     MeasureReport mr = parser.parseResource(MeasureReport.class, finalstring);
+
     return mr;
   }
 
