@@ -32,9 +32,12 @@ import ca.uhn.fhir.rest.annotation.Operation;
 import ca.uhn.fhir.rest.annotation.OperationParam;
 import ca.uhn.fhir.rest.param.*;
 import ca.uhn.fhir.rest.server.IResourceProvider;
+import com.sun.tools.internal.ws.wsdl.document.http.HTTPConstants;
 import org.apache.commons.io.IOUtils;
+import org.apache.http.entity.ContentType;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.*;
+import org.hl7.fhir.r4.utils.client.ClientUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -81,12 +84,12 @@ public class SanerServerCsvTransformOperation {
   }
 
   @Operation(name = "$report", manualResponse=true, manualRequest=true)
-  public MeasureReport report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
+  public void report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
     String organization = theServletRequest.getParameter("reporter");
     String subject = theServletRequest.getParameter("subject");
     String periodStart = theServletRequest.getParameter("period.start");
     String periodEnd = theServletRequest.getParameter("period.end");
-
+    String contentType = theServletRequest.getContentType();
     //create date param using start and end
 
     DateParam dateParamStart = new DateParam(periodStart);
@@ -142,6 +145,17 @@ public class SanerServerCsvTransformOperation {
         transformer.setParameter("periodStart", periodStart);
         transformer.setParameter("periodEnd", periodEnd);
         transformer.transform(src, result);
+
+        StringBuffer sb = outWriter.getBuffer();
+        String finalstring = sb.toString();
+
+        IParser parser = fhirContext.newXmlParser();
+
+        MeasureReport mr = parser.parseResource(MeasureReport.class, finalstring);
+
+        theServletResponse.setContentType(contentType);
+        theServletResponse.getOutputStream().write(new ClientUtils().getResourceAsByteArray(mr, true, true));
+        theServletResponse.getOutputStream().close();
       } catch (TransformerException e) {
         throw new SanerCsvParserException(e);
       } catch (NullPointerException e) {
@@ -149,17 +163,6 @@ public class SanerServerCsvTransformOperation {
       } catch (IOException e) {
         e.printStackTrace();
       }
-    //return new ResponseEntity(stream, HttpStatus.OK);
-    StringBuffer sb = outWriter.getBuffer();
-    String finalstring = sb.toString();
-
-    System.out.println("DEBUG ---> gonna try to turn this into a measure " + finalstring);
-
-    IParser parser = fhirContext.newXmlParser();
-
-    MeasureReport mr = parser.parseResource(MeasureReport.class, finalstring);
-
-    return mr;
   }
 
 
