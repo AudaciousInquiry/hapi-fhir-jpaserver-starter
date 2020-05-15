@@ -337,7 +337,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!-- plugin>
                 <groupId>org.basepom.maven</groupId>
                 <artifactId>duplicate-finder-maven-plugin</artifactId>
                 <executions>
@@ -352,7 +352,7 @@
                 </executions>
                 <configuration>
                     <failBuildInCaseOfConflict>true</failBuildInCaseOfConflict>
-                    <checkTestClasspath>false</checkTestClasspath>
+                    <checkTestClasspath>false</checkTestClasspath-->
                     <!--
                     <printEqualFiles>false</printEqualFiles>
                     <failBuildInCaseOfDifferentContentConflict>true</failBuildInCaseOfDifferentContentConflict>
@@ -422,14 +422,14 @@
                             <artifactId>checker-compat-qual</artifactId>
                         </dependency>
                     </ignoredDependencies>
-                    -->
+                    --><!--
                     <ignoredResourcePatterns>
                         <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
                         <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
                         <ignoredResourcePattern>.*\.json$</ignoredResourcePattern>
                     </ignoredResourcePatterns>
                 </configuration>
-            </plugin>
+            </plugin -->
 
 
         </plugins>
