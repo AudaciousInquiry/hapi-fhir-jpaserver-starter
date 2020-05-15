@@ -1,0 +1,72 @@
+{
+  "resourceType": "Location",
+  "id": "Loc-X140088",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Loc-X140088</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: DAHL UNIVERSITY MEDICAL CENTER Building</p><p><b>mode</b>: instance</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'HOSP' = 'Hospital)</span></p><p><b>address</b>: 5841 S MARYLAND AVE CHICAGO IL 60637 USA (WORK)</p><p><b>physicalType</b>: Site <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'si' = 'Site)</span></p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-87.604925</td><td>41.787956</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-X140088.html\">Generated Summary: id: X140088; X140088; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: DAHL UNIVERSITY MEDICAL CENTER</a></p></div>"
+  },
+  "status": "active",
+  "name": "DAHL UNIVERSITY MEDICAL CENTER Building",
+  "mode": "instance",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "HOSP"
+        }
+      ]
+    }
+  ],
+  "address": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "latitude",
+            "valueDecimal": 41.787956
+          },
+          {
+            "url": "longitude",
+            "valueDecimal": -87.604925
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+      }
+    ],
+    "use": "work",
+    "type": "both",
+    "line": [
+      "5841 S MARYLAND AVE"
+    ],
+    "city": "CHICAGO",
+    "district": "COOK",
+    "state": "IL",
+    "postalCode": "60637",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "si"
+      }
+    ]
+  },
+  "position": {
+    "longitude": -87.604925,
+    "latitude": 41.787956
+  },
+  "managingOrganization": {
+    "reference": "Organization/X140088"
+  }
+}

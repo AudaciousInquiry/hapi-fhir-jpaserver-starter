@@ -1,0 +1,64 @@
+{
+  "resourceType": "Organization",
+  "id": "X140049",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: X140049</p><p><b>meta</b>: </p><p><b>identifier</b>: X140049</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider)</span></p><p><b>name</b>: JEMISIN MEDICAL CENTER</p><p><b>address</b>: 3 ERIE CT OAK PARK IL 60302 USA (WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/connectathon/hospitals",
+      "value": "X140049"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov"
+        }
+      ]
+    }
+  ],
+  "name": "JEMISIN MEDICAL CENTER",
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.89184
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -87.777471
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "line": [
+        "3 ERIE CT"
+      ],
+      "city": "OAK PARK",
+      "district": "COOK",
+      "state": "IL",
+      "postalCode": "60302",
+      "country": "USA"
+    }
+  ]
+}

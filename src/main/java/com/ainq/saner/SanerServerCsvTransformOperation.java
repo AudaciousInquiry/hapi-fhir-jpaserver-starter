@@ -26,6 +26,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.jpa.dao.DaoMethodOutcome;
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
 import ca.uhn.fhir.jpa.dao.IFhirResourceDao;
 import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
@@ -36,10 +37,10 @@ import ca.uhn.fhir.rest.annotation.IdParam;
 import ca.uhn.fhir.rest.annotation.Operation;
 import ca.uhn.fhir.rest.param.*;
 import ca.uhn.fhir.rest.server.IResourceProvider;
+import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.InvalidRequestException;
 import ca.uhn.fhir.rest.server.exceptions.PreconditionFailedException;
 import ca.uhn.fhir.rest.server.exceptions.ResourceNotFoundException;
-
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.text.StringEscapeUtils;
@@ -419,9 +420,20 @@ public class SanerServerCsvTransformOperation implements IResourceProvider {
             transformer.setParameter("map", mapDocument.getDocumentElement().getOwnerDocument());
         }
 
-        void writeOutput(HttpServletResponse theServletResponse, StringWriter outWriter) throws IOException {
+        void writeOutput(HttpServletRequest theRequest, HttpServletResponse theServletResponse, StringWriter outWriter, boolean created) throws IOException {
             MeasureReport mr = parser.parseResource(MeasureReport.class, outWriter.toString());
+            writeOutput(theRequest, theServletResponse, mr, created);
+        }
+
+        void writeOutput(HttpServletRequest theRequest, HttpServletResponse theServletResponse, DomainResource mr, boolean created) throws IOException {
             theServletResponse.setContentType(outputContentType);
+            if (created) {
+                theServletResponse.setStatus(HttpServletResponse.SC_CREATED);
+
+                // TODO: This is a cheat, fix it.
+                String serverBase = StringUtils.substringBefore(theRequest.getRequestURI(), "/fhir/");
+                theServletResponse.setHeader(HttpHeaders.CONTENT_LOCATION, serverBase + "/fhir/" + mr.getId());
+            }
             if (outputContentType.endsWith("html")) {
                 String html = mr.getText().getDivAsString();
                 theServletResponse.getOutputStream().write(html.getBytes(StandardCharsets.UTF_8));
@@ -446,6 +458,10 @@ public class SanerServerCsvTransformOperation implements IResourceProvider {
         xmlToCsvResource = resourceLoader.getResource("classpath:xmlToCsv.xslt");
     }
 
+    /**
+     * Force a refresh of the stylesheet resources
+     * @param resp  The ServletResponse to send a message back to.
+     */
     @Operation(name = "$init", manualResponse = true, manualRequest = true)
     public void init(HttpServletResponse resp) {
         init();
@@ -471,8 +487,17 @@ public class SanerServerCsvTransformOperation implements IResourceProvider {
      * @param theServletResponse    The servlet response in which to write the results.
      *
      */
+    @Operation(name = "$convert", manualResponse = true, manualRequest = true)
+    public void convert(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
+        convert(theServletRequest, theServletResponse, false);
+    }
+
     @Operation(name = "$report", manualResponse = true, manualRequest = true)
     public void report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse) {
+        convert(theServletRequest, theServletResponse, true);
+    }
+
+    private void convert(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse, boolean create) {
         String measureName = theServletRequest.getParameter("name");
         String measureUrl = theServletRequest.getParameter("url");
         String query = "";
@@ -503,18 +528,22 @@ public class SanerServerCsvTransformOperation implements IResourceProvider {
         if (l.size() > 2) {
             throw new InvalidRequestException("More than one measure matches Measure?" + query);
         }
-        report(theServletRequest, theServletResponse, (Measure)l.get(0));
+        convert(theServletRequest, theServletResponse, (Measure)l.get(0), create);
+    }
+
+    @Operation(name = "$convert", manualResponse = true, manualRequest = true)
+    public void convert(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse,
+        @IdParam IdType measureId) {
+        convert(theServletRequest, theServletResponse, validateResource(measureId, Measure.class), false);
     }
 
     @Operation(name = "$report", manualResponse = true, manualRequest = true)
     public void report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse,
         @IdParam IdType measureId) {
-        report(theServletRequest, theServletResponse, validateResource(measureId, Measure.class));
+        convert(theServletRequest, theServletResponse, validateResource(measureId, Measure.class), true);
     }
 
-    private void report(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse, Measure reportedMeasure) {
-
-
+    private void convert(HttpServletRequest theServletRequest, HttpServletResponse theServletResponse, Measure reportedMeasure, boolean create) {
         try {
             ConversionRequest conversionRequest = new ConversionRequest(theServletRequest, reportedMeasure);
             conversionRequest.validateParameters();
@@ -530,8 +559,21 @@ public class SanerServerCsvTransformOperation implements IResourceProvider {
             // Perform the transformation
             transformer.transform(new StreamSource(new StringReader("<test/>")), new StreamResult(outWriter));
 
-            // Write the output
-            conversionRequest.writeOutput(theServletResponse, outWriter);
+            if (!create) {
+                // Write the output
+                conversionRequest.writeOutput(theServletRequest, theServletResponse, outWriter, false);
+            }
+
+            // TODO: Check to see if there is already a report for this time period
+            // and measure for the specified location and reporter, if there is
+            // update it instead of just creating a new one.
+
+            String result = outWriter.toString();
+            MeasureReport report = fhirContext.newXmlParser().parseResource(MeasureReport.class, result);
+            DaoMethodOutcome oc = dao.getResourceDao(MeasureReport.class).create(report);
+            report.setId(oc.getId());
+
+            conversionRequest.writeOutput(theServletRequest, theServletResponse, report, true);
         } catch (Exception e) {
             throw new SanerCsvParserException(e);
         }

@@ -1,0 +1,64 @@
+{
+  "resourceType": "Organization",
+  "id": "X410009",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: X410009</p><p><b>meta</b>: </p><p><b>identifier</b>: X410009</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider)</span></p><p><b>name</b>: DUNWICH MEDICAL CENTER</p><p><b>address</b>: 455 TOLL GATE RD WARWICK RI 02886 USA (WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/connectathon/hospitals",
+      "value": "X410009"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov"
+        }
+      ]
+    }
+  ],
+  "name": "DUNWICH MEDICAL CENTER",
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.704478
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -71.477902
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "line": [
+        "455 TOLL GATE RD"
+      ],
+      "city": "WARWICK",
+      "district": "KENT",
+      "state": "RI",
+      "postalCode": "02886",
+      "country": "USA"
+    }
+  ]
+}

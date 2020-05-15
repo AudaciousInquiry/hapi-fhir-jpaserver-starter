@@ -1,0 +1,72 @@
+{
+  "resourceType": "Location",
+  "id": "Loc-X410004",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Loc-X410004</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: CHARLES D WARD MEMORIAL HOSPITAL Building</p><p><b>mode</b>: instance</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'HOSP' = 'Hospital)</span></p><p><b>address</b>: 825 CHALKSTONE AVE PROVIDENCE RI 02908 USA (WORK)</p><p><b>physicalType</b>: Site <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'si' = 'Site)</span></p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-71.43458</td><td>41.834015</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-X410004.html\">Generated Summary: id: X410004; X410004; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: CHARLES D WARD MEMORIAL HOSPITAL</a></p></div>"
+  },
+  "status": "active",
+  "name": "CHARLES D WARD MEMORIAL HOSPITAL Building",
+  "mode": "instance",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "HOSP"
+        }
+      ]
+    }
+  ],
+  "address": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "latitude",
+            "valueDecimal": 41.834015
+          },
+          {
+            "url": "longitude",
+            "valueDecimal": -71.43458
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+      }
+    ],
+    "use": "work",
+    "type": "both",
+    "line": [
+      "825 CHALKSTONE AVE"
+    ],
+    "city": "PROVIDENCE",
+    "district": "PROVIDENCE",
+    "state": "RI",
+    "postalCode": "02908",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "si"
+      }
+    ]
+  },
+  "position": {
+    "longitude": -71.43458,
+    "latitude": 41.834015
+  },
+  "managingOrganization": {
+    "reference": "Organization/X410004"
+  }
+}
