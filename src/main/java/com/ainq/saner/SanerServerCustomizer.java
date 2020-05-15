@@ -57,19 +57,21 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
     // Enumerate the resources is src/main/resource/preload folder
     PathMatchingResourcePatternResolver r = new PathMatchingResourcePatternResolver();
     IParser p = server.getFhirContext().newJsonParser();
+    org.springframework.core.io.Resource loading = null;
     try {
       ApplicationContext appCtx = (ApplicationContext) server.getServletContext()
         .getAttribute("org.springframework.web.context.WebApplicationContext.ROOT");
       DaoRegistry dao = appCtx.getBean(DaoRegistry.class);
 
       for (org.springframework.core.io.Resource res : r.getResources("/preload/*.json")) {
+        LOGGER.info("Loading resource from {}", (loading = res).getFilename());
         IAnyResource base = (IAnyResource) p.parseResource(res.getInputStream());
         IFhirResourceDao<IAnyResource> resDao = (IFhirResourceDao<IAnyResource>) dao
           .getResourceDao(base.getClass());
         resDao.create(base);
       }
-    } catch (IOException e) {
-      LOGGER.error("Unexpected IO Exception while preloading resources", e);
+    } catch (Exception e) {
+      LOGGER.error("Unexpected Exception while preloading resource {}", loading.getFilename(), e);
     }
   }
 
