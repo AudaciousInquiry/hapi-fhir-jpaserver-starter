@@ -36,13 +36,13 @@ public class HapiProperties {
   static final String DATASOURCE_DRIVER = "datasource.driver";
   static final String DATASOURCE_MAX_POOL_SIZE = "datasource.max_pool_size";
   static final String DATASOURCE_PASSWORD = "datasource.password";
-  static final String DATASOURCE_URL = "datasource.url";
+  public static final String DATASOURCE_URL = "datasource.url";
   static final String DATASOURCE_USERNAME = "datasource.username";
   static final String DEFAULT_ENCODING = "default_encoding";
   static final String DEFAULT_PAGE_SIZE = "default_page_size";
   static final String DEFAULT_PRETTY_PRINT = "default_pretty_print";
   static final String ETAG_SUPPORT = "etag_support";
-  static final String FHIR_VERSION = "fhir_version";
+  public static final String FHIR_VERSION = "fhir_version";
   static final String ALLOW_CASCADING_DELETES = "allow_cascading_deletes";
   static final String HAPI_PROPERTIES = "hapi.properties";
   static final String LOGGER_ERROR_FORMAT = "logger.error_format";
@@ -56,7 +56,7 @@ public class HapiProperties {
   static final String SERVER_NAME = "server.name";
   static final String SUBSCRIPTION_EMAIL_ENABLED = "subscription.email.enabled";
   static final String SUBSCRIPTION_RESTHOOK_ENABLED = "subscription.resthook.enabled";
-  static final String SUBSCRIPTION_WEBSOCKET_ENABLED = "subscription.websocket.enabled";
+  public static final String SUBSCRIPTION_WEBSOCKET_ENABLED = "subscription.websocket.enabled";
   static final String ALLOWED_BUNDLE_TYPES = "allowed_bundle_types";
   static final String TEST_PORT = "test.port";
   static final String TESTER_CONFIG_REFUSE_TO_FETCH_THIRD_PARTY_URLS = "tester.config.refuse_to_fetch_third_party_urls";

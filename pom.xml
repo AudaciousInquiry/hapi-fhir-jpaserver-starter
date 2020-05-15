@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -193,32 +193,26 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlets</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-server</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-util</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-webapp</artifactId>
-            <scope>test</scope>
         </dependency>
         <!--
         <dependency>
@@ -249,7 +243,18 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Spring Boot starter for FHIR -->
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-spring-boot-starter</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+            <version>10.0</version>
+        </dependency>
     </dependencies>
 
     <packaging>war</packaging>
@@ -421,6 +426,7 @@
                     <ignoredResourcePatterns>
                         <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
                         <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
+                        <ignoredResourcePattern>.*\.json$</ignoredResourcePattern>
                     </ignoredResourcePatterns>
                 </configuration>
             </plugin>
