@@ -1,5 +1,25 @@
 package ca.uhn.fhir.jpa.starter;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+import javax.servlet.ServletException;
+
+import org.hl7.fhir.dstu3.model.Bundle;
+import org.hl7.fhir.dstu3.model.Meta;
+import org.hl7.fhir.r4.model.Bundle.BundleType;
+import org.springframework.context.ApplicationContext;
+import org.springframework.http.HttpHeaders;
+import org.springframework.web.cors.CorsConfiguration;
+
+import com.ainq.saner.SanerServerCsvTransformOperation;
+import com.ainq.saner.SanerServerCustomizer;
+import com.ainq.saner.SanerServerHelloWorldOperation;
+import com.ainq.saner.SanerServerMeasureReportTransformOperation;
+
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.FhirVersionEnum;
 import ca.uhn.fhir.interceptor.api.IInterceptorBroadcaster;
@@ -36,21 +56,6 @@ import ca.uhn.fhir.rest.server.interceptor.ResponseHighlighterInterceptor;
 import ca.uhn.fhir.rest.server.interceptor.ResponseValidatingInterceptor;
 import ca.uhn.fhir.validation.IValidatorModule;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
-import com.ainq.saner.SanerServerCsvTransformOperation;
-import com.ainq.saner.SanerServerCustomizer;
-import com.ainq.saner.SanerServerHelloWorldOperation;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
-import javax.servlet.ServletException;
-import org.hl7.fhir.dstu3.model.Bundle;
-import org.hl7.fhir.dstu3.model.Meta;
-import org.hl7.fhir.r4.model.Bundle.BundleType;
-import org.springframework.context.ApplicationContext;
-import org.springframework.http.HttpHeaders;
-import org.springframework.web.cors.CorsConfiguration;
 
 public class JpaRestfulServer extends RestfulServer {
 
@@ -111,6 +116,10 @@ public class JpaRestfulServer extends RestfulServer {
 
     SanerServerCsvTransformOperation sanerServerCsvTransformOperation = appCtx.getBean("sanerCsvTransformOperation", SanerServerCsvTransformOperation.class);
     registerProvider(sanerServerCsvTransformOperation);
+    
+    SanerServerMeasureReportTransformOperation sanerServerMeasureReportTransformOperation = appCtx.getBean("sanerMeasureReportTransformOperation", SanerServerMeasureReportTransformOperation.class);
+    registerProvider(sanerServerMeasureReportTransformOperation);
+    
     /*
      * The conformance provider exports the supported resources, search parameters, etc for
      * this server. The JPA version adds resourceProviders counts to the exported statement, so it

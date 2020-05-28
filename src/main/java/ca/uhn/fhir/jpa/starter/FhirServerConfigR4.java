@@ -1,19 +1,23 @@
 package ca.uhn.fhir.jpa.starter;
 
-import ca.uhn.fhir.context.ConfigurationException;
-import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
-import ca.uhn.fhir.jpa.search.DatabaseBackedPagingProvider;
-import com.ainq.saner.SanerServerCsvTransformOperation;
-import com.ainq.saner.SanerServerCustomizer;
-import com.ainq.saner.SanerServerHelloWorldOperation;
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+
+import com.ainq.saner.SanerServerCsvTransformOperation;
+import com.ainq.saner.SanerServerCustomizer;
+import com.ainq.saner.SanerServerHelloWorldOperation;
+import com.ainq.saner.SanerServerMeasureReportTransformOperation;
+
+import ca.uhn.fhir.context.ConfigurationException;
+import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
+import ca.uhn.fhir.jpa.search.DatabaseBackedPagingProvider;
 
 @Configuration
 public class FhirServerConfigR4 extends BaseJavaConfigR4 {
@@ -71,6 +75,11 @@ public class FhirServerConfigR4 extends BaseJavaConfigR4 {
   @Bean(name = "sanerServerCustomizer")
   public SanerServerCustomizer sanerServerCustomizer() {
     return new SanerServerCustomizer();
+  }
+  
+  @Bean(name = "sanerMeasureReportTransformOperation")
+  public SanerServerMeasureReportTransformOperation measureReportTransformProvider(){
+    return new SanerServerMeasureReportTransformOperation();
   }
 
   @PostConstruct
