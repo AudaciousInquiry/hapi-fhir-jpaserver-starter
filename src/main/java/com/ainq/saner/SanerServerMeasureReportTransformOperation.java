@@ -18,6 +18,7 @@ import org.hl7.fhir.r4.model.MeasureReport.MeasureReportGroupPopulationComponent
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.jpa.starter.HapiProperties;
 import ca.uhn.fhir.rest.annotation.IdParam;
 import ca.uhn.fhir.rest.annotation.Operation;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
@@ -29,14 +30,12 @@ public class SanerServerMeasureReportTransformOperation implements IResourceProv
 	@Autowired
 	private FhirContext fhirContext;
 
-
-
 	@Operation(name = "$convert", idempotent=true)
 	public MeasureReport convert(@IdParam IdType theMeasureReportId) {		
 
 
 		FhirContext ctx = FhirContext.forR4();
-		String serverBase = "http://localhost:8080/hapi-fhir-jpaserver/fhir";
+		String serverBase = HapiProperties.getServerAddress();
 		IGenericClient client = ctx.newRestfulGenericClient(serverBase);
 
 		MeasureReport mr = client.read(MeasureReport.class, theMeasureReportId.getIdPart());
@@ -49,7 +48,7 @@ public class SanerServerMeasureReportTransformOperation implements IResourceProv
 	public Binary convert1(@IdParam IdType theMeasureReportId) {
 
 		FhirContext ctx = FhirContext.forR4();
-		String serverBase = "http://localhost:8080/hapi-fhir-jpaserver/fhir";
+		String serverBase = HapiProperties.getServerAddress();
 		IGenericClient client = ctx.newRestfulGenericClient(serverBase);
 
 		MeasureReport mr = client.read(MeasureReport.class, theMeasureReportId.getIdPart());
