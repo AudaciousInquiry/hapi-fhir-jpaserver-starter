@@ -1,0 +1,32 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "103120912"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "ADVENTIST HEALTHCARE WASHINGTON ADVENTIST HOSPITAL",
+  "alias": [ "WASHINGTON ADVENTIST HOSPITAL" ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 891-5651"
+  }, {
+    "system": "url",
+    "value": "http://www.adventisthealthcare.com/wah/"
+  } ],
+  "address": [ {
+    "line": [ "7600 CARROLL AVENUE" ],
+    "city": "TAKOMA PARK",
+    "district": "MONTGOMERY",
+    "state": "MD",
+    "postalCode": "20912",
+    "country": "USA"
+  } ]
+}

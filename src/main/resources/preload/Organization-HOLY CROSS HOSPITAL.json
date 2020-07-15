@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "1920910"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "HOLY CROSS HOSPITAL",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 754-7000"
+  }, {
+    "system": "url",
+    "value": "http://www.holycrosshealth.org"
+  } ],
+  "address": [ {
+    "line": [ "1500 FOREST GLEN ROAD" ],
+    "city": "SILVER SPRING",
+    "district": "MONTGOMERY",
+    "state": "MD",
+    "postalCode": "20910",
+    "country": "USA"
+  } ]
+}

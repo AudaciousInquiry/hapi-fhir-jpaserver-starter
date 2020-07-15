@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "4921218"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "MEDSTAR UNION MEMORIAL HOSPITAL",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 554-2227"
+  }, {
+    "system": "url",
+    "value": "http://www.unionmemorial.org"
+  } ],
+  "address": [ {
+    "line": [ "201 EAST UNIVERSITY PARKWAY" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21218",
+    "country": "USA"
+  } ]
+}

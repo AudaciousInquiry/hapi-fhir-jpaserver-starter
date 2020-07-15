@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "4821224"
+  } ],
+  "name": "JOHNS HOPKINS BAYVIEW MEDICAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 550-0123"
+  }, {
+    "system": "url",
+    "value": "http://www.hopkinsbayview.org"
+  } ],
+  "address": {
+    "line": [ "4940 EASTERN AVENUE" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21224",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.54677819,
+    "latitude": 39.29067881
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "4821224"
+    }
+  }
+}

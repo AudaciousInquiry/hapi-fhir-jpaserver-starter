@@ -128,10 +128,10 @@ public class ExampleServerR4IT {
 
         ourLog.info("Project base path is: {}", path);
 
-        ourServer = new Server(0);
+        ourServer = new Server(ourPort);
 
         WebAppContext webAppContext = new WebAppContext();
-        webAppContext.setContextPath("/hapi-fhir-jpaserver");
+        webAppContext.setContextPath("/");
         webAppContext.setDisplayName("HAPI FHIR");
         webAppContext.setDescriptor(path + "/src/main/webapp/WEB-INF/web.xml");
         webAppContext.setResourceBase(path + "/target/hapi-fhir-jpaserver-starter");
@@ -145,7 +145,7 @@ public class ExampleServerR4IT {
         ourCtx.getRestfulClientFactory().setServerValidationMode(ServerValidationModeEnum.NEVER);
         ourCtx.getRestfulClientFactory().setSocketTimeout(1200 * 1000);
         String ourServerBase = HapiProperties.getServerAddress();
-        ourServerBase = "http://localhost:" + ourPort + "/hapi-fhir-jpaserver/fhir/";
+        ourServerBase = "http://localhost:" + ourPort + "/fhir/";
 
         ourClient = ourCtx.newRestfulGenericClient(ourServerBase);
         ourClient.registerInterceptor(new LoggingInterceptor(true));

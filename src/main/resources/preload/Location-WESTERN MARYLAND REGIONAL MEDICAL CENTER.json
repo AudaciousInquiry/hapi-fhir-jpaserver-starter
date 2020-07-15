@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "4521502"
+  } ],
+  "name": "WESTERN MARYLAND REGIONAL MEDICAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(240) 964-2196"
+  }, {
+    "system": "url",
+    "value": "http://www.wmhs.com"
+  } ],
+  "address": {
+    "line": [ "12500 WILLOWBROOK ROAD" ],
+    "city": "CUMBERLAND",
+    "district": "ALLEGANY",
+    "state": "MD",
+    "postalCode": "21502",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -78.7332415,
+    "latitude": 39.64783067
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "4521502"
+    }
+  }
+}

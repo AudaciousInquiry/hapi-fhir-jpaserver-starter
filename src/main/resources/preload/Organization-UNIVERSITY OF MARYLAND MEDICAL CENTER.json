@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "4121201"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "UNIVERSITY OF MARYLAND MEDICAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 328-8667"
+  }, {
+    "system": "url",
+    "value": "http://www.umms.org/hospitals/ummc.htm"
+  } ],
+  "address": [ {
+    "line": [ "22 S GREENE ST" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21201",
+    "country": "USA"
+  } ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "5121204"
+  } ],
+  "name": "GREATER BALTIMORE MEDICAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(443) 849-2000"
+  }, {
+    "system": "url",
+    "value": "http://www.gbmc.org"
+  } ],
+  "address": {
+    "line": [ "6701 NORTH CHARLES STREET" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE",
+    "state": "MD",
+    "postalCode": "21204",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.62455651,
+    "latitude": 39.39085636
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "5121204"
+    }
+  }
+}

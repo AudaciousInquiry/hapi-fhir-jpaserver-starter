@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6121613"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "EASTERN SHORE HOSPITAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 221-2525"
+  }, {
+    "system": "url",
+    "value": "http://www.dhmh.state.md.us/eshc"
+  } ],
+  "address": [ {
+    "line": [ "POST OFFICE BOX 800" ],
+    "city": "CAMBRIDGE",
+    "district": "DORCHESTER",
+    "state": "MD",
+    "postalCode": "21613",
+    "country": "USA"
+  } ]
+}

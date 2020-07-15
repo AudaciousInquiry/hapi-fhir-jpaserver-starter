@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "182120889"
+  } ],
+  "name": "WALTER REED NATIONAL MILITARY MEDICAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 295-4611"
+  }, {
+    "system": "url",
+    "value": "https://www.wrnmmc.capmed.mil/sitepages/home.aspx"
+  } ],
+  "address": {
+    "line": [ "8901 ROCKVILLE PIKE" ],
+    "city": "BETHESDA",
+    "district": "MONTGOMERY",
+    "state": "MD",
+    "postalCode": "20889",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -77.09358972,
+    "latitude": 39.00128695
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "182120889"
+    }
+  }
+}

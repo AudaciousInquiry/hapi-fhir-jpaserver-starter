@@ -1,0 +1,48 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "103221207"
+  } ],
+  "name": "UNIV OF MD REHABILITATION & ORTHOPAEDIC INSTITUTE",
+  "alias": [ "KERNAN HOSPITAL" ],
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622310",
+      "display": "ORTHOPEDIC HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 448-6701"
+  }, {
+    "system": "url",
+    "value": "http://umrehabortho.org/"
+  } ],
+  "address": {
+    "line": [ "2200 KERNAN DRIVE" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21207",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.7079635,
+    "latitude": 39.31376424
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "103221207"
+    }
+  }
+}

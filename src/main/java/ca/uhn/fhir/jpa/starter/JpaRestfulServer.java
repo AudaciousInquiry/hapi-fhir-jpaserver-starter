@@ -17,8 +17,8 @@ import org.springframework.web.cors.CorsConfiguration;
 
 import com.ainq.saner.SanerServerCsvTransformOperation;
 import com.ainq.saner.SanerServerCustomizer;
-import com.ainq.saner.SanerServerHelloWorldOperation;
 import com.ainq.saner.SanerServerMeasureReportTransformOperation;
+import com.ainq.saner.SanerServerMeasureTransformOperation;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.FhirVersionEnum;
@@ -110,16 +110,11 @@ public class JpaRestfulServer extends RestfulServer {
     registerProviders(resourceProviders.createProviders());
     registerProvider(systemProvider);
     //registerProvider(new InstanceLoader());
-    SanerServerHelloWorldOperation sanerHelloWorldOperation = appCtx
-      .getBean("sanerHelloWorldOperation", SanerServerHelloWorldOperation.class);
-    registerProvider(sanerHelloWorldOperation);
 
-    SanerServerCsvTransformOperation sanerServerCsvTransformOperation = appCtx.getBean("sanerCsvTransformOperation", SanerServerCsvTransformOperation.class);
-    registerProvider(sanerServerCsvTransformOperation);
-    
-    SanerServerMeasureReportTransformOperation sanerServerMeasureReportTransformOperation = appCtx.getBean("sanerMeasureReportTransformOperation", SanerServerMeasureReportTransformOperation.class);
-    registerProvider(sanerServerMeasureReportTransformOperation);
-    
+    registerProvider(appCtx.getBean("sanerCsvTransformOperation", SanerServerCsvTransformOperation.class));
+    registerProvider(appCtx.getBean("sanerMeasureReportTransformOperation", SanerServerMeasureReportTransformOperation.class));
+    registerProvider(appCtx.getBean("sanerMeasureTransformOperation", SanerServerMeasureTransformOperation.class));
+
     /*
      * The conformance provider exports the supported resources, search parameters, etc for
      * this server. The JPA version adds resourceProviders counts to the exported statement, so it

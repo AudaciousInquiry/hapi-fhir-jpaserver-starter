@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6221701"
+  } ],
+  "name": "FREDERICK MEMORIAL HOSPITAL",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(240) 566-3300"
+  }, {
+    "system": "url",
+    "value": "http://www.fmh.org"
+  } ],
+  "address": {
+    "line": [ "400 WEST SEVENTH ST" ],
+    "city": "FREDERICK",
+    "district": "FREDERICK",
+    "state": "MD",
+    "postalCode": "21701",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -77.41466111,
+    "latitude": 39.42265668
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "6221701"
+    }
+  }
+}

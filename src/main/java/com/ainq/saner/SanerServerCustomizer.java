@@ -7,11 +7,15 @@ import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
 import java.io.IOException;
 import org.hl7.fhir.instance.model.api.IAnyResource;
+import org.hl7.fhir.instance.model.api.IBaseResource;
+import org.hl7.fhir.r4.model.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
+
+import com.ainq.utils.JpaUtils;
 
 @Component
 public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
@@ -65,10 +69,8 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
 
       for (org.springframework.core.io.Resource res : r.getResources("/preload/*.json")) {
         LOGGER.info("Loading resource from {}", (loading = res).getFilename());
-        IAnyResource base = (IAnyResource) p.parseResource(res.getInputStream());
-        IFhirResourceDao<IAnyResource> resDao = (IFhirResourceDao<IAnyResource>) dao
-          .getResourceDao(base.getClass());
-        resDao.create(base);
+        Resource base = (Resource) p.parseResource(res.getInputStream());
+        JpaUtils.create(dao, base);
       }
     } catch (Exception e) {
       LOGGER.error("Unexpected Exception while preloading resource {}", loading.getFilename(), e);

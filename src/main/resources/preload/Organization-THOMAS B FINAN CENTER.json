@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6421502"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "THOMAS B FINAN CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 777-2240"
+  }, {
+    "system": "url",
+    "value": "http://www.dhmh.state.md.us"
+  } ],
+  "address": [ {
+    "line": [ "10102 COUNTRY CLUB ROAD, PO BOX 1722" ],
+    "city": "CUMBERLAND",
+    "district": "ALLEGANY",
+    "state": "MD",
+    "postalCode": "21502",
+    "country": "USA"
+  } ]
+}

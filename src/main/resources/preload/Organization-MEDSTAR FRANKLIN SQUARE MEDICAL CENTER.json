@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "5021237"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "MEDSTAR FRANKLIN SQUARE MEDICAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(443) 777-7850"
+  }, {
+    "system": "url",
+    "value": "http://www.medstarfranklin.org"
+  } ],
+  "address": [ {
+    "line": [ "9000 FRANKLIN SQUARE DR" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE",
+    "state": "MD",
+    "postalCode": "21237",
+    "country": "USA"
+  } ]
+}

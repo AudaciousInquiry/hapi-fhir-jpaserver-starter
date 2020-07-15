@@ -1,0 +1,32 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6621613"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "UNIVERSITY OF MD SHORE MEDICAL CTR AT DORCHESTER",
+  "alias": [ "DORCHESTER GENERAL HOSPITAL" ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 228-5511"
+  }, {
+    "system": "url",
+    "value": "https://em.umaryland.edu/page/hospitals/dorchester_general"
+  } ],
+  "address": [ {
+    "line": [ "300 BRYN STREET" ],
+    "city": "CAMBRIDGE",
+    "district": "DORCHESTER",
+    "state": "MD",
+    "postalCode": "21613",
+    "country": "USA"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "103921014"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "UNIVERSITY OF M D UPPER CHESAPEAKE MEDICAL CENTER",
+  "alias": [ "UPPER CHESAPEAKE MEDICAL CENTER" ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(443) 643-3303"
+  }, {
+    "system": "url",
+    "value": "http://www.uchs.org"
+  } ],
+  "address": [ {
+    "line": [ "500 UPPER CHESAPEAKE DRIVE" ],
+    "city": "BEL AIR",
+    "district": "HARFORD",
+    "state": "MD",
+    "postalCode": "21014",
+    "country": "USA"
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "4621401"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "ANNE ARUNDEL MEDICAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(443) 481-1307"
+  }, {
+    "system": "url",
+    "value": "http://www.aahs.org"
+  } ],
+  "address": [ {
+    "line": [ "2001 MEDICAL PARKWAY" ],
+    "city": "ANNAPOLIS",
+    "district": "ANNE ARUNDEL",
+    "state": "MD",
+    "postalCode": "21401",
+    "country": "USA"
+  } ]
+}

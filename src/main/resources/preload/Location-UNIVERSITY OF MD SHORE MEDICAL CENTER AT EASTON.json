@@ -1,0 +1,48 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "3321601"
+  } ],
+  "name": "UNIVERSITY OF MD SHORE MEDICAL CENTER AT EASTON",
+  "alias": [ "MEMORIAL HOSPITAL AT EASTON" ],
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 822-1000"
+  }, {
+    "system": "url",
+    "value": "http://www.shorehealth.org/services/mhe/"
+  } ],
+  "address": {
+    "line": [ "219 S WASHINGTON ST" ],
+    "city": "EASTON",
+    "district": "TALBOT",
+    "state": "MD",
+    "postalCode": "21601",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.07685606,
+    "latitude": 38.76965106
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "3321601"
+    }
+  }
+}

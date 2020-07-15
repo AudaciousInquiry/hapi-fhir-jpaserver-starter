@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "1821239"
+  } ],
+  "name": "MEDSTAR GOOD SAMARITAN HOSPITAL",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(443) 444-3902"
+  }, {
+    "system": "url",
+    "value": "http://www.goodsam-md.org"
+  } ],
+  "address": {
+    "line": [ "5601 LOCH RAVEN BLVD" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21239",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.58728282,
+    "latitude": 39.35839578
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "1821239"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "5421204"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "SHEPPARD AND ENOCH PRATT HOSPITAL",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 938-3401"
+  }, {
+    "system": "url",
+    "value": "http://www.sheppardpratt.org/sp_htmlcode/sp_locations/sp_loc_balt_sp.aspx"
+  } ],
+  "address": [ {
+    "line": [ "6501 NORTH CHARLES STREET" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE",
+    "state": "MD",
+    "postalCode": "21204",
+    "country": "USA"
+  } ]
+}

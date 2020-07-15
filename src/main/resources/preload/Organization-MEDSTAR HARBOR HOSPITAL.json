@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "2021225"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "MEDSTAR HARBOR HOSPITAL",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 350-3201"
+  }, {
+    "system": "url",
+    "value": "http://www.harborhospital.org"
+  } ],
+  "address": [ {
+    "line": [ "3001 S HANOVER STREET" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21225",
+    "country": "USA"
+  } ]
+}

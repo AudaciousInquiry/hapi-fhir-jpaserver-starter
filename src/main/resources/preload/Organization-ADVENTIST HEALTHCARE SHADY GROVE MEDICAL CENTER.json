@@ -1,0 +1,32 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "103020850"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "ADVENTIST HEALTHCARE SHADY GROVE MEDICAL CENTER",
+  "alias": [ "SHADY GROVE ADVENTIST HOSPITAL" ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(240) 826-6517"
+  }, {
+    "system": "url",
+    "value": "http://www.adventisthealthcare.com"
+  } ],
+  "address": [ {
+    "line": [ "9901 MEDICAL CENTER DRIVE" ],
+    "city": "ROCKVILLE",
+    "district": "MONTGOMERY",
+    "state": "MD",
+    "postalCode": "20850",
+    "country": "USA"
+  } ]
+}

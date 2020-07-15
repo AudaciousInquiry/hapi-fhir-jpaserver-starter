@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "2920903"
+  } ],
+  "name": "SAINT LUKE INSTITUTE",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 445-1046"
+  }, {
+    "system": "url",
+    "value": "http://www.sli.org"
+  } ],
+  "address": {
+    "line": [ "8901 NEW HAMPSHIRE AVENUE" ],
+    "city": "SILVER SPRING",
+    "district": "PRINCE GEORGE'S",
+    "state": "MD",
+    "postalCode": "20903",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.9800222,
+    "latitude": 39.00256796
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "2920903"
+    }
+  }
+}

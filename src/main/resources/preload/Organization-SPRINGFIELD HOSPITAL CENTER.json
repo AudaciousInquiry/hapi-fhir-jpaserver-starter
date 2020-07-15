@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "5721784"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "SPRINGFIELD HOSPITAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 970-7001"
+  }, {
+    "system": "url",
+    "value": "http://www.dhmh.state.md.us/springfield"
+  } ],
+  "address": [ {
+    "line": [ "6655 SYKESVILLE ROAD" ],
+    "city": "SYKESVILLE",
+    "district": "CARROLL",
+    "state": "MD",
+    "postalCode": "21784",
+    "country": "USA"
+  } ]
+}

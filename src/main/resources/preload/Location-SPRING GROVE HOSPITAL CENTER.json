@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6521228"
+  } ],
+  "name": "SPRING GROVE HOSPITAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 402-7455"
+  }, {
+    "system": "url",
+    "value": "http://www.springgrove.com/"
+  } ],
+  "address": {
+    "line": [ "55 WADE AVENUE" ],
+    "city": "CATONSVILLE",
+    "district": "BALTIMORE",
+    "state": "MD",
+    "postalCode": "21228",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.7225854,
+    "latitude": 39.2647555
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "6521228"
+    }
+  }
+}

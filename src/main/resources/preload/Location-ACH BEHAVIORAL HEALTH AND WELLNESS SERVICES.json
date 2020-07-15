@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "6021613"
+  } ],
+  "name": "ACH BEHAVIORAL HEALTH AND WELLNESS SERVICES",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 221-0288"
+  }, {
+    "system": "url",
+    "value": "https://www.adventisthealthcare.com/abh/locations/profile/?id=1092&searchid=dbe0e24b-f65e-e111-9894-e0cb4ef9b7ad"
+  } ],
+  "address": {
+    "line": [ "821 FIELDCREST DRIVE" ],
+    "city": "CAMBRIDGE",
+    "district": "DORCHESTER",
+    "state": "MD",
+    "postalCode": "21613",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.05799123,
+    "latitude": 38.54945363
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "6021613"
+    }
+  }
+}

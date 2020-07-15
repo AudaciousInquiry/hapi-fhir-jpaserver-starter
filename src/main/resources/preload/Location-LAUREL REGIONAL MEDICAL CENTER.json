@@ -1,0 +1,47 @@
+{
+  "resourceType": "Location",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "2720707"
+  } ],
+  "name": "LAUREL REGIONAL MEDICAL CENTER",
+  "mode": "instance",
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 725-4300"
+  }, {
+    "system": "url",
+    "value": "http://www.laurelregionalhospital.org/"
+  } ],
+  "address": {
+    "line": [ "7300 VAN DUSEN ROAD" ],
+    "city": "LAUREL",
+    "district": "PRINCE GEORGE'S",
+    "state": "MD",
+    "postalCode": "20707",
+    "country": "USA"
+  },
+  "physicalType": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "code": "si"
+    } ]
+  },
+  "position": {
+    "longitude": -76.88120724,
+    "latitude": 39.08679628
+  },
+  "managingOrganization": {
+    "identifier": {
+      "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+      "value": "2720707"
+    }
+  }
+}

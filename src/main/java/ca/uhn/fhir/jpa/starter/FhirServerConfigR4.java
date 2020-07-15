@@ -12,8 +12,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 import com.ainq.saner.SanerServerCsvTransformOperation;
 import com.ainq.saner.SanerServerCustomizer;
-import com.ainq.saner.SanerServerHelloWorldOperation;
 import com.ainq.saner.SanerServerMeasureReportTransformOperation;
+import com.ainq.saner.SanerServerMeasureTransformOperation;
 
 import ca.uhn.fhir.context.ConfigurationException;
 import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
@@ -62,11 +62,6 @@ public class FhirServerConfigR4 extends BaseJavaConfigR4 {
     return retVal;
   }
 
-  @Bean(name = "sanerHelloWorldOperation")
-  public SanerServerHelloWorldOperation instanceLoaderProvider() {
-    return new SanerServerHelloWorldOperation();
-  }
-
   @Bean(name = "sanerCsvTransformOperation")
   public SanerServerCsvTransformOperation csvTransformProvider(){
     return new SanerServerCsvTransformOperation();
@@ -76,10 +71,15 @@ public class FhirServerConfigR4 extends BaseJavaConfigR4 {
   public SanerServerCustomizer sanerServerCustomizer() {
     return new SanerServerCustomizer();
   }
-  
+
   @Bean(name = "sanerMeasureReportTransformOperation")
   public SanerServerMeasureReportTransformOperation measureReportTransformProvider(){
     return new SanerServerMeasureReportTransformOperation();
+  }
+
+  @Bean(name = "sanerMeasureTransformOperation")
+  public SanerServerMeasureTransformOperation measureTransformProvider(){
+    return new SanerServerMeasureTransformOperation();
   }
 
   @PostConstruct

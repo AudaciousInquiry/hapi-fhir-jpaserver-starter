@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "183520904"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "ADVENTIST HEALTHCARE WHITE OAK MEDICAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(301) 891-5651"
+  }, {
+    "system": "url",
+    "value": "https://www.adventisthealthcare.com/locations/profile/white-oak-medical-center/?utm_source=local-listing&utm_medium=organic&utm_campaign=website-link"
+  } ],
+  "address": [ {
+    "line": [ "11890 HEALING WAY" ],
+    "city": "SILVER SPRING",
+    "district": "MONTGOMERY",
+    "state": "MD",
+    "postalCode": "20904",
+    "country": "USA"
+  } ]
+}

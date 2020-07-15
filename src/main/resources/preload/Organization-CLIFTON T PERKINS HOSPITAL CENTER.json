@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "120794"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "CLIFTON T PERKINS HOSPITAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 724-3001"
+  }, {
+    "system": "url",
+    "value": "http://www.dhmh.state.md.us/perkins/"
+  } ],
+  "address": [ {
+    "line": [ "8450 DORSEY RUN ROAD" ],
+    "city": "JESSUP",
+    "district": "HOWARD",
+    "state": "MD",
+    "postalCode": "20794",
+    "country": "USA"
+  } ]
+}

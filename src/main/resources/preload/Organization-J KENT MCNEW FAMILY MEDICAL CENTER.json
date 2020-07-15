@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "191021401"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622210",
+      "display": "PSYCHIATRIC AND SUBSTANCE ABUSE HOSPITALS"
+    } ]
+  } ],
+  "name": "J KENT MCNEW FAMILY MEDICAL CENTER",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(667) 204-7300"
+  }, {
+    "system": "url",
+    "value": "https://aahs.org/locations/j--kent-mcnew-family-medical-center/"
+  } ],
+  "address": [ {
+    "line": [ "175 HARRY S TRUMAN PARKWAY" ],
+    "city": "ANNAPOLIS",
+    "district": "ANNE ARUNDEL",
+    "state": "MD",
+    "postalCode": "21401",
+    "country": "USA"
+  } ]
+}

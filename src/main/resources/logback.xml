@@ -13,4 +13,7 @@
 		<appender-ref ref="STDOUT" />
 	</root>
 
+	<logger name="org.hibernate" level="WARN"/>
+	<logger name="ca.uhn.fhir.jpa.subscription.module.interceptor.SubscriptionDebugLogInterceptor" level="WARN"/>
+
 </configuration>

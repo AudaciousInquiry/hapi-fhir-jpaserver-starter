@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "identifier": [ {
+    "system": "https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals",
+    "value": "921287"
+  } ],
+  "active": true,
+  "type": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/naics",
+      "code": "622110",
+      "display": "GENERAL MEDICAL AND SURGICAL HOSPITALS"
+    } ]
+  } ],
+  "name": "JOHNS HOPKINS HOSPITAL",
+  "telecom": [ {
+    "system": "phone",
+    "value": "(410) 955-9540"
+  }, {
+    "system": "url",
+    "value": "http://www.hopkinsmedicine.org"
+  } ],
+  "address": [ {
+    "line": [ "600 NORTH WOLFE STREET" ],
+    "city": "BALTIMORE",
+    "district": "BALTIMORE CITY",
+    "state": "MD",
+    "postalCode": "21287",
+    "country": "USA"
+  } ]
+}
