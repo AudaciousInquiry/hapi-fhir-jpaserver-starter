@@ -1,0 +1,400 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "MeasuredValues",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">numTotBeds<a name=\"MeasuredValues-numTotBeds\"> </a></td><td>All Hospital Beds</td><td>Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow (surge) beds used for inpatients or outpatients</td></tr><tr><td style=\"white-space:nowrap\">numTotBedsOcc<a name=\"MeasuredValues-numTotBedsOcc\"> </a></td><td>Hospital Beds Occupied</td><td>Total number of all Inpatient and outpatient beds that are occupied</td></tr><tr><td style=\"white-space:nowrap\">numTotBedsAvail<a name=\"MeasuredValues-numTotBedsAvail\"> </a></td><td>Hospital Beds Available</td><td>Total number of all Inpatient and outpatient beds that are available</td></tr><tr><td style=\"white-space:nowrap\">numbeds<a name=\"MeasuredValues-numbeds\"> </a></td><td>Hospital Inpatient Beds</td><td>Inpatient beds, including all staffed, licensed, and overflow (surge) beds used for inpatients</td></tr><tr><td style=\"white-space:nowrap\">numBedsOcc<a name=\"MeasuredValues-numBedsOcc\"> </a></td><td>Hospital Inpatient Bed Occupancy</td><td>Total number of staffed inpatient beds that are occupied</td></tr><tr><td style=\"white-space:nowrap\">numICUBeds<a name=\"MeasuredValues-numICUBeds\"> </a></td><td>ICU Beds</td><td>Total number of staffed inpatient intensive care unit (ICU) beds</td></tr><tr><td style=\"white-space:nowrap\">numICUBedsOcc<a name=\"MeasuredValues-numICUBedsOcc\"> </a></td><td>ICU Bed Occupancy</td><td>Total number of staffed inpatient ICU beds that are occupied</td></tr><tr><td style=\"white-space:nowrap\">numICUBedsAvail<a name=\"MeasuredValues-numICUBedsAvail\"> </a></td><td>ICU Bed Availability</td><td>Total number of staffed inpatient ICU beds that are available</td></tr><tr><td style=\"white-space:nowrap\">numImpBeds<a name=\"MeasuredValues-numImpBeds\"> </a></td><td>Inpatient (non-ICU) Beds</td><td>Total number of staffed inpatient non-ICU beds</td></tr><tr><td style=\"white-space:nowrap\">numImpBedsOcc<a name=\"MeasuredValues-numImpBedsOcc\"> </a></td><td>Inpatient (non-ICU) Bed Occupancy</td><td>Total number of staffed inpatient non-ICU beds that are occupied</td></tr><tr><td style=\"white-space:nowrap\">numImpBedsAvail<a name=\"MeasuredValues-numImpBedsAvail\"> </a></td><td>Inpatient (non-ICU) Bed Availability</td><td>Total number of staffed inpatient non-ICU beds that are available</td></tr><tr><td style=\"white-space:nowrap\">numAmbBeds<a name=\"MeasuredValues-numAmbBeds\"> </a></td><td>Ambulatory Beds</td><td>Total number of staffed ambulatory beds</td></tr><tr><td style=\"white-space:nowrap\">numAmbBedsOcc<a name=\"MeasuredValues-numAmbBedsOcc\"> </a></td><td>Ambulatory Bed Occupancy</td><td>Total number of staffed ambulatory beds that are occupied</td></tr><tr><td style=\"white-space:nowrap\">numAmbBedsAvail<a name=\"MeasuredValues-numAmbBedsAvail\"> </a></td><td>Ambulatory Bed Availability</td><td>Total number of staffed ambulatory beds that are available</td></tr><tr><td style=\"white-space:nowrap\">numVent<a name=\"MeasuredValues-numVent\"> </a></td><td>Mechanical Ventilators</td><td>Total number of ventilators available</td></tr><tr><td style=\"white-space:nowrap\">numVentUse<a name=\"MeasuredValues-numVentUse\"> </a></td><td>Mechanical Ventilators in Use</td><td>Total number of ventilators in use</td></tr><tr><td style=\"white-space:nowrap\">numVentAvail<a name=\"MeasuredValues-numVentAvail\"> </a></td><td>Mechanical Ventilators Available</td><td>Total number of ventilators available</td></tr><tr><td style=\"white-space:nowrap\">numC19Pats<a name=\"MeasuredValues-numC19Pats\"> </a></td><td>All COVID-19 Confirmed or Suspected Patients</td><td>Patients with suspected or confirmed COVID-19 in any location.</td></tr><tr><td style=\"white-space:nowrap\">numC19HospPats<a name=\"MeasuredValues-numC19HospPats\"> </a></td><td>Hospitalized COVID-19 Patients</td><td>Patients currently hospitalized in an inpatient care location who have suspected or confirmed COVID-19</td></tr><tr><td style=\"white-space:nowrap\">numC19OverflowPats<a name=\"MeasuredValues-numC19OverflowPats\"> </a></td><td>ED/Overflow COVID-19 Patients</td><td>Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed</td></tr><tr><td style=\"white-space:nowrap\">numC19HOPats<a name=\"MeasuredValues-numC19HOPats\"> </a></td><td>Hospital Onset COVID-19 Patients</td><td>Patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization</td></tr><tr><td style=\"white-space:nowrap\">cumC19HOPats<a name=\"MeasuredValues-cumC19HOPats\"> </a></td><td>Cumulative Hospital Onset COVID-19 Patients</td><td>Cumulative total of patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization</td></tr><tr><td style=\"white-space:nowrap\">numC19VentPats<a name=\"MeasuredValues-numC19VentPats\"> </a></td><td>Ventilated COVID-19 Patients</td><td>Patients in any location who have suspected or confirmed COVID-19 and are on a mechanical ventilator</td></tr><tr><td style=\"white-space:nowrap\">numC19MechVentPats<a name=\"MeasuredValues-numC19MechVentPats\"> </a></td><td>Hospitalized and Ventilated COVID-19 Patients</td><td>Patients hospitalized in an NHSN inpatient care location who have suspected or confirmed COVID-19 and are on a mechanical ventilator</td></tr><tr><td style=\"white-space:nowrap\">numC19OFMechVentPats<a name=\"MeasuredValues-numC19OFMechVentPats\"> </a></td><td>ED/Overflow and Ventilated COVID-19 Patients</td><td>Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator</td></tr><tr><td style=\"white-space:nowrap\">numC19Died<a name=\"MeasuredValues-numC19Died\"> </a></td><td>COVID-19 Patient Deaths</td><td>Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location</td></tr><tr><td style=\"white-space:nowrap\">cumC19Died<a name=\"MeasuredValues-cumC19Died\"> </a></td><td>Cumulative COVID-19 Patient Deaths</td><td>Cumulative total of Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location</td></tr><tr><td style=\"white-space:nowrap\">totalOrdersIncrease<a name=\"MeasuredValues-totalOrdersIncrease\"> </a></td><td>New Diagnostic Tests Ordered/Received</td><td/></tr><tr><td style=\"white-space:nowrap\">totalOrders<a name=\"MeasuredValues-totalOrders\"> </a></td><td>Cumulative Diagnostic Tests Ordered/Received</td><td/></tr><tr><td style=\"white-space:nowrap\">totalTestResultsIncrease<a name=\"MeasuredValues-totalTestResultsIncrease\"> </a></td><td>New Tests Resulted</td><td/></tr><tr><td style=\"white-space:nowrap\">rejected<a name=\"MeasuredValues-rejected\"> </a></td><td>Cumulative Specimens Rejected</td><td/></tr><tr><td style=\"white-space:nowrap\">totalTestResults<a name=\"MeasuredValues-totalTestResults\"> </a></td><td>Cumulative Tests Performed</td><td/></tr><tr><td style=\"white-space:nowrap\">positiveIncrease<a name=\"MeasuredValues-positiveIncrease\"> </a></td><td>New Positive COVID-19 Tests</td><td/></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"MeasuredValues-positive\"> </a></td><td>Cumulative Positive COVID-19 Tests</td><td/></tr><tr><td style=\"white-space:nowrap\">allReports<a name=\"MeasuredValues-allReports\"> </a></td><td>All Laboratory Reports for any Order</td><td/></tr><tr><td style=\"white-space:nowrap\">latestReports<a name=\"MeasuredValues-latestReports\"> </a></td><td>Most Recent Laboratory Reports for any Order</td><td/></tr><tr><td style=\"white-space:nowrap\">ventsupply<a name=\"MeasuredValues-ventsupply\"> </a></td><td>Ventilator supplies (any, including tubing) - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">ventreuse<a name=\"MeasuredValues-ventreuse\"> </a></td><td>Ventilator supplies (any, including tubing) - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">ventobtain<a name=\"MeasuredValues-ventobtain\"> </a></td><td>Ventilator supplies (any, including tubing) - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">n95masksupply<a name=\"MeasuredValues-n95masksupply\"> </a></td><td>N95 masks - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">n95maskreuse<a name=\"MeasuredValues-n95maskreuse\"> </a></td><td>N95 masks - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">n95maskobtain<a name=\"MeasuredValues-n95maskobtain\"> </a></td><td>N95 masks - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">othrespsupply<a name=\"MeasuredValues-othrespsupply\"> </a></td><td>Other respirators including PAPRs - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">othrespreuse<a name=\"MeasuredValues-othrespreuse\"> </a></td><td>Other respirators including PAPRs - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">othrespobtain<a name=\"MeasuredValues-othrespobtain\"> </a></td><td>Other respirators including PAPRs - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">surgmasksupply<a name=\"MeasuredValues-surgmasksupply\"> </a></td><td>Surgical masks - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">surgmaskreuse<a name=\"MeasuredValues-surgmaskreuse\"> </a></td><td>Surgical masks - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">surgmaskobtain<a name=\"MeasuredValues-surgmaskobtain\"> </a></td><td>Surgical masks - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">shieldsupply<a name=\"MeasuredValues-shieldsupply\"> </a></td><td>Eye protection including face shields or goggles - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">shieldreuse<a name=\"MeasuredValues-shieldreuse\"> </a></td><td>Eye protection including face shields or goggles - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">shieldobtain<a name=\"MeasuredValues-shieldobtain\"> </a></td><td>Eye protection including face shields or goggles - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">gownsupply<a name=\"MeasuredValues-gownsupply\"> </a></td><td>Gowns (single use) - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">gownreuse<a name=\"MeasuredValues-gownreuse\"> </a></td><td>Gowns (single use) - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">gownobtain<a name=\"MeasuredValues-gownobtain\"> </a></td><td>Gowns (single use) - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">glovesupply<a name=\"MeasuredValues-glovesupply\"> </a></td><td>Gloves - On-hand Supply</td><td/></tr><tr><td style=\"white-space:nowrap\">glovereuse<a name=\"MeasuredValues-glovereuse\"> </a></td><td>Gloves - Reusing or Extending Use</td><td/></tr><tr><td style=\"white-space:nowrap\">gloveobtain<a name=\"MeasuredValues-gloveobtain\"> </a></td><td>Gloves - Able to Obtain</td><td/></tr><tr><td style=\"white-space:nowrap\">shortenvsvc<a name=\"MeasuredValues-shortenvsvc\"> </a></td><td>Environmental services - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortnurse<a name=\"MeasuredValues-shortnurse\"> </a></td><td>Nurses - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortrt<a name=\"MeasuredValues-shortrt\"> </a></td><td>Respiratory therapists - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortphar<a name=\"MeasuredValues-shortphar\"> </a></td><td>Pharmacists and pharmacy techs - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortphys<a name=\"MeasuredValues-shortphys\"> </a></td><td>Attending physicians, fellows - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shorttemp<a name=\"MeasuredValues-shorttemp\"> </a></td><td>Temporary physicians, nurses, respiratory therapists, and pharmacists - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortoth<a name=\"MeasuredValues-shortoth\"> </a></td><td>Other HCP - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortothlic<a name=\"MeasuredValues-shortothlic\"> </a></td><td>Other licensed independent practitioners - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">shortothsfy<a name=\"MeasuredValues-shortothsfy\"> </a></td><td>Other HCP - Specify the groups - Critical Staffing Shortage Today</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortenvsvc<a name=\"MeasuredValues-posshortenvsvc\"> </a></td><td>Environmental services - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortnurse<a name=\"MeasuredValues-posshortnurse\"> </a></td><td>Nurses - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortrt<a name=\"MeasuredValues-posshortrt\"> </a></td><td>Respiratory therapists - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortphar<a name=\"MeasuredValues-posshortphar\"> </a></td><td>Pharmacists and pharmacy techs - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortphys<a name=\"MeasuredValues-posshortphys\"> </a></td><td>Attending physicians, fellows - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshorttemp<a name=\"MeasuredValues-posshorttemp\"> </a></td><td>Temporary physicians, nurses, respiratory therapists, and pharmacists - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortoth<a name=\"MeasuredValues-posshortoth\"> </a></td><td>Other HCP - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortothlic<a name=\"MeasuredValues-posshortothlic\"> </a></td><td>Other licensed independent practitioners - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">posshortothsfy<a name=\"MeasuredValues-posshortothsfy\"> </a></td><td>Other HCP - Specify the groups - Critical Staffing Shortage Within a Week</td><td/></tr><tr><td style=\"white-space:nowrap\">state<a name=\"MeasuredValues-state\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">county<a name=\"MeasuredValues-county\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">facilityId<a name=\"MeasuredValues-facilityId\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">collectionDate<a name=\"MeasuredValues-collectionDate\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">summaryCensusId<a name=\"MeasuredValues-summaryCensusId\"> </a></td><td/><td/></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+  "version": "0.1.0",
+  "name": "MeasuredValues",
+  "title": "Measured Values in Sample Measures",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "A Code System for Populations in Sample Measures defined by The SANER Project",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 80,
+  "concept": [
+    {
+      "code": "numTotBeds",
+      "display": "All Hospital Beds",
+      "definition": "Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow (surge) beds used for inpatients or outpatients"
+    },
+    {
+      "code": "numTotBedsOcc",
+      "display": "Hospital Beds Occupied",
+      "definition": "Total number of all Inpatient and outpatient beds that are occupied"
+    },
+    {
+      "code": "numTotBedsAvail",
+      "display": "Hospital Beds Available",
+      "definition": "Total number of all Inpatient and outpatient beds that are available"
+    },
+    {
+      "code": "numbeds",
+      "display": "Hospital Inpatient Beds",
+      "definition": "Inpatient beds, including all staffed, licensed, and overflow (surge) beds used for inpatients"
+    },
+    {
+      "code": "numBedsOcc",
+      "display": "Hospital Inpatient Bed Occupancy",
+      "definition": "Total number of staffed inpatient beds that are occupied"
+    },
+    {
+      "code": "numICUBeds",
+      "display": "ICU Beds",
+      "definition": "Total number of staffed inpatient intensive care unit (ICU) beds"
+    },
+    {
+      "code": "numICUBedsOcc",
+      "display": "ICU Bed Occupancy",
+      "definition": "Total number of staffed inpatient ICU beds that are occupied"
+    },
+    {
+      "code": "numICUBedsAvail",
+      "display": "ICU Bed Availability",
+      "definition": "Total number of staffed inpatient ICU beds that are available"
+    },
+    {
+      "code": "numImpBeds",
+      "display": "Inpatient (non-ICU) Beds",
+      "definition": "Total number of staffed inpatient non-ICU beds"
+    },
+    {
+      "code": "numImpBedsOcc",
+      "display": "Inpatient (non-ICU) Bed Occupancy",
+      "definition": "Total number of staffed inpatient non-ICU beds that are occupied"
+    },
+    {
+      "code": "numImpBedsAvail",
+      "display": "Inpatient (non-ICU) Bed Availability",
+      "definition": "Total number of staffed inpatient non-ICU beds that are available"
+    },
+    {
+      "code": "numAmbBeds",
+      "display": "Ambulatory Beds",
+      "definition": "Total number of staffed ambulatory beds"
+    },
+    {
+      "code": "numAmbBedsOcc",
+      "display": "Ambulatory Bed Occupancy",
+      "definition": "Total number of staffed ambulatory beds that are occupied"
+    },
+    {
+      "code": "numAmbBedsAvail",
+      "display": "Ambulatory Bed Availability",
+      "definition": "Total number of staffed ambulatory beds that are available"
+    },
+    {
+      "code": "numVent",
+      "display": "Mechanical Ventilators",
+      "definition": "Total number of ventilators available"
+    },
+    {
+      "code": "numVentUse",
+      "display": "Mechanical Ventilators in Use",
+      "definition": "Total number of ventilators in use"
+    },
+    {
+      "code": "numVentAvail",
+      "display": "Mechanical Ventilators Available",
+      "definition": "Total number of ventilators available"
+    },
+    {
+      "code": "numC19Pats",
+      "display": "All COVID-19 Confirmed or Suspected Patients",
+      "definition": "Patients with suspected or confirmed COVID-19 in any location."
+    },
+    {
+      "code": "numC19HospPats",
+      "display": "Hospitalized COVID-19 Patients",
+      "definition": "Patients currently hospitalized in an inpatient care location who have suspected or confirmed COVID-19"
+    },
+    {
+      "code": "numC19OverflowPats",
+      "display": "ED/Overflow COVID-19 Patients",
+      "definition": "Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed"
+    },
+    {
+      "code": "numC19HOPats",
+      "display": "Hospital Onset COVID-19 Patients",
+      "definition": "Patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization"
+    },
+    {
+      "code": "cumC19HOPats",
+      "display": "Cumulative Hospital Onset COVID-19 Patients",
+      "definition": "Cumulative total of patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization"
+    },
+    {
+      "code": "numC19VentPats",
+      "display": "Ventilated COVID-19 Patients",
+      "definition": "Patients in any location who have suspected or confirmed COVID-19 and are on a mechanical ventilator"
+    },
+    {
+      "code": "numC19MechVentPats",
+      "display": "Hospitalized and Ventilated COVID-19 Patients",
+      "definition": "Patients hospitalized in an NHSN inpatient care location who have suspected or confirmed COVID-19 and are on a mechanical ventilator"
+    },
+    {
+      "code": "numC19OFMechVentPats",
+      "display": "ED/Overflow and Ventilated COVID-19 Patients",
+      "definition": "Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator"
+    },
+    {
+      "code": "numC19Died",
+      "display": "COVID-19 Patient Deaths",
+      "definition": "Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location"
+    },
+    {
+      "code": "cumC19Died",
+      "display": "Cumulative COVID-19 Patient Deaths",
+      "definition": "Cumulative total of Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location"
+    },
+    {
+      "code": "totalOrdersIncrease",
+      "display": "New Diagnostic Tests Ordered/Received"
+    },
+    {
+      "code": "totalOrders",
+      "display": "Cumulative Diagnostic Tests Ordered/Received"
+    },
+    {
+      "code": "totalTestResultsIncrease",
+      "display": "New Tests Resulted"
+    },
+    {
+      "code": "rejected",
+      "display": "Cumulative Specimens Rejected"
+    },
+    {
+      "code": "totalTestResults",
+      "display": "Cumulative Tests Performed"
+    },
+    {
+      "code": "positiveIncrease",
+      "display": "New Positive COVID-19 Tests"
+    },
+    {
+      "code": "positive",
+      "display": "Cumulative Positive COVID-19 Tests"
+    },
+    {
+      "code": "allReports",
+      "display": "All Laboratory Reports for any Order"
+    },
+    {
+      "code": "latestReports",
+      "display": "Most Recent Laboratory Reports for any Order"
+    },
+    {
+      "code": "ventsupply",
+      "display": "Ventilator supplies (any, including tubing) - On-hand Supply"
+    },
+    {
+      "code": "ventreuse",
+      "display": "Ventilator supplies (any, including tubing) - Reusing or Extending Use"
+    },
+    {
+      "code": "ventobtain",
+      "display": "Ventilator supplies (any, including tubing) - Able to Obtain"
+    },
+    {
+      "code": "n95masksupply",
+      "display": "N95 masks - On-hand Supply"
+    },
+    {
+      "code": "n95maskreuse",
+      "display": "N95 masks - Reusing or Extending Use"
+    },
+    {
+      "code": "n95maskobtain",
+      "display": "N95 masks - Able to Obtain"
+    },
+    {
+      "code": "othrespsupply",
+      "display": "Other respirators including PAPRs - On-hand Supply"
+    },
+    {
+      "code": "othrespreuse",
+      "display": "Other respirators including PAPRs - Reusing or Extending Use"
+    },
+    {
+      "code": "othrespobtain",
+      "display": "Other respirators including PAPRs - Able to Obtain"
+    },
+    {
+      "code": "surgmasksupply",
+      "display": "Surgical masks - On-hand Supply"
+    },
+    {
+      "code": "surgmaskreuse",
+      "display": "Surgical masks - Reusing or Extending Use"
+    },
+    {
+      "code": "surgmaskobtain",
+      "display": "Surgical masks - Able to Obtain"
+    },
+    {
+      "code": "shieldsupply",
+      "display": "Eye protection including face shields or goggles - On-hand Supply"
+    },
+    {
+      "code": "shieldreuse",
+      "display": "Eye protection including face shields or goggles - Reusing or Extending Use"
+    },
+    {
+      "code": "shieldobtain",
+      "display": "Eye protection including face shields or goggles - Able to Obtain"
+    },
+    {
+      "code": "gownsupply",
+      "display": "Gowns (single use) - On-hand Supply"
+    },
+    {
+      "code": "gownreuse",
+      "display": "Gowns (single use) - Reusing or Extending Use"
+    },
+    {
+      "code": "gownobtain",
+      "display": "Gowns (single use) - Able to Obtain"
+    },
+    {
+      "code": "glovesupply",
+      "display": "Gloves - On-hand Supply"
+    },
+    {
+      "code": "glovereuse",
+      "display": "Gloves - Reusing or Extending Use"
+    },
+    {
+      "code": "gloveobtain",
+      "display": "Gloves - Able to Obtain"
+    },
+    {
+      "code": "shortenvsvc",
+      "display": "Environmental services - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortnurse",
+      "display": "Nurses - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortrt",
+      "display": "Respiratory therapists - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortphar",
+      "display": "Pharmacists and pharmacy techs - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortphys",
+      "display": "Attending physicians, fellows - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shorttemp",
+      "display": "Temporary physicians, nurses, respiratory therapists, and pharmacists - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortoth",
+      "display": "Other HCP - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortothlic",
+      "display": "Other licensed independent practitioners - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "shortothsfy",
+      "display": "Other HCP - Specify the groups - Critical Staffing Shortage Today"
+    },
+    {
+      "code": "posshortenvsvc",
+      "display": "Environmental services - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortnurse",
+      "display": "Nurses - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortrt",
+      "display": "Respiratory therapists - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortphar",
+      "display": "Pharmacists and pharmacy techs - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortphys",
+      "display": "Attending physicians, fellows - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshorttemp",
+      "display": "Temporary physicians, nurses, respiratory therapists, and pharmacists - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortoth",
+      "display": "Other HCP - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortothlic",
+      "display": "Other licensed independent practitioners - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "posshortothsfy",
+      "display": "Other HCP - Specify the groups - Critical Staffing Shortage Within a Week"
+    },
+    {
+      "code": "state"
+    },
+    {
+      "code": "county"
+    },
+    {
+      "code": "facilityId"
+    },
+    {
+      "code": "collectionDate"
+    },
+    {
+      "code": "summaryCensusId"
+    }
+  ]
+}

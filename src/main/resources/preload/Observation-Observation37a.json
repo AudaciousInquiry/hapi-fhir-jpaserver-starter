@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation37a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation37a</p><p><b>identifier</b>: id: 112233-3</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19994-3}\">Oxygen/Inspired gas setting [Volume Fraction] Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient7a.html\">Generated Summary: id: Patient7a; id: Pat112233; gender: female; birthDate: 1967-08-23</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter7a.html\">Generated Summary: id: Encounter7a; id: Enc112233; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></a></p><p><b>effective</b>: 2020-09-08</p><p><b>value</b>: 100 %</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Observation",
+      "value": "112233-3"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "19994-3",
+        "display": "Oxygen/Inspired gas setting [Volume Fraction] Ventilator"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient7a"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter7a"
+  },
+  "effectiveDateTime": "2020-09-08",
+  "valueQuantity": {
+    "value": 100,
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  }
+}

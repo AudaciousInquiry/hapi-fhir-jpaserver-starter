@@ -2,6 +2,10 @@ package com.ainq.utils;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.math.BigDecimal;
+import java.text.ParseException;
+import java.util.Date;
+
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import org.apache.commons.lang3.StringUtils;
@@ -48,6 +52,58 @@ public class CsvUtils {
 
     }
 
+    /**
+     * Parse a datetime in one of the commonly used CSV formats for a date or datetime
+     * into a Date.
+     *
+     * @param value The value to parse
+     * @return  The parsed value
+     */
+    public static Date parseCSVDate(String value) {
+        try {
+            return DateUtils.parseDate(value, value.contains(":") ? DATE_TIME_FORMATS : DATE_FORMATS);
+        } catch (ParseException ex) {
+            return null;
+        }
+    }
+
+    /**
+     * Parse number into Decimal format to a BigDecimal value.
+     *
+     * @param value The number to parse.
+     * @return  The value.
+     */
+    public static BigDecimal parseCSVDecimal(String value) {
+        try {
+            return new BigDecimal(value);
+        } catch (NumberFormatException nfex) {
+            return null;
+        }
+    }
+
+
+    /**
+     * Parse an integer into Integer value.
+     *
+     * @param value The number to parse.
+     * @return  The value.
+     */
+    public static Integer parseCSVInteger(String value) {
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException nfex) {
+            return null;
+        }
+    }
+
+    /**
+     * Parse a datetime in one of the commonly used CSV formats for a date or datetime
+     * into a DateTimeType.
+     *
+     * @param value
+     * @param errorLoc
+     * @return
+     */
     public static DateTimeType parseCSVDate(String value, org.hl7.fhir.r4.model.Element errorLoc) {
         if (StringUtils.isBlank(value)) {
             errorLoc.addExtension(FhirUtils.DATA_ABSENT_REASON, new CodeType(DataAbsentReason.UNSUPPORTED.toCode()));

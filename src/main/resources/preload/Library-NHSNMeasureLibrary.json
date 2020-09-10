@@ -1,0 +1,172 @@
+{
+  "resourceType": "Library",
+  "id": "NHSNMeasureLibrary",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasureLibrary"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: NHSNMeasureLibrary</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: NHSNMeasureLibrary</p><p><b>title</b>: NHSN Patient Impact and Hospital Capacity Measure Library</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type asset-collection}\">Asset Collection</span></p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: HL7 Public Health Workgroup: mailto:pher@lists.hl7.org</p><p><b>relatedArtifact</b>: , , , </p><p><b>content</b>: , , , , , , , </p></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary",
+  "version": "0.1.0",
+  "name": "NHSNMeasureLibrary",
+  "title": "NHSN Patient Impact and Hospital Capacity Measure Library",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "asset-collection"
+      }
+    ]
+  },
+  "date": "2020-09-10T02:00:40-04:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "840539006",
+            "display": "COVID-19"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "author": [
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:pher@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "label": "NHSN COVID-19 Reporting",
+      "display": "CDC/NHSN COVID-19 Patient Impact & Hospital Capacity Module Home Page",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/acute-care-hospital/covid19/"
+    },
+    {
+      "type": "documentation",
+      "label": "How to import COVID-19 Summary Data",
+      "display": "Importing COVID-19 Patient Module Denominator data for Patient Safety Component",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf"
+    },
+    {
+      "type": "documentation",
+      "label": "Table of Instructions",
+      "display": "Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf"
+    },
+    {
+      "type": "documentation",
+      "label": "CSV File Template",
+      "display": "CDC/NHSN COVID-19 Reporting CSV File Template",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/covid19-test-csv-import.csv"
+    }
+  ],
+  "content": [
+    {
+      "id": "SARSCoV2Labs",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109",
+      "title": "C19HCC SARS coronavirus 2 Qualitative Detection Laboratory Tests"
+    },
+    {
+      "id": "COVID19DXSNOMED",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124",
+      "title": "COVID_19 SNOMED CT (Disorders)"
+    },
+    {
+      "id": "COVID19DXICD10",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123",
+      "title": "COVID_19 ICD-10 (Disorders)"
+    },
+    {
+      "id": "Remdesivir",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/us/saner/ValueSet/Remdesivir",
+      "title": "Remdesivir"
+    },
+    {
+      "id": "COVID19Exposure",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203",
+      "title": "COVID_19 (COVID_19 Exposure)"
+    },
+    {
+      "id": "SuspectedCOVID19",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.116",
+      "title": "C19HCC Suspected COVID19 Infection"
+    },
+    {
+      "id": "HealthcareServiceLocation",
+      "contentType": "application/fhir+xml",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.192.16.840.1.113883.1.11.20275",
+      "title": "Healthcare Service Location"
+    },
+    {
+      "id": "PatientsOnVentilator",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/us/saner/ValueSet/PatientsOnVentilator",
+      "title": "Patients on a Ventilator"
+    }
+  ]
+}

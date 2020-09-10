@@ -1,0 +1,164 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "MeasureReport-aggregate",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AggregatetwoormoremoreMessureReportresourcesintoasingleMeasureReport.</h2><p>OPERATION: AggregatetwoormoremoreMessureReportresourcesintoasingleMeasureReport.</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-aggregate</pre><div><p>This operation enables a Measure Intermediary to create a measure report that aggregates data from multiple measure reports.\nThe MeasureReport to be aggregated can be provided in the measure-report parameter, or the caller can indicate which measures <strong>should</strong> be aggregated by\nspecifying the search criteria which the Intermediary will use to select the MeasureReport resources to aggregate.  In all cases, the MeasureReport resources\nbeing aggregated must reference the same Measure resource defining the MeasureReport to generate.</p>\n</div><p>URL: [base]/MeasureReport/[id]/$aggregate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_id</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#uri\">uri</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure-report</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/measurereport.html\">MeasureReport</a></td><td/><td><div><p>The MeasureReport resources to aggregate.</p>\n</div></td></tr><tr><td>IN</td><td>measure.title</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td/></tr><tr><td>IN</td><td>period</td><td>1..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>IN</td><td>result-reporter</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>A reference or identifier of the reporter for the MeasureReport. May be omitted if all MeasureReport resources\nbeing aggregated have a common reporter. A server may determine the reporter based on business rules (e.g., based on the identity of the sender of the request).</p>\n</div></td></tr><tr><td>IN</td><td>result-subject</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>A reference or identifier of the subject for the MeasureReport. May be omitted if all MeasureReport resources\nbeing aggregated have a common subject.</p>\n</div></td></tr><tr><td>IN</td><td>subject</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/measurereport.html\">MeasureReport</a></td><td/><td><div><p>The result of the aggregation operation.</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-aggregate",
+  "version": "0.1.0",
+  "name": "AggregatetwoormoremoreMessureReportresourcesintoasingleMeasureReport.",
+  "title": "Aggregate two or more more Messure Report resources into a single MeasureReport.",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": true,
+  "date": "2020-09-10T02:00:40-04:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This operation enables a Measure Intermediary to create a measure report that aggregates data from multiple measure reports.\nThe MeasureReport to be aggregated can be provided in the measure-report parameter, or the caller can indicate which measures **should** be aggregated by\nspecifying the search criteria which the Intermediary will use to select the MeasureReport resources to aggregate.  In all cases, the MeasureReport resources\nbeing aggregated must reference the same Measure resource defining the MeasureReport to generate.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "aggregate",
+  "resource": [
+    "MeasureReport"
+  ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "_id",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "measure",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "string",
+      "searchType": "uri"
+    },
+    {
+      "name": "measure-report",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "The MeasureReport resources to aggregate.",
+      "type": "MeasureReport"
+    },
+    {
+      "name": "measure.title",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "period",
+      "use": "in",
+      "min": 1,
+      "max": "2",
+      "type": "string",
+      "searchType": "date"
+    },
+    {
+      "name": "reporter",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "reference"
+    },
+    {
+      "name": "reporter:identifier",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "result-reporter",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A reference or identifier of the reporter for the MeasureReport. May be omitted if all MeasureReport resources\nbeing aggregated have a common reporter. A server may determine the reporter based on business rules (e.g., based on the identity of the sender of the request).",
+      "type": "string",
+      "searchType": "reference"
+    },
+    {
+      "name": "result-subject",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A reference or identifier of the subject for the MeasureReport. May be omitted if all MeasureReport resources\nbeing aggregated have a common subject.",
+      "type": "string",
+      "searchType": "reference"
+    },
+    {
+      "name": "subject",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "reference"
+    },
+    {
+      "name": "subject:identifier",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "The result of the aggregation operation.",
+      "type": "MeasureReport"
+    }
+  ]
+}

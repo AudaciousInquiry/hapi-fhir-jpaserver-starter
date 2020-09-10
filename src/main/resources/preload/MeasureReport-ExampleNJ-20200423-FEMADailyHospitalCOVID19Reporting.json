@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting</p><p><b>meta</b>: </p><p><b>identifier</b>: urn:uuid:375c3ae7-9219-11ea-1863-09173f13e4c5</p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting\">http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting</a></p><p><b>subject</b>: <a href=\"Location-states-NJ.html\">State of New Jersey. Generated Summary: id: states-NJ; 34</a></p><p><b>date</b>: Apr 23, 2020, 12:00:00 AM</p><p><b>reporter</b>: <a href=\"Organization-NJ-DPH.html\">New Jersey Department of Public Health. Generated Summary: id: NJ-DPH; name: New Jersey Department of Public Health</a></p><p><b>period</b>: Apr 23, 2020, 12:00:00 AM --&gt; Apr 23, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: Percent Positive among Newly Resulted Tests <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem code 'positiveIncreasePercent' = 'Percent Positive among Newly Resulted Tests)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: New Diagnostic Tests Ordered/Received <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'totalOrdersIncrease' = 'New Diagnostic Tests Ordered/Received; {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: </p></blockquote></blockquote><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting</p><p><b>meta</b>: </p><p><b>identifier</b>: id: urn:uuid:375c3ae7-9219-11ea-1863-09173f13e4c5</p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting\">http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting</a></p><p><b>subject</b>: <a href=\"Location-states-NJ.html\">State of New Jersey. Generated Summary: id: states-NJ; id: 34</a></p><p><b>date</b>: 2020-04-23</p><p><b>reporter</b>: <a href=\"Organization-NJ-DPH.html\">New Jersey Department of Public Health. Generated Summary: id: NJ-DPH; name: New Jersey Department of Public Health</a></p><p><b>period</b>: 2020-04-23 --&gt; 2020-04-23</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem positiveIncreasePercent}\">Percent Positive among Newly Resulted Tests</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalOrdersIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">New Diagnostic Tests Ordered/Received</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalTestResultsIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population denominator}\">New Tests Resulted</span></p><p><b>count</b>: 8489</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues positiveIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population numerator}\">New Positive COVID-19 Tests</span></p><p><b>count</b>: 4124</p></blockquote><p><b>measureScore</b>: 48.58 %</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem positivePercent}\">Cumulative Percent Positive among Resulted Tests</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalOrders}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Cumulative Diagnostic Tests Ordered/Received</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues rejected}, {http://terminology.hl7.org/CodeSystem/measure-population denominator-exclusion}\">Cumulative Specimens Rejected</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalTestResults}, {http://terminology.hl7.org/CodeSystem/measure-population denominator}\">Cumulative Tests Performed</span></p><p><b>count</b>: 200148</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues positive}, {http://terminology.hl7.org/CodeSystem/measure-population numerator}\">Cumulative Positive COVID-19 Tests</span></p><p><b>count</b>: 99989</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues allReports}\">All Laboratory Reports for any Order</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues latestReports}\">Most Recent Laboratory Reports for any Order</span></p><p><b>count</b>: ??</p></blockquote><p><b>measureScore</b>: 49.96 %</p></blockquote></div>"
   },
   "identifier": [
     {
@@ -20,21 +20,6 @@
   "type": "summary",
   "measure": "http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting",
   "subject": {
-    "extension": [
-      {
-        "extension": [
-          {
-            "url": "latitude",
-            "valueDecimal": 40.1907
-          },
-          {
-            "url": "longitude",
-            "valueDecimal": 74.6728
-          }
-        ],
-        "url": "http://hl7.org/fhir/us/saner/StructureDefinition/GeoLocation"
-      }
-    ],
     "reference": "Location/states-NJ",
     "identifier": {
       "system": "https://www.census.gov/geographies",
@@ -66,7 +51,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalOrdersIncrease"
               },
               {
@@ -88,7 +73,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalTestResultsIncrease"
               },
               {
@@ -103,7 +88,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "positiveIncrease"
               },
               {
@@ -136,7 +121,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalOrders"
               },
               {
@@ -158,7 +143,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "rejected"
               },
               {
@@ -180,7 +165,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalTestResults"
               },
               {
@@ -195,7 +180,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "positive"
               },
               {
@@ -205,6 +190,44 @@
             ]
           },
           "count": 99989
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "code": "allReports"
+              }
+            ],
+            "text": "All Laboratory Reports for any Order"
+          },
+          "_count": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unsupported"
+              }
+            ]
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "code": "latestReports"
+              }
+            ],
+            "text": "Most Recent Laboratory Reports for any Order"
+          },
+          "_count": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unsupported"
+              }
+            ]
+          }
         }
       ],
       "measureScore": {

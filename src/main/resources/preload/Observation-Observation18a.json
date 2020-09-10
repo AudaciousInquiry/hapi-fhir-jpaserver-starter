@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation18a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation18a</p><p><b>identifier</b>: id: Obs334455-1</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 94759-8}\">SARS-CoV-2 (COVID-19) RNA [Presence] in Nasopharynx by NAA with probe detection</span></p><p><b>subject</b>: <a href=\"Patient-Patient8a.html\">Generated Summary: id: Patient8a; id: Pat334455; gender: female; birthDate: 1956-09-13</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter8a.html\">Generated Summary: id: Encounter8a; id: Enc334455; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></a></p><p><b>effective</b>: 2020-09-08</p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 260373001}\">Detected</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Observation",
+      "value": "Obs334455-1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "94759-8",
+        "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Nasopharynx by NAA with probe detection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient8a"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter8a"
+  },
+  "effectiveDateTime": "2020-09-08",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "260373001",
+        "display": "Detected"
+      }
+    ]
+  }
+}

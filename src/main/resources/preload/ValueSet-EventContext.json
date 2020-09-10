@@ -1,0 +1,136 @@
+{
+  "resourceType": "ValueSet",
+  "id": "EventContext",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82145005\">82145005</a></td><td>Avalanche</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48071004\">48071004</a></td><td>Cyclone</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8766005\">8766005</a></td><td>Earthquake</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255710008\">255710008</a></td><td>Environmental stimuli</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=20936008\">20936008</a></td><td>Fire storm</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111056004\">111056004</a></td><td>Flood</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=256236005\">256236005</a></td><td>Fog</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=461861000124101\">461861000124101</a></td><td>Ice storm</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49061008\">49061008</a></td><td>Landslide</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5193003\">5193003</a></td><td>Lightning</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=102410009\">102410009</a></td><td>Pollution</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=257451007\">257451007</a></td><td>Running water</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59262002\">59262002</a></td><td>Snowstorm</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=257494002\">257494002</a></td><td>Thunder</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=19224001\">19224001</a></td><td>Tidal wave</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24454008\">24454008</a></td><td>Torrential rain</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90978007\">90978007</a></td><td>Volcanic eruption</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90569008\">90569008</a></td><td>Wind</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/ValueSet/EventContext",
+  "version": "0.1.0",
+  "name": "EventContext",
+  "title": "Event Context",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This Value Set enables classification of environmental events for categorizing measures.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "82145005",
+            "display": "Avalanche"
+          },
+          {
+            "code": "48071004",
+            "display": "Cyclone"
+          },
+          {
+            "code": "8766005",
+            "display": "Earthquake"
+          },
+          {
+            "code": "255710008",
+            "display": "Environmental stimuli"
+          },
+          {
+            "code": "20936008",
+            "display": "Fire storm"
+          },
+          {
+            "code": "111056004",
+            "display": "Flood"
+          },
+          {
+            "code": "256236005",
+            "display": "Fog"
+          },
+          {
+            "code": "461861000124101",
+            "display": "Ice storm"
+          },
+          {
+            "code": "49061008",
+            "display": "Landslide"
+          },
+          {
+            "code": "5193003",
+            "display": "Lightning"
+          },
+          {
+            "code": "102410009",
+            "display": "Pollution"
+          },
+          {
+            "code": "257451007",
+            "display": "Running water"
+          },
+          {
+            "code": "59262002",
+            "display": "Snowstorm"
+          },
+          {
+            "code": "257494002",
+            "display": "Thunder"
+          },
+          {
+            "code": "19224001",
+            "display": "Tidal wave"
+          },
+          {
+            "code": "24454008",
+            "display": "Torrential rain"
+          },
+          {
+            "code": "90978007",
+            "display": "Volcanic eruption"
+          },
+          {
+            "code": "90569008",
+            "display": "Wind"
+          }
+        ]
+      }
+    ]
+  }
+}

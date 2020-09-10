@@ -1,0 +1,38 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "MedicationRequest19c",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: MedicationRequest19c</p><p><b>identifier</b>: id: Med778899</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 2367757}\">remdesivir 5 MG/ML</span></p><p><b>subject</b>: <a href=\"Patient-Patient9c.html\">Generated Summary: id: Patient9c; id: Pat778899; gender: female; birthDate: 1929-09-30</a></p><p><b>dosageInstruction</b>: </p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/MedicationRequest",
+      "value": "Med778899"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "2367757"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient9c"
+  },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2020-09-08"
+          }
+        }
+      }
+    }
+  ]
+}

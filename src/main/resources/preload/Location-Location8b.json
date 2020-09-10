@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "Location8b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Location8b</p><p><b>identifier</b>: id: Loc44082</p><p><b>type</b>: <span title=\"Codes: {https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1097-5}\">Post-anesthesia Care Unit (as an Overflow unit)</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Location",
+      "value": "Loc44082"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "code": "1097-5",
+          "display": "Post-anesthesia Care Unit (as an Overflow unit)"
+        }
+      ]
+    }
+  ]
+}

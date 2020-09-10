@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition9b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Condition9b</p><p><b>identifier</b>: id: Con667788</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 67782005}\">Adult respiratory distress syndrome</span></p><p><b>subject</b>: <a href=\"Patient-Patient9b.html\">Generated Summary: id: Patient9b; id: Pat667788; gender: female; birthDate: 1949-04-04</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Condition",
+      "value": "Con667788"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "67782005"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient9b"
+  }
+}

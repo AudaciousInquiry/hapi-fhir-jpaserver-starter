@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "Location2a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Location2a</p><p><b>identifier</b>: id: Loc44082</p><p><b>type</b>: <span title=\"Codes: {https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1208-8}\">Telemetry Ward</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Location",
+      "value": "Loc44082"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "code": "1208-8",
+          "display": "Telemetry Ward"
+        }
+      ]
+    }
+  ]
+}

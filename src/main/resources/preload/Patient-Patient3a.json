@@ -1,0 +1,15 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient3a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Patient3a</p><p><b>identifier</b>: id: Pat777777</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1940-02-02</p></div>"
+  },
+  "identifier": [
+    {
+      "value": "Pat777777"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1940-02-02"
+}

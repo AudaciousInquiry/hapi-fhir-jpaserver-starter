@@ -3,15 +3,14 @@
   "id": "ScoreAgeBrackets",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Age Brackets By Score (20)</h2><div><p>A Value Set of age groups in 20 year increments used in some public health dashboards</p>\n</div><ul><li>Include these codes as defined in <a href=\"CodeSystem-AgeBracket.html\"><code>http://hl7.org/fhir/us/saner/CodeSystem/AgeBracket</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>under20</td><td>&lt; 20</td><td>Less than 20 years in age</td></tr><tr><td>20to39</td><td>20 - 39</td><td>20 to 39 years in age</td></tr><tr><td>40to59</td><td/><td/></tr><tr><td>60to79</td><td/><td/></tr><tr><td>80plus</td><td>80+</td><td>80 or more years in age</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-IHE-ADX-agerange.html\"><code>http://profiles.ihe.net/fhir/CodeSystem/IHE_ADX_agerange</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P0Y--P20Y\">P0Y--P20Y</a></td><td>&lt; 20 Years</td><td>A age of less than 20 years old</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P20Y--P40Y\">P20Y--P40Y</a></td><td>20-40 Years</td><td>A age greater or equal to 20 and less than 40 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P40Y--P60Y\">P40Y--P60Y</a></td><td>40-60 Years</td><td>A age greater or equal to 40 and less than 60 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P60Y--P80Y\">P60Y--P80Y</a></td><td>60-80 Years</td><td>A age greater or equal to 60 and less than 80 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P80Y--P9999Y\">P80Y--P9999Y</a></td><td>80+ Years</td><td>A age greater or equal to 80 years</td></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/saner/ValueSet/ScoreAgeBrackets",
   "version": "0.1.0",
   "name": "ScoreAgeBrackets",
   "title": "Age Brackets By Score (20)",
   "status": "active",
-  "date": "2020-05-14T08:43:17-04:00",
-  "publisher": "HL7 International",
+  "date": "2020-09-10T02:00:40-04:00",
   "contact": [
     {
       "name": "HL7 Patient Administration Workgroup",
@@ -42,25 +41,35 @@
     }
   ],
   "description": "A Value Set of age groups in 20 year increments used in some public health dashboards",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/saner/CodeSystem/AgeBracket",
+        "system": "http://profiles.ihe.net/fhir/CodeSystem/IHE_ADX_agerange",
         "concept": [
           {
-            "code": "under20"
+            "code": "P0Y--P20Y"
           },
           {
-            "code": "20to39"
+            "code": "P20Y--P40Y"
           },
           {
-            "code": "40to59"
+            "code": "P40Y--P60Y"
           },
           {
-            "code": "60to79"
+            "code": "P60Y--P80Y"
           },
           {
-            "code": "80plus"
+            "code": "P80Y--P9999Y"
           }
         ]
       }

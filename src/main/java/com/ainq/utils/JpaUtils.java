@@ -27,17 +27,43 @@ public class JpaUtils {
     }
 
     /**
-     * Handles the base retrieval operation for lookups.
-     * @param <T>   The type of resource to find.
-     * @param type  The class for the type of resource
-     * @param theParams The search paramaters for finding the resource.
-     * @return  The located resource
+     * Handles the base create operation.
+     * @param <T>   The type of resource to create.
+     * @param resource  The class to store
+     * @return  The OperationOutcome
      */
-    @SuppressWarnings("unchecked")
     public static <T extends org.hl7.fhir.r4.model.Resource> OperationOutcome create(DaoRegistry dao, T resource) {
-        return (OperationOutcome) dao.getResourceDao((Class<T>) resource.getClass()).create(resource).getOperationOutcome();
+        @SuppressWarnings("unchecked")
+        OperationOutcome oc = (OperationOutcome)dao.getResourceDao((Class<T>) resource.getClass()).create(resource).getOperationOutcome();
+        resource.setId(oc.getId());
+        return oc;
     }
 
+
+    /**
+     * Handles the base update operation.
+     * @param <T>   The type of resource to create or update.
+     * @param resource  The resource to create or update.
+     * @return  The OperationOutcome
+     */
+    public static <T extends org.hl7.fhir.r4.model.Resource> OperationOutcome createOrUpdate(DaoRegistry dao, T resource) {
+        if (resource.hasId()) {
+            return create(dao, resource);
+        }
+        return update(dao, resource);
+    }
+
+    /**
+     * Handles the base update operation.
+     * @param <T>   The type of resource to update.
+     * @param resource  The resource to update.
+     * @return  The OperationOutcome
+     */
+    public static <T extends org.hl7.fhir.r4.model.Resource> OperationOutcome update(DaoRegistry dao, T resource) {
+        @SuppressWarnings("unchecked")
+        OperationOutcome oc = (OperationOutcome)dao.getResourceDao((Class<T>) resource.getClass()).update(resource).getOperationOutcome();
+        return oc;
+    }
 
     /**
      * Handles the base retrieval operation for lookups.

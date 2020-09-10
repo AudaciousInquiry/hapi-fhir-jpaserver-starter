@@ -1,0 +1,43 @@
+{
+  "resourceType": "Encounter",
+  "id": "Encounter6b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Encounter6b</p><p><b>identifier</b>: id: Enc654321</p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"Patient-Patient6b.html\">Generated Summary: id: Patient6b; id: Pat654321; gender: female; birthDate: 1967-08-23</a></p><p><b>period</b>: 2020-09-08 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-Location6b.html\">Generated Summary: id: Location6b; id: Loc44082; <span title=\"Codes: {https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1076-9}\">Pediatric Medical Ward</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode PEDU}\">Pediatric unit</span></a></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Encounter",
+      "value": "Enc654321"
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/Patient6b"
+  },
+  "period": {
+    "start": "2020-09-08"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "67782005",
+          "display": "Acute respiratory distress syndrome (disorder)"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "Location/Location6b"
+      }
+    }
+  ]
+}

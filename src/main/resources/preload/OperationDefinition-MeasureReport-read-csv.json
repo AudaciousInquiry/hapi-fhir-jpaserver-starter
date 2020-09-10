@@ -1,0 +1,81 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "MeasureReport-read-csv",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ReadinCSVFormat</h2><p>OPERATION: ReadinCSVFormat</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-read-csv</pre><div><p>Read a given MeasureReport using the CSV Format. See <a href=\"CSV_Conversion.html\">CSV Conversion</a> for details.</p>\n</div><p>URL: [base]/MeasureReport/[id]/$read-csv</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>map</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#composite\">composite</a>)</td><td/><td/></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td/></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-read-csv",
+  "version": "0.1.0",
+  "name": "ReadinCSVFormat",
+  "title": "Read in CSV Format",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": true,
+  "date": "2020-09-10T02:00:40-04:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Read a given MeasureReport using the CSV Format. See [CSV Conversion](CSV_Conversion.html) for details.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "read-csv",
+  "resource": [
+    "MeasureReport"
+  ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "map",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "string",
+      "searchType": "composite"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "type": "Binary"
+    }
+  ]
+}

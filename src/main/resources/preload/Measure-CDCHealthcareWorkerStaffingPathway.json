@@ -9,8 +9,20 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway\">http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>title</b>: COVID-19 Healthcare Worker Staffing Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Worker Staffing Pathway</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America)</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): mailto:nhsn@cdc.gov</p><p><b>relatedArtifact</b>: , , , , , </p><p><b>type</b>: Composite <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'composite' = 'Composite)</span></p><blockquote><p><b>group</b></p><p><b>code</b>: Front-line persons who clean patient rooms and all areas in a healthcare facility <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortenvsvc' = 'shortenvsvc)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Registered nurses and licensed practical nurses <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortnurse' = 'shortnurse)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortrt' = 'shortrt)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Pharmacists and pharmacy techs <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortphar' = 'shortphar)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Attending physicians, fellows <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortphys' = 'shortphys)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shorttemp' = 'shorttemp)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortoth' = 'shortoth)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Advanced practice nurses, physician assistants <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortothlic' = 'shortothlic)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'shortothsfy' = 'shortothsfy)</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Front-line persons who clean patient rooms and all areas in a healthcare facility <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortenvsvc' = 'posshortenvsvc)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Registered nurses and licensed practical nurses <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortnurse' = 'posshortnurse)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortrt' = 'posshortrt)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Pharmacists and pharmacy techs <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortphar' = 'posshortphar)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Attending physicians, fellows <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortphys' = 'posshortphys)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshorttemp' = 'posshorttemp)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above. <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortoth' = 'posshortoth)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Advanced practice nurses, physician assistants <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortothlic' = 'posshortothlic)</span></p><blockquote><p><b>population</b></p><p><b>code</b>: true <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'true' = 'true)</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: false <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/special-values code 'false' = 'false)</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above. <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner code 'posshortothsfy' = 'posshortothsfy)</span></p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway\">http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>title</b>: COVID-19 Healthcare Worker Staffing Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Worker Staffing Pathway</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): mailto:nhsn@cdc.gov</p><p><b>relatedArtifact</b>: , , , , , </p><p><b>library</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type composite}\">Composite</span></p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/saner/StructureDefinition/ReportingPeriod",
+      "valueTiming": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
   "url": "http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway",
   "version": "0.1.0",
   "name": "CDCHealthcareWorkerStaffingPathway",
@@ -130,6 +142,9 @@
       "url": "https://www.cdc.gov/nhsn/pdfs/covid19/facility-import-hcw.csv"
     }
   ],
+  "library": [
+    "http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary"
+  ],
   "type": [
     {
       "coding": [
@@ -197,7 +212,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -206,7 +221,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortenvsvc"
           }
         ],
@@ -275,7 +290,7 @@
                   {
                     "system": "http://snomed.info/sct",
                     "code": "106293008",
-                    "display": "Nursing Personell"
+                    "display": "Nursing personnel"
                   }
                 ],
                 "text": "Nurses"
@@ -305,7 +320,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -314,7 +329,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortnurse"
           }
         ],
@@ -413,7 +428,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -422,7 +437,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortrt"
           }
         ],
@@ -521,7 +536,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -530,7 +545,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortphar"
           }
         ],
@@ -629,7 +644,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -638,7 +653,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortphys"
           }
         ],
@@ -737,7 +752,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -746,7 +761,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shorttemp"
           }
         ],
@@ -845,7 +860,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -854,7 +869,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortoth"
           }
         ],
@@ -953,7 +968,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -962,7 +977,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "shortothlic"
           }
         ],
@@ -1027,9 +1042,13 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "106375005"
                   }
                 ],
-                "text": "Persons who work in the facility"
+                "text": "Cleaning Staff"
               }
             },
             {
@@ -1056,7 +1075,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1065,73 +1084,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
-            "code": "shortothsfy"
-          }
-        ],
-        "text": "Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above"
-      }
-    },
-    {
-      "extension": [
-        {
-          "extension": [
-            {
-              "url": "scoring",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-                    "code": "continuous-variable"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "subject",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/resource-types",
-                    "code": "Practitioner"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-type",
-                    "code": "structure"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "improvementNotation",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-                    "code": "increase"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
-            }
-          ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortenvsvc"
           }
         ],
@@ -1196,8 +1149,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Nursing Staff"
               }
             },
             {
@@ -1224,7 +1181,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1233,7 +1190,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortnurse"
           }
         ],
@@ -1298,8 +1255,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Respiratory Specialists"
               }
             },
             {
@@ -1326,7 +1287,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1335,7 +1296,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortrt"
           }
         ],
@@ -1400,8 +1361,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Pharmacy Specialists"
               }
             },
             {
@@ -1428,7 +1393,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1437,7 +1402,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortphar"
           }
         ],
@@ -1502,8 +1467,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Attending Physicians"
               }
             },
             {
@@ -1530,7 +1499,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1539,7 +1508,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortphys"
           }
         ],
@@ -1604,8 +1573,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Intermittent Staff"
               }
             },
             {
@@ -1632,7 +1605,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1641,7 +1614,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshorttemp"
           }
         ],
@@ -1706,8 +1679,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Other Staff"
               }
             },
             {
@@ -1734,7 +1711,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1743,7 +1720,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortoth"
           }
         ],
@@ -1808,8 +1785,12 @@
                   {
                     "system": "http://hl7.org/fhir/resource-types",
                     "code": "Practitioner"
+                  },
+                  {
+                    "system": "http://snomed.info/sct"
                   }
-                ]
+                ],
+                "text": "Advanced Practice Nurse/Physician Assistant"
               }
             },
             {
@@ -1836,7 +1817,7 @@
             },
             {
               "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
+              "valueString": "count"
             }
           ],
           "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
@@ -1845,7 +1826,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner",
+            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
             "code": "posshortothlic"
           }
         ],
@@ -1887,72 +1868,6 @@
           }
         }
       ]
-    },
-    {
-      "extension": [
-        {
-          "extension": [
-            {
-              "url": "scoring",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-                    "code": "continuous-variable"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "subject",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/resource-types",
-                    "code": "Practitioner"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "type",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-type",
-                    "code": "structure"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "improvementNotation",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
-                    "code": "increase"
-                  }
-                ]
-              }
-            },
-            {
-              "url": "rateAggregation",
-              "valueString": "aggregable-by-period"
-            }
-          ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/us/saner",
-            "code": "posshortothsfy"
-          }
-        ],
-        "text": "Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above."
-      }
     }
   ]
 }

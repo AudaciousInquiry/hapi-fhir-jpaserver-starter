@@ -16,9 +16,6 @@ import org.hl7.fhir.r4.model.IdType;
 import org.hl7.fhir.r4.model.Measure;
 import org.hl7.fhir.r4.model.Measure.MeasureGroupComponent;
 import org.hl7.fhir.r4.model.Measure.MeasureGroupPopulationComponent;
-import org.hl7.fhir.r4.model.MeasureReport;
-import org.hl7.fhir.r4.model.MeasureReport.MeasureReportGroupComponent;
-import org.hl7.fhir.r4.model.MeasureReport.MeasureReportGroupPopulationComponent;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ca.uhn.fhir.jpa.dao.DaoRegistry;

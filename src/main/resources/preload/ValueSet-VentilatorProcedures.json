@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "VentilatorProcedures",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorProcedures",
+  "version": "0.1.0",
+  "name": "VentilatorProcedures",
+  "title": "Ventilator Procedures",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes used to report a ventilation procedure",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ]
+}

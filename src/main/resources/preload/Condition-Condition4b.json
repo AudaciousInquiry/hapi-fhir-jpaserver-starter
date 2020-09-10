@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition4b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Condition4b</p><p><b>identifier</b>: id: Con234567</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 233604007}\">Pneumonia</span></p><p><b>subject</b>: <a href=\"Patient-Patient4b.html\">Generated Summary: id: Patient4b; id: Pat234567; gender: female; birthDate: 1967-08-23</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Condition",
+      "value": "Con234567"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "233604007"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient4b"
+  }
+}

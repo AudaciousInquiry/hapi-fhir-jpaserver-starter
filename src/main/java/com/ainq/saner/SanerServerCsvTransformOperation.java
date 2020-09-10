@@ -25,8 +25,6 @@ import org.hl7.fhir.r4.model.IdType;
 import org.hl7.fhir.r4.model.Measure;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.ainq.utils.JpaUtils;
-
 /**
  * This class supports the $convert and $report operations on measures.
  * $convert converts from CSV format to a MeasureReport

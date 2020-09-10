@@ -1,0 +1,37 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "MedicationRequest17b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: MedicationRequest17b</p><p><b>identifier</b>: id: Med223344</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: \">Remdesivir</span></p><p><b>subject</b>: <a href=\"Patient-Patient7b.html\">Generated Summary: id: Patient7b; id: Pat223344; gender: female; birthDate: 1949-12-07</a></p><p><b>dosageInstruction</b>: </p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/MedicationRequest",
+      "value": "Med223344"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "Remdesivir"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient7b"
+  },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2020-09-08"
+          }
+        }
+      }
+    }
+  ]
+}

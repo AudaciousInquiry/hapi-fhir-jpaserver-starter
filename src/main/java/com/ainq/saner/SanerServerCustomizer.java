@@ -1,13 +1,9 @@
 package com.ainq.saner;
 
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
-import ca.uhn.fhir.jpa.dao.IFhirResourceDao;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
-import java.io.IOException;
-import org.hl7.fhir.instance.model.api.IAnyResource;
-import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

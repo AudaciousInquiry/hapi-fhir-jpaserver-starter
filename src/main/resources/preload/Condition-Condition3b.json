@@ -1,0 +1,27 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition3b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Condition3b</p><p><b>identifier</b>: id: Con999999</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-Patient3b.html\">Generated Summary: id: Patient3b; id: Pat999999; gender: male; birthDate: 1949-12-07</a></p><p><b>onset</b>: 2020-09-09</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Condition",
+      "value": "Con999999"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "67782005",
+        "display": "Acute respiratory distress syndrome (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient3b"
+  },
+  "onsetDateTime": "2020-09-09"
+}

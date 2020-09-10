@@ -23,12 +23,10 @@ import org.hl7.fhir.r4.model.CodeType;
 import org.hl7.fhir.r4.model.CodeableConcept;
 import org.hl7.fhir.r4.model.Coding;
 import org.hl7.fhir.r4.model.DateTimeType;
-import org.hl7.fhir.r4.model.DecimalType;
 import org.hl7.fhir.r4.model.DomainResource;
 import org.hl7.fhir.r4.model.Element;
 import org.hl7.fhir.r4.model.IdType;
 import org.hl7.fhir.r4.model.Identifier;
-import org.hl7.fhir.r4.model.IntegerType;
 import org.hl7.fhir.r4.model.Location;
 import org.hl7.fhir.r4.model.Measure;
 import org.hl7.fhir.r4.model.MeasureReport;
@@ -37,7 +35,6 @@ import org.hl7.fhir.r4.model.Parameters;
 import org.hl7.fhir.r4.model.Period;
 import org.hl7.fhir.r4.model.PrimitiveType;
 import org.hl7.fhir.r4.model.Reference;
-import org.hl7.fhir.r4.model.SimpleQuantity;
 import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.Type;
 import org.hl7.fhir.r4.model.Bundle.BundleEntryComponent;
@@ -59,7 +56,6 @@ import com.opencsv.CSVReaderHeaderAware;
 import com.opencsv.CSVReaderHeaderAwareBuilder;
 
 import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.jpa.dao.DaoMethodOutcome;
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
 import ca.uhn.fhir.model.api.TemporalPrecisionEnum;
 import ca.uhn.fhir.parser.DataFormatException;
@@ -382,6 +378,41 @@ class ConversionRequest {
         // TODO: Address the issue that there could be multiple rows with different stratifiers and strata
         Map<String,String> row = r.get(0);
 
+        getScoresAndCounts(mr, row);
+        getMissingParts(mr, row);
+
+        boolean failed = false;
+        if (forCreate) {
+            // TODO: Verify that subject and reporter have been set in measureReport.
+            if (mr.hasSubject() && mr.hasReporter()) {
+                try {
+                    // TODO: Check to see if there is already a report for this time period
+                    // and measure for the specified location and reporter, if there is
+                    // update it instead of just creating a new one.
+                    JpaUtils.createOrUpdate(dao, mr);
+                } catch (Exception ex) {
+                    LOGGER.error("Creation failed for MeasureReport");
+                    failed = true;
+                }
+            } else {
+                LOGGER.error("Missing subject or reporter in MeasureReport");
+                failed = true;
+            }
+        }
+
+        if (!failed) {
+            // Set FullUrl Value in bundle
+            BundleEntryComponent comp = result.addEntry().setResource(mr);
+            count++;
+            if (mr.hasIdElement()) {
+                comp.setFullUrl(serverBase + "/fhir/" + mr.getId());
+            }
+        } else {
+            // TODO: Report error in bundle
+        }
+    }
+
+    private void getScoresAndCounts(MeasureReport mr, Map<String, String> row) {
         // For each group in the Measure
         for (Measure.MeasureGroupComponent group: reportedMeasure.getGroup()) {
             MeasureReportGroupComponent mrGroup = mr.addGroup();
@@ -391,32 +422,7 @@ class ConversionRequest {
 
             String heading = mapHeading(codeValue);
             String value = row.get(heading);
-            if (!StringUtils.isBlank(value)) {
-                // Hurray! There's a value for this measure.
-                // Convert to DecimalType
-                DecimalType dt = null;
-                try {
-                    dt = new DecimalType(value);
-                } catch (Exception nfex) {
-                    // TODO: Log the error;
-                }
-                if (dt != null) {
-                    mrGroup.setMeasureScore(new SimpleQuantity().setValueElement(dt));
-                } else {
-                    mrGroup.getMeasureScore().addExtension()
-                        .setUrl(FhirUtils.DATA_ABSENT_REASON)
-                        .setValue(new CodeType(DataAbsentReason.NOTANUMBER.toCode()));
-                    mrGroup.getMeasureScore().addExtension()
-                        .setUrl(FhirUtils.ORIGINAL_TEXT)
-                        .setValue(new StringType(value));
-                }
-            } else if (value != null) {
-                // There's a column, but no value for it.
-                mrGroup.getMeasureScore().addExtension()
-                    .setUrl(FhirUtils.DATA_ABSENT_REASON)
-                    .setValue(new CodeType(DataAbsentReason.UNKNOWN.toCode()));
-            }
-
+            FhirUtils.storeDecimal(value, mrGroup.getMeasureScore());
 
             // For each population in the group
             // This is the part that gets done for the rows with no stratifiers  values.
@@ -426,66 +432,7 @@ class ConversionRequest {
                 mrPopulation.setCode(codeValue);
                 heading = mapHeading(codeValue);
                 value = row.get(heading);
-                if (!StringUtils.isBlank(value)) {
-
-                    IntegerType it = null;
-                    try {
-                        it = new IntegerType(value);
-                    } catch (Exception nfex) {
-                        LOGGER.debug("{} {} is not a valid number", heading, value);
-                    }
-                    if (it != null) {
-                        mrPopulation.setCountElement(it);
-                    } else {
-                        mrPopulation.getCountElement().addExtension()
-                            .setUrl(FhirUtils.DATA_ABSENT_REASON)
-                            .setValue(new CodeType(DataAbsentReason.NOTANUMBER.toCode()));
-                        mrPopulation.getCountElement().addExtension()
-                            .setUrl(FhirUtils.ORIGINAL_TEXT)
-                            .setValue(new StringType(value));
-                    }
-
-                    mrPopulation.setCountElement(new IntegerType(value));
-                } else if (value != null) {
-                    // The column is present, but it has no value
-                    mrPopulation.getCountElement().addExtension()
-                        .setUrl(FhirUtils.DATA_ABSENT_REASON)
-                        .setValue(new CodeType(DataAbsentReason.UNKNOWN.toCode()));
-                } else {
-                    // The column has no value
-                    mrPopulation.getCountElement().addExtension()
-                        .setUrl(FhirUtils.DATA_ABSENT_REASON)
-                        .setValue(new CodeType(DataAbsentReason.UNSUPPORTED.toCode()));
-                }
-            }
-        }
-        getMissingParts(mr, row);
-
-        boolean failed = false;
-        try {
-            if (forCreate) {
-                // TODO: Verify that subject and reporter have been set in measureReport.
-                if (mr.hasSubject() && mr.hasReporter()) {
-                    // TODO: Check to see if there is already a report for this time period
-                    // and measure for the specified location and reporter, if there is
-                    // update it instead of just creating a new one.
-                    DaoMethodOutcome oc = dao.getResourceDao(MeasureReport.class).create(mr);
-                    mr.setId(oc.getId());
-                } else {
-                    LOGGER.error("Missing subject or reporter in MeasureReport");
-                    failed = true;
-                }
-            }
-        } catch (Exception ex) {
-            LOGGER.error("Creation failed for MeasureReport");
-            failed = true;
-        }
-        if (!failed) {
-            // Set FullUrl Value in bundle
-            BundleEntryComponent comp = result.addEntry().setResource(mr);
-            count++;
-            if (mr.hasIdElement()) {
-                comp.setFullUrl(serverBase + "/fhir/" + mr.getId());
+                FhirUtils.storeInteger(value, mrPopulation.getCountElement());
             }
         }
     }

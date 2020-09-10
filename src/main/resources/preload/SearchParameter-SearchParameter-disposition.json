@@ -1,0 +1,65 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "SearchParameter-disposition",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: SearchParameter-disposition</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-disposition\">http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-disposition</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: disposition</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: This SearchParameter enables query of encounters by disposition to support automation of measure computation.</p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>code</b>: disposition</p><p><b>base</b>: Encounter</p><p><b>type</b>: token</p><p><b>expression</b>: hospitalization.dispositionCode</p><p><b>xpath</b>: f:hospitalization/f:dispositionCode</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-disposition",
+  "version": "0.1.0",
+  "name": "disposition",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-09-10T02:00:40-04:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This SearchParameter enables query of encounters by disposition to support automation of measure computation.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "code": "disposition",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "hospitalization.dispositionCode",
+  "xpath": "f:hospitalization/f:dispositionCode",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": true
+}

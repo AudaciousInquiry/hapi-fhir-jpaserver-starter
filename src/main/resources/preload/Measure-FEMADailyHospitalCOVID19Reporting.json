@@ -8,14 +8,26 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: FEMADailyHospitalCOVID19Reporting</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting\">http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: FEMADailyHospitalCOVID19Reporting</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: May 14, 2020, 8:43:17 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America)</span></p><p><b>topic</b>: Immunology laboratory test (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '252318005' = 'Immunology laboratory test', given as 'Immunology laboratory test (procedure)'})</span></p><p><b>author</b>: FEMA: mailto:fema-hhs-covid-diagnostics-tf@fema.dhs.gov&nbsp;</p><p><b>relatedArtifact</b>: , , , </p><p><b>type</b>: Outcome <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'outcome' = 'Outcome)</span></p><p><b>rateAggregation</b>: aggregable-by-period</p><blockquote><p><b>group</b></p><p><b>code</b>: # of new positive test results released / # of total new tests released for previous date queried <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem code 'positiveIncreasePercent' = 'Percent Positive among Newly Resulted Tests', given as 'Percent Positive among Newly Resulted Tests'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: Midnight to midnight cutoff, tests ordered on previous date queried <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'totalOrdersIncrease' = 'New Diagnostic Tests Ordered/Received', given as 'New Diagnostic Tests Ordered/Received'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: Enter the number of new Diagnostic Tests Ordered/Received during the reporting period.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Midnight to midnight cutoff, test results released on previous date queried <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'totalTestResultsIncrease' = 'New Tests Resulted', given as 'New Tests Resulted'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>description</b>: nter the number of results recieved/generated during the reporting period.\nDo not include results where the test could not be completed because the specimen\nwas rejected or a positive/negative result could not be established</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Midnight to midnight cutoff, positive test results released on previous date queried <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'positiveIncrease' = 'New Positive COVID-19 Tests', given as 'New Positive COVID-19 Tests'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>description</b>: Enter the number of positive test results released during the reporting period.</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: # of total positive results to released date / # of total tests results released to date <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem code 'positivePercent' = 'Cumulative Percent Positive among Resulted Tests', given as 'Cumulative Percent Positive among Resulted Tests'})</span></p><blockquote><p><b>population</b></p><p><b>code</b>: All tests ordered to date. <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'totalOrders' = 'Cumulative Diagnostic Tests Ordered/Received', given as 'Cumulative Diagnostic Tests Ordered/Received'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: Enter the cumulative number of tests ordered to date.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: All specimens rejected for testing to date <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'rejected' = 'Cumulative Specimens Rejected', given as 'Cumulative Specimens Rejected'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator-exclusion' = 'Denominator Exclusion)</span></p><p><b>description</b>: Enter the cumulative number of specimens rejected for testing to date.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: All tests with results released to date <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'totalTestResults' = 'Cumulative Tests Performed', given as 'Cumulative Tests Performed'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>description</b>: nter the total number tests with results released to date. Do not include tests where a\npositive/negative result could not be determined (e.g., because the specimen was inadequate).</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: All positive test results released to date <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem code 'positive' = 'Cumulative Positive COVID-19 Tests', given as 'Cumulative Positive COVID-19 Tests'}; {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>description</b>: Enter the total number of positive test results release to date.</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: FEMADailyHospitalCOVID19Reporting</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting\">http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: FEMADailyHospitalCOVID19Reporting</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>topic</b>: <span title=\"Codes: {http://snomed.info/sct 252318005}\">Immunology laboratory test (procedure)</span></p><p><b>author</b>: HL7 Public Health Workgroup: mailto:pher@lists.hl7.org</p><p><b>relatedArtifact</b>: , , , </p><p><b>library</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/FEMAMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/FEMAMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type outcome}\">Outcome</span></p><p><b>rateAggregation</b>: count</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem positiveIncreasePercent}\"># of new positive test results released / # of total new tests released for previous date queried</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalOrdersIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Midnight to midnight cutoff, tests ordered on previous date queried</span></p><p><b>description</b>: Enter the number of new Diagnostic Tests Ordered/Received during the reporting period.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalTestResultsIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population denominator}\">Midnight to midnight cutoff, test results released on previous date queried</span></p><p><b>description</b>: nter the number of results recieved/generated during the reporting period.\nDo not include results where the test could not be completed because the specimen\nwas rejected or a positive/negative result could not be established</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues positiveIncrease}, {http://terminology.hl7.org/CodeSystem/measure-population numerator}\">Midnight to midnight cutoff, positive test results released on previous date queried</span></p><p><b>description</b>: Enter the number of positive test results released during the reporting period.</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem positivePercent}\"># of total positive results to released date / # of total tests results released to date</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalOrders}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">All tests ordered to date.</span></p><p><b>description</b>: Enter the cumulative number of tests ordered to date.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues rejected}, {http://terminology.hl7.org/CodeSystem/measure-population denominator-exclusion}\">All specimens rejected for testing to date</span></p><p><b>description</b>: Enter the cumulative number of specimens rejected for testing to date.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues totalTestResults}, {http://terminology.hl7.org/CodeSystem/measure-population denominator}\">All tests with results released to date</span></p><p><b>description</b>: nter the total number tests with results released to date. Do not include tests where a\npositive/negative result could not be determined (e.g., because the specimen was inadequate).</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues positive}, {http://terminology.hl7.org/CodeSystem/measure-population numerator}\">All positive test results released to date</span></p><p><b>description</b>: Enter the total number of positive test results release to date.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues allReports}\">Reports to date including corrected, amended and canceled reports</span></p><p><b>description</b>: This is in intermediate population used to simplify calculations</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues latestReports}\">Latest Reports to date for each order</span></p><p><b>description</b>: This is in intermediate population used to simplify calculations</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/saner/StructureDefinition/ReportingPeriod",
+      "valueTiming": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
   "url": "http://hl7.org/fhir/us/saner/Measure/FEMADailyHospitalCOVID19Reporting",
   "version": "0.1.0",
   "name": "FEMADailyHospitalCOVID19Reporting",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-14T08:43:17-04:00",
+  "date": "2020-09-10T02:00:40-04:00",
   "publisher": "HL7 International",
   "contact": [
     {
@@ -86,11 +98,11 @@
   ],
   "author": [
     {
-      "name": "FEMA",
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "email",
-          "value": "mailto:fema-hhs-covid-diagnostics-tf@fema.dhs.gov "
+          "value": "mailto:pher@lists.hl7.org"
         }
       ]
     }
@@ -121,6 +133,9 @@
       "url": "https://images.magnetmail.net/images/clients/AHA_MCHF/attach/2020/March/0330/Template_for_Daily_Hospital_COVID19_Reporting.xlsx"
     }
   ],
+  "library": [
+    "http://hl7.org/fhir/us/saner/StructureDefinition/FEMAMeasureLibrary"
+  ],
   "type": [
     {
       "coding": [
@@ -131,9 +146,70 @@
       ]
     }
   ],
-  "rateAggregation": "aggregable-by-period",
+  "rateAggregation": "count",
   "group": [
     {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "scoring",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+                    "code": "continuous-variable"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "subject",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/resource-types",
+                    "code": "ServiceRequest"
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "252318005",
+                    "display": "Immunology laboratory test (procedure)"
+                  }
+                ],
+                "text": "COVID-19 Diagnostic Testing"
+              }
+            },
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+                    "code": "outcome"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "improvementNotation",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                    "code": "decrease"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "rateAggregation",
+              "valueString": "cumulative"
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+        }
+      ],
       "code": {
         "coding": [
           {
@@ -149,7 +225,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalOrdersIncrease",
                 "display": "New Diagnostic Tests Ordered/Received"
               },
@@ -172,7 +248,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalTestResultsIncrease",
                 "display": "New Tests Resulted"
               },
@@ -195,7 +271,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "positiveIncrease",
                 "display": "New Positive COVID-19 Tests"
               },
@@ -217,6 +293,67 @@
       ]
     },
     {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "scoring",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+                    "code": "continuous-variable"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "subject",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/resource-types",
+                    "code": "ServiceRequest"
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "252318005",
+                    "display": "Immunology laboratory test (procedure)"
+                  }
+                ],
+                "text": "COVID-19 Cumulative Diagnostic Testing"
+              }
+            },
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+                    "code": "outcome"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "improvementNotation",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                    "code": "decrease"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "rateAggregation",
+              "valueString": "cumulative"
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+        }
+      ],
       "code": {
         "coding": [
           {
@@ -232,7 +369,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalOrders",
                 "display": "Cumulative Diagnostic Tests Ordered/Received"
               },
@@ -255,7 +392,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "rejected",
                 "display": "Cumulative Specimens Rejected"
               },
@@ -278,7 +415,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "totalTestResults",
                 "display": "Cumulative Tests Performed"
               },
@@ -301,7 +438,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
                 "code": "positive",
                 "display": "Cumulative Positive COVID-19 Tests"
               },
@@ -318,6 +455,44 @@
             "name": "positive",
             "language": "text/fhirpath",
             "expression": "DiagnosticReport.where($this in %totalTestResults and conclusionCode in %ValueSet-ConfirmedCOVID19Diagnosis)"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "code": "allReports",
+                "display": "All Laboratory Reports for any Order"
+              }
+            ],
+            "text": "Reports to date including corrected, amended and canceled reports"
+          },
+          "description": "This is in intermediate population used to simplify calculations",
+          "criteria": {
+            "description": "Diagnostic Reports provided in response to totalOrders",
+            "name": "allReports",
+            "language": "text/fhirpath",
+            "expression": "DiagnosticReport.where(basedOn in %totalOrders)"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "code": "latestReports",
+                "display": "Most Recent Laboratory Reports for any Order"
+              }
+            ],
+            "text": "Latest Reports to date for each order"
+          },
+          "description": "This is in intermediate population used to simplify calculations",
+          "criteria": {
+            "description": "Most recent diagnostic reports provided in response to totalOrders",
+            "name": "latestReports",
+            "language": "text/fhirpath",
+            "expression": "TBD"
           }
         }
       ]

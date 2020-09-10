@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PublicHealthMeasureAttachmentTypes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:ietf:bcp:13</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>application/fhir+xml</td><td>application/fhir+xml</td><td/></tr><tr><td>application/fhir+json</td><td>application/fhir+json</td><td/></tr><tr><td>text/cql</td><td>text/cql</td><td/></tr><tr><td>application/gzip</td><td>application/gzip</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/ValueSet/PublicHealthMeasureAttachmentTypes",
+  "version": "0.1.0",
+  "name": "PublicHealthMeasureAttachmentTypes",
+  "title": "Public Health Measure Attachment Types",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Preferred Mime Types for use with Public Health Measure Definitions",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:bcp:13",
+        "concept": [
+          {
+            "code": "application/fhir+xml"
+          },
+          {
+            "code": "application/fhir+json"
+          },
+          {
+            "code": "text/cql"
+          },
+          {
+            "code": "application/gzip"
+          }
+        ]
+      }
+    ]
+  }
+}

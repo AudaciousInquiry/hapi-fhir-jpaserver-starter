@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "COVID19DXICD10",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B34.2</td><td>Coronavirus infection, unspecified</td><td/></tr><tr><td>B97.2</td><td>Coronavirus as the cause of diseases classified elsewhere</td><td/></tr><tr><td>B97.29</td><td>Other coronavirus as the cause of diseases classified elsewhere</td><td/></tr><tr><td>U07.1</td><td>COVID-19</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123",
+  "version": "0.1.0",
+  "name": "COVID19DXICD10",
+  "status": "active",
+  "date": "2020-05-16T01:00:22-04:00",
+  "publisher": "CSTE Steward",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This Value Set includes codes describing COVID-19 illness from ICD-10-CM",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "B34.2",
+            "display": "Coronavirus infection, unspecified"
+          },
+          {
+            "code": "B97.2",
+            "display": "Coronavirus as the cause of diseases classified elsewhere"
+          },
+          {
+            "code": "B97.29",
+            "display": "Other coronavirus as the cause of diseases classified elsewhere"
+          },
+          {
+            "code": "U07.1",
+            "display": "COVID-19"
+          }
+        ]
+      }
+    ]
+  }
+}

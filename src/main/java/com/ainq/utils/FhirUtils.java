@@ -2,11 +2,20 @@ package com.ainq.utils;
 
 import java.util.Calendar;
 
+import org.apache.commons.lang3.StringUtils;
 import org.hl7.fhir.r4.model.BaseDateTimeType;
+import org.hl7.fhir.r4.model.CodeType;
+import org.hl7.fhir.r4.model.DecimalType;
 import org.hl7.fhir.r4.model.DomainResource;
 import org.hl7.fhir.r4.model.Identifier;
+import org.hl7.fhir.r4.model.IntegerType;
 import org.hl7.fhir.r4.model.Property;
+import org.hl7.fhir.r4.model.Quantity;
 import org.hl7.fhir.r4.model.Reference;
+import org.hl7.fhir.r4.model.StringType;
+import org.hl7.fhir.r4.model.codesystems.DataAbsentReason;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * The DomUtils class provides some utility functions for working with XML
@@ -16,7 +25,7 @@ import org.hl7.fhir.r4.model.Reference;
  *
  */
 public class FhirUtils {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(FhirUtils.class);
     public static final String
             DATA_ABSENT_REASON = "http://hl7.org/fhir/StructureDefinition/data-absent-reason";
     public static final String
@@ -72,4 +81,82 @@ public class FhirUtils {
         return Calendar.DAY_OF_MONTH;
     }
 
+
+    /**
+     * Set a quantity to a string value, or report the reason why
+     * it wasn't set.
+     * @param <Q>   The type of the quantity value
+     * @param value The value to set
+     * @param qty   The place to store the value
+     * @return  The stored value.
+     */
+    public static <Q extends Quantity> Q storeDecimal(String value, Q qty) {
+        if (!StringUtils.isBlank(value)) {
+            // Hurray! There's a value for this quantity.
+            // Convert to DecimalType
+            DecimalType dt = null;
+            try {
+                dt = new DecimalType(value);
+            } catch (Exception nfex) {
+                LOGGER.debug("{} is not a valid number", value);
+            }
+            if (dt != null) {
+                qty.setValueElement(dt);
+            } else {
+                qty.addExtension()
+                    .setUrl(FhirUtils.DATA_ABSENT_REASON)
+                    .setValue(new CodeType(DataAbsentReason.NOTANUMBER.toCode()));
+                qty.addExtension()
+                    .setUrl(FhirUtils.ORIGINAL_TEXT)
+                    .setValue(new StringType(value));
+            }
+        } else if (value != null) {
+            // There's a column, but no value for it.
+            qty.addExtension()
+                .setUrl(FhirUtils.DATA_ABSENT_REASON)
+                .setValue(new CodeType(DataAbsentReason.UNKNOWN.toCode()));
+        }
+        return qty;
+    }
+
+    /**
+     * Set an Integer to a int value, or report the reason why
+     * it wasn't set.
+     * @param value The value to set
+     * @param i   The place to store the value
+     * @return The stored value.
+     */
+    public static IntegerType storeInteger(String value, IntegerType i) {
+        if (!StringUtils.isBlank(value)) {
+            Integer it = null;
+            try {
+                it = CsvUtils.parseCSVInteger(value);
+            } catch (Exception nfex) {
+                LOGGER.debug("{} is not a valid number", value);
+            }
+            if (it != null) {
+                i.setValue(it);
+            } else {
+                i.addExtension()
+                    .setUrl(FhirUtils.DATA_ABSENT_REASON)
+                    .setValue(new CodeType(DataAbsentReason.NOTANUMBER.toCode()));
+                i.addExtension()
+                    .setUrl(FhirUtils.ORIGINAL_TEXT)
+                    .setValue(new StringType(value));
+            }
+
+            return i;
+        } else if (value != null) {
+            // The column is present, but it has no value
+            i.addExtension()
+                .setUrl(FhirUtils.DATA_ABSENT_REASON)
+                .setValue(new CodeType(DataAbsentReason.UNKNOWN.toCode()));
+        } else {
+            // The column has no value
+            i.addExtension()
+                .setUrl(FhirUtils.DATA_ABSENT_REASON)
+                .setValue(new CodeType(DataAbsentReason.UNSUPPORTED.toCode()));
+        }
+        return i;
+     }
 }

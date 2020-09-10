@@ -1,0 +1,108 @@
+{
+  "resourceType": "ValueSet",
+  "id": "Remdesivir",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2284718</td><td>remdesivir</td><td/></tr><tr><td>2284957</td><td>remdesivir 100 MG</td><td/></tr><tr><td>2284958</td><td>remdesivir Injectable Product</td><td/></tr><tr><td>2284959</td><td>remdesivir Injection</td><td/></tr><tr><td>2284960</td><td>remdesivir 100 MG Injection (EUA)</td><td/></tr><tr><td>2367757</td><td>remdesivir 5 MG/ML</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870592005\">870592005</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870519002\">870519002</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870600003\">870600003</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870518005\">870518005</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870521007\">870521007</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870520008\">870520008</a></td><td/><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870522000\">870522000</a></td><td/><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/ValueSet/Remdesivir",
+  "version": "0.1.0",
+  "name": "Remdesivir",
+  "title": "Remdesivir",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "This Value Set identifies Remdesivir",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards\nDevelopment Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT\nis not covered by this agreement.\n\nThis value set includes source materials developed by the US National Library of Medicine: Reference to specific\ncommercial products, manufacturers, companies, or trademarks does not constitute its endorsement or recommendation\nby the U.S. Government, Department of Health and Human Services, or NLM. Source materials are available from the\nNLM Website at no charge at https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "2284718"
+          },
+          {
+            "code": "2284957"
+          },
+          {
+            "code": "2284958"
+          },
+          {
+            "code": "2284959"
+          },
+          {
+            "code": "2284960"
+          },
+          {
+            "code": "2367757"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "870592005"
+          },
+          {
+            "code": "870519002"
+          },
+          {
+            "code": "870600003"
+          },
+          {
+            "code": "870518005"
+          },
+          {
+            "code": "870521007"
+          },
+          {
+            "code": "870520008"
+          },
+          {
+            "code": "870522000"
+          }
+        ]
+      }
+    ]
+  }
+}

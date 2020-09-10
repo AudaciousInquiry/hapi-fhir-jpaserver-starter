@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SuspectedCOVID19Diagnoses",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Import all the codes that are contained in <a href=\"ValueSet-COVID19Exposures.html\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203</a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/saner/ValueSet/SuspectedCOVID19Diagnoses",
+  "version": "0.1.0",
+  "name": "SuspectedCOVID19Diagnoses",
+  "title": "Suspected COVID-19 Diagnosis Values",
+  "status": "active",
+  "date": "2020-09-10T02:00:40-04:00",
+  "contact": [
+    {
+      "name": "HL7 Patient Administration Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ainq.com"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for suspected COVID-19",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203"
+        ]
+      }
+    ]
+  }
+}

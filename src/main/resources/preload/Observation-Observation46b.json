@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation46b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation46b</p><p><b>identifier</b>: id: 654321-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient6b.html\">Generated Summary: id: Patient6b; id: Pat654321; gender: female; birthDate: 1967-08-23</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter6b.html\">Generated Summary: id: Encounter6b; id: Enc654321; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></a></p><p><b>effective</b>: 2020-09-09</p><p><b>value</b>: 5 cm[H20]</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Observation",
+      "value": "654321-4"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "20077-4",
+        "display": "Positive end expiratory pressure setting Ventilator"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient6b"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter6b"
+  },
+  "effectiveDateTime": "2020-09-09",
+  "valueQuantity": {
+    "value": 5,
+    "system": "http://unitsofmeasure.org",
+    "code": "cm[H20]"
+  }
+}

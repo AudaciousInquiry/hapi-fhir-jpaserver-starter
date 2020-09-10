@@ -1,0 +1,30 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation49b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation49b</p><p><b>identifier</b>: id: 667788-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>effective</b>: 2020-09-07</p><p><b>value</b>: 5 cm[H20]</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Observation",
+      "value": "667788-4"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "20077-4",
+        "display": "Positive end expiratory pressure setting Ventilator"
+      }
+    ]
+  },
+  "effectiveDateTime": "2020-09-07",
+  "valueQuantity": {
+    "value": 5,
+    "system": "http://unitsofmeasure.org",
+    "code": "cm[H20]"
+  }
+}

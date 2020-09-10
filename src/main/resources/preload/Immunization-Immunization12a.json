@@ -1,0 +1,27 @@
+{
+  "resourceType": "Immunization",
+  "id": "Immunization12a",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Immunization12a</p><p><b>identifier</b>: id: 444444</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 346524008}\">Influenza split virion vaccine</span></p><p><b>patient</b>: <a href=\"Patient-Patient2a.html\">Generated Summary: id: Patient2a; id: Pat444444; gender: male; birthDate: 1956-09-13</a></p><p><b>occurrence</b>: 2020-09-09</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Immunization",
+      "value": "444444"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346524008"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Patient2a"
+  },
+  "occurrenceDateTime": "2020-09-09"
+}

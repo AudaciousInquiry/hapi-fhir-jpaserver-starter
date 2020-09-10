@@ -1,0 +1,27 @@
+{
+  "resourceType": "Condition",
+  "id": "Condition7b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Condition7b</p><p><b>identifier</b>: id: Con223344</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 882784691000119100}\">Pneumonia caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-Patient7b.html\">Generated Summary: id: Patient7b; id: Pat223344; gender: female; birthDate: 1949-12-07</a></p><p><b>onset</b>: 2020-09-09</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Condition",
+      "value": "Con223344"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "882784691000119100",
+        "display": "Pneumonia caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient7b"
+  },
+  "onsetDateTime": "2020-09-09"
+}

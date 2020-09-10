@@ -1,0 +1,53 @@
+{
+  "resourceType": "Encounter",
+  "id": "Encounter7b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Encounter7b</p><p><b>identifier</b>: id: Enc223344</p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"Patient-Patient7b.html\">Generated Summary: id: Patient7b; id: Pat223344; gender: female; birthDate: 1949-12-07</a></p><p><b>period</b>: 2020-09-08 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/discharge-disposition exp}\">Expired</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-Location7b.html\">Generated Summary: id: Location7b; id: Loc44082; <span title=\"Codes: {https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1027-2}\">Medical Critical Care</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode ICU}\">Intensive care unit</span></a></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Encounter",
+      "value": "Enc223344"
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/Patient7b"
+  },
+  "period": {
+    "start": "2020-09-08"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "U07.1",
+          "display": "COVID-19"
+        }
+      ]
+    }
+  ],
+  "hospitalization": {
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+          "code": "exp"
+        }
+      ]
+    }
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/Location7b"
+      }
+    }
+  ]
+}

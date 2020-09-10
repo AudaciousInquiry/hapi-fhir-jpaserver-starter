@@ -3,15 +3,14 @@
   "id": "MeasureGroupSystem",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Measure Group System</h2><div><p>A Code System for Groups defined by The SANER Project</p>\n</div><p>This code system http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Beds<a name=\"MeasureGroupSystem-Beds\"> </a></td><td>Beds</td><td/></tr><tr><td style=\"white-space:nowrap\">Ventilators<a name=\"MeasureGroupSystem-Ventilators\"> </a></td><td>Ventilators</td><td/></tr><tr><td style=\"white-space:nowrap\">Encounters<a name=\"MeasureGroupSystem-Encounters\"> </a></td><td>Encounters</td><td/></tr><tr><td style=\"white-space:nowrap\">VentilatorSupplies<a name=\"MeasureGroupSystem-VentilatorSupplies\"> </a></td><td>Ventilator supplies (any, including tubing)</td><td/></tr><tr><td style=\"white-space:nowrap\">N95Masks<a name=\"MeasureGroupSystem-N95Masks\"> </a></td><td>N95 masks</td><td/></tr><tr><td style=\"white-space:nowrap\">OtherRespirators<a name=\"MeasureGroupSystem-OtherRespirators\"> </a></td><td>Other respirators including PAPRs</td><td/></tr><tr><td style=\"white-space:nowrap\">SurgicalMasks<a name=\"MeasureGroupSystem-SurgicalMasks\"> </a></td><td>Surgical masks</td><td/></tr><tr><td style=\"white-space:nowrap\">EyeProtection<a name=\"MeasureGroupSystem-EyeProtection\"> </a></td><td>Eye protection including face shields or goggles</td><td/></tr><tr><td style=\"white-space:nowrap\">Gown<a name=\"MeasureGroupSystem-Gown\"> </a></td><td>Gowns (single use)</td><td/></tr><tr><td style=\"white-space:nowrap\">Glove<a name=\"MeasureGroupSystem-Glove\"> </a></td><td>Gloves</td><td/></tr><tr><td style=\"white-space:nowrap\">positiveIncreasePercent<a name=\"MeasureGroupSystem-positiveIncreasePercent\"> </a></td><td>Percent Positive among Newly Resulted Tests</td><td/></tr><tr><td style=\"white-space:nowrap\">positivePercent<a name=\"MeasureGroupSystem-positivePercent\"> </a></td><td>Cumulative Percent Positive among Resulted Tests</td><td/></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Beds<a name=\"MeasureGroupSystem-Beds\"> </a></td><td>Beds</td><td>This group reports on Bed availability</td></tr><tr><td style=\"white-space:nowrap\">Ventilators<a name=\"MeasureGroupSystem-Ventilators\"> </a></td><td>Ventilators</td><td>This group reports on Ventilator availability</td></tr><tr><td style=\"white-space:nowrap\">Encounters<a name=\"MeasureGroupSystem-Encounters\"> </a></td><td>Encounters</td><td>This group reports on COVID-19 Patient Encounters</td></tr><tr><td style=\"white-space:nowrap\">CovidDeaths<a name=\"MeasureGroupSystem-CovidDeaths\"> </a></td><td>COVID-19 Deaths</td><td>This group reports on COVID-19 Patient Deaths</td></tr><tr><td style=\"white-space:nowrap\">AcquiredCovid<a name=\"MeasureGroupSystem-AcquiredCovid\"> </a></td><td>Acquired COVID-19 in Hospital</td><td>This group reports on Hospital Acquired COVID-19 Infections</td></tr><tr><td style=\"white-space:nowrap\">VentilatorSupplies<a name=\"MeasureGroupSystem-VentilatorSupplies\"> </a></td><td>Ventilator supplies (any, including tubing)</td><td/></tr><tr><td style=\"white-space:nowrap\">N95Masks<a name=\"MeasureGroupSystem-N95Masks\"> </a></td><td>N95 masks</td><td/></tr><tr><td style=\"white-space:nowrap\">OtherRespirators<a name=\"MeasureGroupSystem-OtherRespirators\"> </a></td><td>Other respirators including PAPRs</td><td/></tr><tr><td style=\"white-space:nowrap\">SurgicalMasks<a name=\"MeasureGroupSystem-SurgicalMasks\"> </a></td><td>Surgical masks</td><td/></tr><tr><td style=\"white-space:nowrap\">EyeProtection<a name=\"MeasureGroupSystem-EyeProtection\"> </a></td><td>Eye protection including face shields or goggles</td><td/></tr><tr><td style=\"white-space:nowrap\">Gown<a name=\"MeasureGroupSystem-Gown\"> </a></td><td>Gowns (single use)</td><td/></tr><tr><td style=\"white-space:nowrap\">Glove<a name=\"MeasureGroupSystem-Glove\"> </a></td><td>Gloves</td><td/></tr><tr><td style=\"white-space:nowrap\">positiveIncreasePercent<a name=\"MeasureGroupSystem-positiveIncreasePercent\"> </a></td><td>Percent Positive among Newly Resulted Tests</td><td/></tr><tr><td style=\"white-space:nowrap\">positivePercent<a name=\"MeasureGroupSystem-positivePercent\"> </a></td><td>Cumulative Percent Positive among Resulted Tests</td><td/></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
   "version": "0.1.0",
   "name": "MeasureGroupSystem",
   "title": "Measure Group System",
   "status": "active",
-  "date": "2020-05-14T08:43:17-04:00",
-  "publisher": "HL7 International",
+  "date": "2020-09-10T02:00:40-04:00",
   "contact": [
     {
       "name": "HL7 Patient Administration Workgroup",
@@ -42,19 +41,43 @@
     }
   ],
   "description": "A Code System for Groups defined by The SANER Project",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "content": "complete",
+  "count": 14,
   "concept": [
     {
       "code": "Beds",
-      "display": "Beds"
+      "display": "Beds",
+      "definition": "This group reports on Bed availability"
     },
     {
       "code": "Ventilators",
-      "display": "Ventilators"
+      "display": "Ventilators",
+      "definition": "This group reports on Ventilator availability"
     },
     {
       "code": "Encounters",
-      "display": "Encounters"
+      "display": "Encounters",
+      "definition": "This group reports on COVID-19 Patient Encounters"
+    },
+    {
+      "code": "CovidDeaths",
+      "display": "COVID-19 Deaths",
+      "definition": "This group reports on COVID-19 Patient Deaths"
+    },
+    {
+      "code": "AcquiredCovid",
+      "display": "Acquired COVID-19 in Hospital",
+      "definition": "This group reports on Hospital Acquired COVID-19 Infections"
     },
     {
       "code": "VentilatorSupplies",

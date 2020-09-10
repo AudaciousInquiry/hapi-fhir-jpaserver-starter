@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "Observation31c",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation31c</p><p><b>identifier</b>: id: 333333-3</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19994-3}\">Oxygen/Inspired gas setting [Volume Fraction] Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient1c.html\">Generated Summary: id: Patient1c; id: Pat333333; gender: male; birthDate: 1949-12-07</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter1c.html\">Generated Summary: id: Encounter1c; id: Enc333333; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-07 --&gt; 2020-09-10; <span title=\"Codes: {http://snomed.info/sct 233604007}\">Pneumonia (disorder)</span></a></p><p><b>effective</b>: 2020-09-07</p><p><b>value</b>: 100 %</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://sanerproject.org/test/Observation",
+      "value": "333333-3"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "19994-3",
+        "display": "Oxygen/Inspired gas setting [Volume Fraction] Ventilator"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient1c"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter1c"
+  },
+  "effectiveDateTime": "2020-09-07",
+  "valueQuantity": {
+    "value": 100,
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  }
+}
