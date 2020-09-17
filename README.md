@@ -146,7 +146,7 @@ Run the configuration.
 
 Point your browser (or fiddler, or what have you) to `http://localhost:8080/hapi/baseDstu3/Patient`
 
-It is important to use MySQL5Dialect when using MySQL version 5+.
+It is important to use MySQL5Dialect when using MySQL version 5+
 
 ## Enabling Subscriptions
 
