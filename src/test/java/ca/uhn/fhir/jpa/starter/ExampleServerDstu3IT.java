@@ -20,6 +20,7 @@ import org.hl7.fhir.dstu3.model.Subscription;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.net.URI;
@@ -30,6 +31,7 @@ import java.util.concurrent.TimeUnit;
 import static ca.uhn.fhir.util.TestUtil.waitForSize;
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 public class ExampleServerDstu3IT {
 
 	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(ExampleServerDstu3IT.class);

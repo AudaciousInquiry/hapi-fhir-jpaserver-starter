@@ -1,9 +1,16 @@
 package com.ainq.saner;
 
+import ca.uhn.fhir.context.ConfigurationException;
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
+import ca.uhn.fhir.parser.DataFormatException;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.rest.server.RestfulServer;
+import ca.uhn.fhir.rest.server.exceptions.UnprocessableEntityException;
 import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
+
+import java.io.IOException;
+
+import org.apache.commons.lang3.StringUtils;
 import org.hl7.fhir.r4.model.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,18 +65,36 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
     PathMatchingResourcePatternResolver r = new PathMatchingResourcePatternResolver();
     IParser p = server.getFhirContext().newJsonParser();
     org.springframework.core.io.Resource loading = null;
-    try {
-      ApplicationContext appCtx = (ApplicationContext) server.getServletContext()
-        .getAttribute("org.springframework.web.context.WebApplicationContext.ROOT");
-      DaoRegistry dao = appCtx.getBean(DaoRegistry.class);
 
-      for (org.springframework.core.io.Resource res : r.getResources("/preload/*.json")) {
-        LOGGER.info("Loading resource from {}", (loading = res).getFilename());
-        Resource base = (Resource) p.parseResource(res.getInputStream());
-        JpaUtils.create(dao, base);
-      }
-    } catch (Exception e) {
-      LOGGER.error("Unexpected Exception while preloading resource {}", loading.getFilename(), e);
+    ApplicationContext appCtx = (ApplicationContext) server.getServletContext()
+      .getAttribute("org.springframework.web.context.WebApplicationContext.ROOT");
+    DaoRegistry dao = appCtx.getBean(DaoRegistry.class);
+
+    try {
+        for (org.springframework.core.io.Resource res : r.getResources("/preload/*.json")) {
+            LOGGER.info("Loading resource from {}", (loading = res).getFilename());
+            Resource base = (Resource) p.parseResource(res.getInputStream());
+            try {
+                try {
+                    JpaUtils.create(dao, base);
+                } catch (UnprocessableEntityException upe) {
+                    String msg = upe.getMessage();
+                    if (StringUtils.contains(msg, "already have one with resource ID: ")) {
+                        String id =
+                            StringUtils.substringAfter(
+                                StringUtils.substringAfter(msg, "resource ID: "), "/"
+                            );
+                        LOGGER.info("Updating existing resource {}", id);
+                        base.setId(id);
+                        JpaUtils.update(dao, base);
+                    }
+                }
+            }  catch (Exception e) {
+                LOGGER.error("Unexpected Exception while preloading resource {}", loading.getFilename(), e);
+            }
+        }
+    } catch (ConfigurationException | DataFormatException | IOException e) {
+        LOGGER.error("Unexpected Exception while preloading resource {}", loading.getFilename(), e);
     }
   }
 

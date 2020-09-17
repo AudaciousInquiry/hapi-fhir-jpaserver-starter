@@ -10,6 +10,7 @@ import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
 import ca.uhn.fhir.rest.api.server.IBundleProvider;
 import ca.uhn.fhir.rest.param.StringParam;
 import ca.uhn.fhir.rest.param.TokenParam;
+import ca.uhn.fhir.rest.param.UriParam;
 import ca.uhn.fhir.rest.server.exceptions.InvalidRequestException;
 import ca.uhn.fhir.rest.server.exceptions.ResourceNotFoundException;
 
@@ -98,6 +99,22 @@ public class JpaUtils {
     public static <T extends org.hl7.fhir.r4.model.Resource> T lookupByIdentifier(DaoRegistry dao, String identifier, Class<T> type) {
         SearchParameterMap theParams = new SearchParameterMap();
         theParams.add("identifier", new TokenParam(identifier));
+        return lookup(dao, type, theParams);
+    }
+
+    /**
+     * Given the url for a definitional resource, go find it.  If there's more
+     * than one with the same name, report an exception.  If it's not found, also
+     * report an exception.
+     *
+     * @param <T>   The type of resource to find.
+     * @param url The identifier of the resource.
+     * @param type  The class for the type of resource
+     * @return  The located resource
+     */
+    public static <T extends org.hl7.fhir.r4.model.Resource> T lookupByUrl(DaoRegistry dao, String url, Class<T> type) {
+        SearchParameterMap theParams = new SearchParameterMap();
+        theParams.add("url", new UriParam(url));
         return lookup(dao, type, theParams);
     }
 

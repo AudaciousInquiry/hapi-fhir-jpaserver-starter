@@ -20,6 +20,7 @@ import org.hl7.fhir.r4.model.Patient;
 import org.hl7.fhir.r4.model.Subscription;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.net.URI;
@@ -60,6 +61,7 @@ public class ExampleServerR4IT {
     }
 
     @Test
+    @Ignore
     public void testWebsocketSubscription() throws Exception {
         /*
          * Create subscription

@@ -11,12 +11,14 @@ import org.eclipse.jetty.webapp.WebAppContext;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.nio.file.Paths;
 
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 public class ExampleServerDstu2IT {
 
 	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(ExampleServerDstu2IT.class);
