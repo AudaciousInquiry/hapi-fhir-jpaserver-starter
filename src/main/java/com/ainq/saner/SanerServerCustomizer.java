@@ -1,8 +1,10 @@
 package com.ainq.saner;
 
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
+import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
 import ca.uhn.fhir.parser.DataFormatException;
 import ca.uhn.fhir.parser.IParser;
+import ca.uhn.fhir.rest.param.UriParam;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.UnprocessableEntityException;
 import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
@@ -192,14 +194,13 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
             // These resources are defined by their url, not their id
             String url = FhirUtils.getPrimitiveValue(base, "url");
             List<IBaseResource> l = JpaUtils.lookupAllByUrl(dao, url, base.getClass());
-            for (IBaseResource r: l) {
-                try {
-                    LOGGER.info("Deleting pre-existing resource {} with same url {}", r.getIdElement().getIdPart(), url);
-                    JpaUtils.delete(dao, r);
-                } catch (Exception e) {
-                    LOGGER.warn("Error deleting existing resource with url = {}", url);
-                }
-            }
+            deleteResources(dao, l);
+
+            // Delete all the old us/saner stuff, since it was replaced by uv/saner stuff
+            SearchParameterMap theParams = new SearchParameterMap();
+            theParams.add("url:below", new UriParam("http://hl7.org/fhir/us/saner"));
+            l = JpaUtils.lookupAll(dao, base.getClass(), theParams);
+            deleteResources(dao, l);
         }
         try {
             JpaUtils.create(dao, base);
@@ -210,6 +211,17 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
                 LOGGER.info("Updating existing resource {}", id);
                 base.setId(id);
                 JpaUtils.update(dao, base);
+            }
+        }
+    }
+
+    private void deleteResources(DaoRegistry dao, List<IBaseResource> l) {
+        for (IBaseResource r: l) {
+            try {
+                LOGGER.info("Deleting pre-existing resource {}", r.getIdElement().getIdPart());
+                JpaUtils.delete(dao, r);
+            } catch (Exception e) {
+                LOGGER.warn("Error deleting existing resource", r.getIdElement().getIdPart());
             }
         }
     }
