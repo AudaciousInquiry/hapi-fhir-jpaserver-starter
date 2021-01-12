@@ -3,7 +3,7 @@
   "id": "MedicationRequest15b",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: MedicationRequest15b</p><p><b>identifier</b>: id: Med987654</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 2367757}\">remdesivir 5 MG/ML</span></p><p><b>subject</b>: <a href=\"Patient-Patient5b.html\">Generated Summary: id: Patient5b; id: Pat987654; gender: female; birthDate: 1967-08-23</a></p><p><b>dosageInstruction</b>: </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Med987654</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 2367757}\">remdesivir 5 MG/ML</span></p><p><b>subject</b>: <a href=\"Patient-Patient5b.html\">Generated Summary: id: Pat987654; gender: female; birthDate: 1967-08-23</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></div>"
   },
   "identifier": [
     {

@@ -3,7 +3,7 @@
   "id": "Observation46c",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation46c</p><p><b>identifier</b>: id: 543210-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient6c.html\">Generated Summary: id: Patient6c; id: Pat543210; gender: male; birthDate: 1949-12-07</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter6c.html\">Generated Summary: id: Encounter6c; id: Enc543210; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; 2020-09-10; <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></a></p><p><b>effective</b>: 2020-09-08</p><p><b>value</b>: 5 cm[H20]</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 543210-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient6c.html\">Generated Summary: id: Pat543210; gender: male; birthDate: 1949-12-07</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter6c.html\">Generated Summary: id: Enc543210; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; 2020-09-10; <span title=\"Codes: {http://snomed.info/sct 67782005}\">Acute respiratory distress syndrome (disorder)</span></a></p><p><b>effective</b>: 2020-09-08</p><p><b>value</b>: 5 cm[H2O]</p></div>"
   },
   "identifier": [
     {
@@ -31,6 +31,6 @@
   "valueQuantity": {
     "value": 5,
     "system": "http://unitsofmeasure.org",
-    "code": "cm[H20]"
+    "code": "cm[H2O]"
   }
 }

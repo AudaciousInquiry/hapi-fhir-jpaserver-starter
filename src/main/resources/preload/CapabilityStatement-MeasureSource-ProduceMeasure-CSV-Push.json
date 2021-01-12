@@ -3,37 +3,44 @@
   "id": "MeasureSource-ProduceMeasure-CSV-Push",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/saner/StructureDefinition/CapabilityStatementWithSlices"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/CapabilityStatementWithSlices"
     ]
   },
   "text": {
     "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MeasureSource_ProduceMeasure_CSV_Push</h2><div><p>Defines the additional requirements for the Measure Source implementing the Produce Measure transaction with the CSV Option and the Push Option.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>Measure</td><td></td><td></td><td></td><td></td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/CapabilityStatement/MeasureSource-ProduceMeasure-CSV-Push",
+  "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-ProduceMeasure-CSV-Push",
   "version": "0.1.0",
   "name": "MeasureSource_ProduceMeasure_CSV_Push",
   "title": "Measure Source implementing the Produce Measure transaction with the CSV Option and the Push Option.",
   "status": "draft",
   "experimental": true,
-  "date": "2020-09-10T01:58:34.787358-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:39:55.251153-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -52,8 +59,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -73,7 +80,7 @@
           "operation": [
             {
               "name": "report-csv",
-              "definition": "http://hl7.org/fhir/us/saner/OperationDefinition/Measure-report-csv",
+              "definition": "http://hl7.org/fhir/uv/saner/OperationDefinition/Measure-report-csv",
               "documentation": "Create or update a MeasureReport from CSV Format"
             }
           ]

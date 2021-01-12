@@ -3,12 +3,12 @@
   "id": "ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasureReport"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureReport"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity</p><p><b>meta</b>: </p><p><b>identifier</b>: id: urn:uuid:f87d8a98-876e-11ea-1639-09173f13e4c5</p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/CDCPatientImpactAndHospitalCapacity\">http://hl7.org/fhir/us/saner/Measure/CDCPatientImpactAndHospitalCapacity</a></p><p><b>subject</b>: <a href=\"Location-states-NJ.html\">State of New Jersey. Generated Summary: id: states-NJ; id: 34</a></p><p><b>date</b>: 2020-04-24</p><p><b>reporter</b>: <a href=\"Organization-NJ-DPH.html\">New Jersey Department of Public Health. Generated Summary: id: NJ-DPH; name: New Jersey Department of Public Health</a></p><p><b>period</b>: 2020-04-24 --&gt; 2020-04-24</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Beds}\">Beds</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numTotBeds}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">All Hospital Beds</span></p><p><b>count</b>: 20000</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numbeds}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Inpatient Beds</span></p><p><b>count</b>: 15000</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numBedsOcc}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Inpatient Bed Occupancy</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numICUBeds}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ICU Beds</span></p><p><b>count</b>: 2500</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numICUBedsOcc}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ICU Bed Occupancy</span></p><p><b>count</b>: ??</p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Ventilators}\">Ventilators</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numVent}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Mechanical Ventilators</span></p><p><b>count</b>: 2250</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numVentUse}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Mechanical Ventilators in Use</span></p><p><b>count</b>: 1800</p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Encounters}\">Encounters</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19HospPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospitalized COVID-19 Patients</span></p><p><b>count</b>: 6847</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19MechVentPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospitalized and Ventilated COVID-19 Patients</span></p><p><b>count</b>: 1487</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19HOPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Onset COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19OverflowPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ED/Overflow COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19OFMechVentPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ED/Overflow and Ventilated COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19Died}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">COVID-19 Patient Deaths</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19Pats}\">Patients with suspected or confirmed COVID-19 in any location.</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues numC19VentPats}\">Ventilated COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f87d8a98-876e-11ea-1639-09173f13e4c5</p><p><b>status</b>: complete</p><p><b>type</b>: summary</p><p><b>measure</b>: <a href=\"http://hl7.org/fhir/uv/saner/Measure/CDCPatientImpactAndHospitalCapacity\">http://hl7.org/fhir/uv/saner/Measure/CDCPatientImpactAndHospitalCapacity</a></p><p><b>subject</b>: <a href=\"Location-states-NJ.html\">State of New Jersey. Generated Summary: id: 34</a></p><p><b>date</b>: 2020-04-24</p><p><b>reporter</b>: <a href=\"Organization-NJ-DPH.html\">New Jersey Department of Public Health. Generated Summary: name: New Jersey Department of Public Health</a></p><p><b>period</b>: 2020-04-24 --&gt; 2020-04-24</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Beds}\">Beds</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numTotBeds}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">All Hospital Beds</span></p><p><b>count</b>: 20000</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numbeds}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Inpatient Beds</span></p><p><b>count</b>: 15000</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numBedsOcc}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Inpatient Bed Occupancy</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numICUBeds}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ICU Beds</span></p><p><b>count</b>: 2500</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numICUBedsOcc}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ICU Bed Occupancy</span></p><p><b>count</b>: ??</p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Ventilators}\">Ventilators</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numVent}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Mechanical Ventilators</span></p><p><b>count</b>: 2250</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numVentUse}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Mechanical Ventilators in Use</span></p><p><b>count</b>: 1800</p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Encounters}\">Encounters</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19HospPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospitalized COVID-19 Patients</span></p><p><b>count</b>: 6847</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19MechVentPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospitalized and Ventilated COVID-19 Patients</span></p><p><b>count</b>: 1487</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19HOPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">Hospital Onset COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19OverflowPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ED/Overflow COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19OFMechVentPats}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">ED/Overflow and Ventilated COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19Died}, {http://terminology.hl7.org/CodeSystem/measure-population measure-population}\">COVID-19 Patient Deaths</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19Pats}\">Patients with suspected or confirmed COVID-19 in any location.</span></p><p><b>count</b>: ??</p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues numC19VentPats}\">Ventilated COVID-19 Patients</span></p><p><b>count</b>: ??</p></blockquote></blockquote></div>"
   },
   "identifier": [
     {
@@ -18,7 +18,7 @@
   ],
   "status": "complete",
   "type": "summary",
-  "measure": "http://hl7.org/fhir/us/saner/Measure/CDCPatientImpactAndHospitalCapacity",
+  "measure": "http://hl7.org/fhir/uv/saner/Measure/CDCPatientImpactAndHospitalCapacity",
   "subject": {
     "reference": "Location/states-NJ",
     "identifier": {
@@ -41,7 +41,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Beds"
           }
         ]
@@ -51,7 +51,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numTotBeds"
               },
               {
@@ -66,7 +66,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numbeds"
               },
               {
@@ -81,7 +81,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numBedsOcc"
               },
               {
@@ -103,7 +103,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numICUBeds"
               },
               {
@@ -118,7 +118,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numICUBedsOcc"
               },
               {
@@ -142,7 +142,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Ventilators"
           }
         ]
@@ -152,7 +152,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numVent"
               },
               {
@@ -167,7 +167,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numVentUse"
               },
               {
@@ -184,7 +184,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Encounters"
           }
         ]
@@ -194,7 +194,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19HospPats"
               },
               {
@@ -209,7 +209,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19MechVentPats"
               },
               {
@@ -224,7 +224,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19HOPats"
               },
               {
@@ -246,7 +246,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19OverflowPats"
               },
               {
@@ -268,7 +268,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19OFMechVentPats"
               },
               {
@@ -290,7 +290,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19Died"
               },
               {
@@ -312,7 +312,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19Pats"
               }
             ],
@@ -331,7 +331,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "numC19VentPats"
               }
             ],

@@ -1,0 +1,156 @@
+{
+  "resourceType": "ValueSet",
+  "id": "AllCOVID19RiskFactors",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=109841003\">109841003</a></td><td>Liver cell carcinoma (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=109989006\">109989006</a></td><td>Multiple myeloma (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118600007\">118600007</a></td><td>Malignant lymphoma (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=13645005\">13645005</a></td><td>Chronic obstructive lung disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363507003\">363507003</a></td><td>Malignant neoplasm of pharynx (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=365981007\">365981007</a></td><td>Finding of tobacco smoking behavior (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=365982000\">365982000</a></td><td>Finding of tobacco smoking consumption (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=38341003\">38341003</a></td><td>Hypertensive disorder, systemic arterial (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=414916001\">414916001</a></td><td>Obesity (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=417357006\">417357006</a></td><td>Sickling disorder due to hemoglobin S (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42343007\">42343007</a></td><td>Congestive heart failure (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428281000\">428281000</a></td><td>Malignant neoplasm of bone (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44054006\">44054006</a></td><td>Diabetes mellitus type 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46177005\">46177005</a></td><td>End-stage renal disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49601007\">49601007</a></td><td>Disorder of cardiovascular system (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53741008\">53741008</a></td><td>Coronary arteriosclerosis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=709044004\">709044004</a></td><td>Chronic kidney disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77176002\">77176002</a></td><td>Smoker (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006\">77386006</a></td><td>Pregnant (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=85898001\">85898001</a></td><td>Cardiomyopathy (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=93143009\">93143009</a></td><td>Leukemia, disease (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/AllCOVID19RiskFactors",
+  "version": "0.1.0",
+  "name": "AllCOVID19RiskFactors",
+  "title": "All COVID-19 Risk Factors",
+  "status": "active",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes identifying COVID-19 Risk Factors/Comorbidities of Concern",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "109841003",
+            "display": "Liver cell carcinoma (disorder)"
+          },
+          {
+            "code": "109989006",
+            "display": "Multiple myeloma (disorder)"
+          },
+          {
+            "code": "118600007",
+            "display": "Malignant lymphoma (disorder)"
+          },
+          {
+            "code": "13645005",
+            "display": "Chronic obstructive lung disease (disorder)"
+          },
+          {
+            "code": "363507003",
+            "display": "Malignant neoplasm of pharynx (disorder)"
+          },
+          {
+            "code": "365981007",
+            "display": "Finding of tobacco smoking behavior (finding)"
+          },
+          {
+            "code": "365982000",
+            "display": "Finding of tobacco smoking consumption (finding)"
+          },
+          {
+            "code": "38341003",
+            "display": "Hypertensive disorder, systemic arterial (disorder)"
+          },
+          {
+            "code": "414916001",
+            "display": "Obesity (disorder)"
+          },
+          {
+            "code": "417357006",
+            "display": "Sickling disorder due to hemoglobin S (disorder)"
+          },
+          {
+            "code": "42343007",
+            "display": "Congestive heart failure (disorder)"
+          },
+          {
+            "code": "428281000",
+            "display": "Malignant neoplasm of bone (disorder)"
+          },
+          {
+            "code": "44054006",
+            "display": "Diabetes mellitus type 2 (disorder)"
+          },
+          {
+            "code": "46177005",
+            "display": "End-stage renal disease (disorder)"
+          },
+          {
+            "code": "49601007",
+            "display": "Disorder of cardiovascular system (disorder)"
+          },
+          {
+            "code": "53741008",
+            "display": "Coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "709044004",
+            "display": "Chronic kidney disease (disorder)"
+          },
+          {
+            "code": "77176002",
+            "display": "Smoker (finding)"
+          },
+          {
+            "code": "77386006",
+            "display": "Pregnant (finding)"
+          },
+          {
+            "code": "85898001",
+            "display": "Cardiomyopathy (disorder)"
+          },
+          {
+            "code": "93143009",
+            "display": "Leukemia, disease (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

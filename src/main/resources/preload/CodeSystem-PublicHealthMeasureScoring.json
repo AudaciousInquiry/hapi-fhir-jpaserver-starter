@@ -3,30 +3,38 @@
   "id": "PublicHealthMeasureScoring",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/saner/CodeSystem/PublicHealthMeasureScoring defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">capacity<a name=\"PublicHealthMeasureScoring-capacity\"> </a></td><td>Capacity</td><td>Measures point in time capacity or utilization</td></tr><tr><td style=\"white-space:nowrap\">event-growth<a name=\"PublicHealthMeasureScoring-event-growth\"> </a></td><td>Event Growth</td><td>Measures cumulative growth by counting current and cumulative events over time</td></tr><tr><td style=\"white-space:nowrap\">queue-length<a name=\"PublicHealthMeasureScoring-queue-length\"> </a></td><td>Queue Length</td><td>Measures the point in time number of activities awaiting completion</td></tr><tr><td style=\"white-space:nowrap\">service-time<a name=\"PublicHealthMeasureScoring-service-time\"> </a></td><td>Service Time</td><td>Measures the aggregate total time to complete activities / total number of activities</td></tr><tr><td style=\"white-space:nowrap\">availability<a name=\"PublicHealthMeasureScoring-availability\"> </a></td><td>Availability</td><td>Measures the point in time availability of resources</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/saner/CodeSystem/PublicHealthMeasureScoring defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">capacity<a name=\"PublicHealthMeasureScoring-capacity\"> </a></td><td>Capacity</td><td>Measures point in time capacity or utilization</td></tr><tr><td style=\"white-space:nowrap\">event-growth<a name=\"PublicHealthMeasureScoring-event-growth\"> </a></td><td>Event Growth</td><td>Measures cumulative growth by counting current and cumulative events over time</td></tr><tr><td style=\"white-space:nowrap\">queue-length<a name=\"PublicHealthMeasureScoring-queue-length\"> </a></td><td>Queue Length</td><td>Measures the point in time number of activities awaiting completion</td></tr><tr><td style=\"white-space:nowrap\">service-time<a name=\"PublicHealthMeasureScoring-service-time\"> </a></td><td>Service Time</td><td>Measures the aggregate total time to complete activities / total number of activities</td></tr><tr><td style=\"white-space:nowrap\">availability<a name=\"PublicHealthMeasureScoring-availability\"> </a></td><td>Availability</td><td>Measures the point in time availability of resources</td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/CodeSystem/PublicHealthMeasureScoring",
+  "url": "http://hl7.org/fhir/uv/saner/CodeSystem/PublicHealthMeasureScoring",
   "version": "0.1.0",
   "name": "PublicHealthMeasureScoring",
   "title": "Public Health Measure Scoring",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -45,8 +53,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

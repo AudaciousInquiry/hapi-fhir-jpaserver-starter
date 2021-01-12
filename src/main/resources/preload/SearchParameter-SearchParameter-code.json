@@ -3,31 +3,38 @@
   "id": "SearchParameter-code",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: SearchParameter-code</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-code\">http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-code</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: code</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: This SearchParameter enables resources used in The SANER Project to be discovered by codes or valueSets used in the resource including those in any extensions.</p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>code</b>: code</p><p><b>base</b>: Measure, MeasureReport, Questionnaire, QuestionnaireResponse</p><p><b>type</b>: token</p><p><b>expression</b>: descendants().valueCodeableConcept | descendants().valueCoding | descendants().valueCode | code | descendants().ofType(Coding).not().code</p><p><b>xpath</b>: descendant::f:valueCodeableConcept | descendant::f:valueCoding | descendant::f:valueCode | f:code | f:descendant::f:code[ends-with(local-name(..),'oding')]</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, text, not, in, not-in, below, above, ofType</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://hl7.org/fhir/uv/saner/SearchParameter/SearchParameter-code</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: code</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Jan 11, 2021, 9:45:51 AM</p><p><b>publisher</b>: HL7 International Public Health Workgroup</p><p><b>contact</b>: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, <a href=\"mailto:pher@lists.hl7.org\">pher@lists.hl7.org</a>, HL7 Public Health Workgroup: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, Keith W. Boone: <a href=\"mailto:mailto:kboone@ainq.com\">mailto:kboone@ainq.com</a></p><p><b>description</b>: This SearchParameter enables resources to be discovered by codes or valueSets used in the resource including those in any extensions.</p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>code</b>: code</p><p><b>base</b>: Measure, MeasureReport, Questionnaire, QuestionnaireResponse</p><p><b>type</b>: token</p><p><b>expression</b>: descendants().valueCodeableConcept | descendants().valueCoding | descendants().valueCode | code | descendants().ofType(Coding).not().code</p><p><b>xpath</b>: descendant::f:valueCodeableConcept | descendant::f:valueCoding | descendant::f:valueCode | f:code | f:descendant::f:code[ends-with(local-name(..),'oding')]</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, text, not, in, not-in, below, above, ofType</p></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/SearchParameter/SearchParameter-code",
+  "url": "http://hl7.org/fhir/uv/saner/SearchParameter/SearchParameter-code",
   "version": "0.1.0",
   "name": "code",
   "status": "draft",
   "experimental": true,
-  "date": "2020-09-10T02:00:40-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -41,13 +48,13 @@
       ]
     }
   ],
-  "description": "This SearchParameter enables resources used in The SANER Project to be discovered by codes or valueSets used in the resource including those in any extensions.",
+  "description": "This SearchParameter enables resources to be discovered by codes or valueSets used in the resource including those in any extensions.",
   "jurisdiction": [
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

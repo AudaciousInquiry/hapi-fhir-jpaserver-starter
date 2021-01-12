@@ -3,7 +3,7 @@
   "id": "Observation42b",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation42b</p><p><b>identifier</b>: id: 555555-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient2b.html\">Generated Summary: id: Patient2b; id: Pat555555; gender: female; birthDate: 1949-04-04</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter2b.html\">Generated Summary: id: Encounter2b; id: Enc555555; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></a></p><p><b>effective</b>: 2020-09-07</p><p><b>value</b>: 5 cm[H20]</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 555555-4</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 20077-4}\">Positive end expiratory pressure setting Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient2b.html\">Generated Summary: id: Pat555555; gender: female; birthDate: 1949-04-04</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter2b.html\">Generated Summary: id: Enc555555; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></a></p><p><b>effective</b>: 2020-09-07</p><p><b>value</b>: 5 cm[H2O]</p></div>"
   },
   "identifier": [
     {
@@ -31,6 +31,6 @@
   "valueQuantity": {
     "value": 5,
     "system": "http://unitsofmeasure.org",
-    "code": "cm[H20]"
+    "code": "cm[H2O]"
   }
 }

@@ -3,30 +3,38 @@
   "id": "SuspectedOrConfirmedCOVID19Diagnoses",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B34.2</td><td>Coronavirus infection, unspecified</td></tr><tr><td>B97.2</td><td>Coronavirus as the cause of diseases classified elsewhere</td></tr><tr><td>B97.29</td><td>Other coronavirus as the cause of diseases classified elsewhere</td></tr><tr><td>U07.1</td><td>COVID-19</td></tr><tr><td>A41.89</td><td>Other specified sepsis</td></tr><tr><td>B34.2</td><td>Coronavirus infection, unspecified</td></tr><tr><td>J12.8</td><td>Other viral pneumonia</td></tr><tr><td>J12.89</td><td>Other viral pneumonia</td></tr><tr><td>J20.8</td><td>Acute bronchitis due to other specified organisms</td></tr><tr><td>J22</td><td>Unspecified acute lower respiratory infection</td></tr><tr><td>J40</td><td>Bronchitis, not specified as acute or chronic</td></tr><tr><td>J80</td><td>Acute respiratory distress syndrome</td></tr><tr><td>J98.8</td><td>Other specified respiratory disorders</td></tr><tr><td>R05</td><td>Cough</td></tr><tr><td>R06.0</td><td>Dyspnea</td></tr><tr><td>R06.02</td><td>Shortness of breath</td></tr><tr><td>R50.9</td><td>Fever, unspecified</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=186747009\">186747009</a></td><td>Coronavirus infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713084008\">713084008</a></td><td>Pneumonia caused by Human coronavirus (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=840539006\">840539006</a></td><td>Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=840544004\">840544004</a></td><td>Suspected disease caused by severe acute respiratory coronavirus 2 (situation)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=840546002\">840546002</a></td><td>Exposure to severe acute respiratory syndrome coronavirus 2 (event)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233604007\">233604007</a></td><td>Pneumonia (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67782005\">67782005</a></td><td>Acute respiratory distress syndrome (disorder)</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses",
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses",
   "version": "0.1.0",
   "name": "SuspectedOrConfirmedCOVID19Diagnoses",
   "title": "Suspected Or Diagnosed COVID-19",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -45,10 +53,121 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
-  ]
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "concept": [
+          {
+            "code": "B34.2",
+            "display": "Coronavirus infection, unspecified"
+          },
+          {
+            "code": "B97.2",
+            "display": "Coronavirus as the cause of diseases classified elsewhere"
+          },
+          {
+            "code": "B97.29",
+            "display": "Other coronavirus as the cause of diseases classified elsewhere"
+          },
+          {
+            "code": "U07.1",
+            "display": "COVID-19"
+          },
+          {
+            "code": "A41.89",
+            "display": "Other specified sepsis"
+          },
+          {
+            "code": "B34.2",
+            "display": "Coronavirus infection, unspecified"
+          },
+          {
+            "code": "J12.8",
+            "display": "Other viral pneumonia"
+          },
+          {
+            "code": "J12.89",
+            "display": "Other viral pneumonia"
+          },
+          {
+            "code": "J20.8",
+            "display": "Acute bronchitis due to other specified organisms"
+          },
+          {
+            "code": "J22",
+            "display": "Unspecified acute lower respiratory infection"
+          },
+          {
+            "code": "J40",
+            "display": "Bronchitis, not specified as acute or chronic"
+          },
+          {
+            "code": "J80",
+            "display": "Acute respiratory distress syndrome"
+          },
+          {
+            "code": "J98.8",
+            "display": "Other specified respiratory disorders"
+          },
+          {
+            "code": "R05",
+            "display": "Cough"
+          },
+          {
+            "code": "R06.0",
+            "display": "Dyspnea"
+          },
+          {
+            "code": "R06.02",
+            "display": "Shortness of breath"
+          },
+          {
+            "code": "R50.9",
+            "display": "Fever, unspecified"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "186747009",
+            "display": "Coronavirus infection (disorder)"
+          },
+          {
+            "code": "713084008",
+            "display": "Pneumonia caused by Human coronavirus (disorder)"
+          },
+          {
+            "code": "840539006",
+            "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "840544004",
+            "display": "Suspected disease caused by severe acute respiratory coronavirus 2 (situation)"
+          },
+          {
+            "code": "840546002",
+            "display": "Exposure to severe acute respiratory syndrome coronavirus 2 (event)"
+          },
+          {
+            "code": "233604007",
+            "display": "Pneumonia (disorder)"
+          },
+          {
+            "code": "67782005",
+            "display": "Acute respiratory distress syndrome (disorder)"
+          }
+        ]
+      }
+    ]
+  }
 }

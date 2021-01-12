@@ -1,0 +1,132 @@
+{
+  "resourceType": "ValueSet",
+  "id": "COVID19Complications",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119731000146105\">119731000146105</a></td><td>Cardiomyopathy due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1240531000000103\">1240531000000103</a></td><td>Myocarditis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1240541000000107\">1240541000000107</a></td><td>Infection of upper respiratory tract caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1240561000000108\">1240561000000108</a></td><td>Encephalopathy due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=138389411000119105\">138389411000119105</a></td><td>Acute bronchitis caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=674814021000119106\">674814021000119106</a></td><td>Acute respiratory distress syndrome due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=840539006\">840539006</a></td><td>Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=866151004\">866151004</a></td><td>Lymphocytopenia due to Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=866152006\">866152006</a></td><td>Thrombocytopenia due to Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870588003\">870588003</a></td><td>Sepsis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870589006\">870589006</a></td><td>Acute kidney injury due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870590002\">870590002</a></td><td>Acute hypoxemic respiratory failure due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=870591003\">870591003</a></td><td>Rhabdomyolysis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=880529761000119102\">880529761000119102</a></td><td>Lower respiratory infection caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=882784691000119100\">882784691000119100</a></td><td>Pneumonia caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/COVID19Complications",
+  "version": "0.1.0",
+  "name": "COVID19Complications",
+  "title": "COVID-19 Complications",
+  "status": "active",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes identifying Complications associated with COVID-19",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "119731000146105",
+            "display": "Cardiomyopathy due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "1240531000000103",
+            "display": "Myocarditis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "1240541000000107",
+            "display": "Infection of upper respiratory tract caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "1240561000000108",
+            "display": "Encephalopathy due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "138389411000119105",
+            "display": "Acute bronchitis caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "674814021000119106",
+            "display": "Acute respiratory distress syndrome due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "840539006",
+            "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "866151004",
+            "display": "Lymphocytopenia due to Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "866152006",
+            "display": "Thrombocytopenia due to Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "870588003",
+            "display": "Sepsis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "870589006",
+            "display": "Acute kidney injury due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "870590002",
+            "display": "Acute hypoxemic respiratory failure due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "870591003",
+            "display": "Rhabdomyolysis due to disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "880529761000119102",
+            "display": "Lower respiratory infection caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "882784691000119100",
+            "display": "Pneumonia caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

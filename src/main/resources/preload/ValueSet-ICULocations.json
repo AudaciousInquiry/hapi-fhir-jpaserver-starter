@@ -3,30 +3,38 @@
   "id": "ICULocations",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1026-4</td><td>Burn Critical Care</td><td/></tr><tr><td>1028-0</td><td>Medical Cardiac Critical Care</td><td/></tr><tr><td>1027-2</td><td>Medical Critical Care</td><td/></tr><tr><td>1029-8</td><td>Medical-Surgical Critical Care</td><td/></tr><tr><td>1035-5</td><td>Neurologic Critical Care</td><td/></tr><tr><td>1223-7</td><td>ONC Medical Critical Care</td><td/></tr><tr><td>1224-5</td><td>ONC Surgical Critical Care</td><td/></tr><tr><td>1225-2</td><td>ONC Medical-Surgical Critical Care</td><td/></tr><tr><td>1034-8</td><td>Prenatal Critical Care</td><td/></tr><tr><td>1033-0</td><td>Respiratory Critical Care</td><td/></tr><tr><td>1032-2</td><td>Surgical Cardiothoracic Critical Care</td><td/></tr><tr><td>1233-6</td><td>ONC Pediatric Critical Care</td><td/></tr><tr><td>1043-9</td><td>Cardiothoracic Critical Care</td><td/></tr><tr><td>1044-7</td><td>Pediatric Medical Critical Care</td><td/></tr><tr><td>1045-4</td><td>Pediatric Medical-Surgical Critical Care</td><td/></tr><tr><td>1047-0</td><td>Pediatric Respiratory Critical Care</td><td/></tr><tr><td>1048-8</td><td>Pediatric Surgical Critical Care</td><td/></tr><tr><td>1039-7</td><td>Neonatal Critical Care (Level II/III)</td><td/></tr><tr><td>1221-1</td><td>Long Term Acute Care Ward</td><td/></tr><tr><td>1224-5</td><td>Oncology Surgical Critical Care</td><td/></tr><tr><td>1225-2</td><td>Oncology Medical-Surgical Critical Care</td><td/></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1026-4</td><td>Burn Critical Care</td></tr><tr><td>1028-0</td><td>Medical Cardiac Critical Care</td></tr><tr><td>1027-2</td><td>Medical Critical Care</td></tr><tr><td>1029-8</td><td>Medical-Surgical Critical Care</td></tr><tr><td>1035-5</td><td>Neurologic Critical Care</td></tr><tr><td>1223-7</td><td>ONC Medical Critical Care</td></tr><tr><td>1224-5</td><td>ONC Surgical Critical Care</td></tr><tr><td>1225-2</td><td>ONC Medical-Surgical Critical Care</td></tr><tr><td>1034-8</td><td>Prenatal Critical Care</td></tr><tr><td>1033-0</td><td>Respiratory Critical Care</td></tr><tr><td>1032-2</td><td>Surgical Cardiothoracic Critical Care</td></tr><tr><td>1233-6</td><td>ONC Pediatric Critical Care</td></tr><tr><td>1043-9</td><td>Cardiothoracic Critical Care</td></tr><tr><td>1044-7</td><td>Pediatric Medical Critical Care</td></tr><tr><td>1045-4</td><td>Pediatric Medical-Surgical Critical Care</td></tr><tr><td>1047-0</td><td>Pediatric Respiratory Critical Care</td></tr><tr><td>1048-8</td><td>Pediatric Surgical Critical Care</td></tr><tr><td>1039-7</td><td>Neonatal Critical Care (Level II/III)</td></tr><tr><td>1221-1</td><td>Long Term Acute Care Ward</td></tr><tr><td>1224-5</td><td>Oncology Surgical Critical Care</td></tr><tr><td>1225-2</td><td>Oncology Medical-Surgical Critical Care</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/ValueSet/ICULocations",
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/ICULocations",
   "version": "0.1.0",
   "name": "ICULocations",
   "title": "ICU Locations",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -45,8 +53,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

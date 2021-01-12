@@ -1,0 +1,264 @@
+{
+  "resourceType": "ValueSet",
+  "id": "VTEReports",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/36850-6.html\">36850-6</a></td><td>MRA Lower extremity veins - right WO and W contrast IV</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/36416-6.html\">36416-6</a></td><td>MRA Lower extremity veins WO and W contrast IV</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69162-6.html\">69162-6</a></td><td>MRA Pulmonary artery - bilateral W contrast IA</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/36803-5.html\">36803-5</a></td><td>MRA Pulmonary vessels</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/81596-9.html\">81596-9</a></td><td>NM Lung Quantitative Views Ventilation and Perfusion</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39942-8.html\">39942-8</a></td><td>NM Lung Ventilation and Perfusion</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39946-9.html\">39946-9</a></td><td>NM Lung Ventilation and Perfusion and Differential</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30697-7.html\">30697-7</a></td><td>NM Pulmonary system Ventilation and Perfusion</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24888-0.html\">24888-0</a></td><td>NM Pulmonary system Ventilation and Perfusion W Xe-133 IH and W Tc-99m MAA IV</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39838-8.html\">39838-8</a></td><td>SPECT Lung ventilation and perfusion</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69399-4.html\">69399-4</a></td><td>US Femoral vein and Popliteal vein</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38134-3.html\">38134-3</a></td><td>US Femoral vessels</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38128-5.html\">38128-5</a></td><td>US Femoral vessels - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38037-8.html\">38037-8</a></td><td>US Femur - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38048-5.html\">38048-5</a></td><td>US Femur - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/43566-9.html\">43566-9</a></td><td>US Hip and Thigh</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30709-0.html\">30709-0</a></td><td>US Lower extremity</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38013-9.html\">38013-9</a></td><td>US Lower extremity - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38040-2.html\">38040-2</a></td><td>US Lower extremity - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38039-4.html\">38039-4</a></td><td>US Lower extremity - left limited</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38051-9.html\">38051-9</a></td><td>US Lower extremity - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/38050-1.html\">38050-1</a></td><td>US Lower extremity - right limited</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/46363-8.html\">46363-8</a></td><td>US Lower extremity vein</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/46364-6.html\">46364-6</a></td><td>US Lower extremity vein - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48692-8.html\">48692-8</a></td><td>US Lower extremity vein - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/48691-0.html\">48691-0</a></td><td>US Lower extremity vein - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69385-3.html\">69385-3</a></td><td>US Lower extremity veins - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/69392-9.html\">69392-9</a></td><td>US Lower extremity veins - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/80860-0.html\">80860-0</a></td><td>US Lower extremity veins - unilateral limited</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/24881-5.html\">24881-5</a></td><td>US Popliteal space</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26262-6.html\">26262-6</a></td><td>US Popliteal space - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26263-4.html\">26263-4</a></td><td>US Popliteal space - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/26264-2.html\">26264-2</a></td><td>US Popliteal space - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39498-1.html\">39498-1</a></td><td>US.doppler Femoral vessels - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39504-6.html\">39504-6</a></td><td>US.doppler Femoral vessels - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93604-7.html\">93604-7</a></td><td>US.doppler Lower extremity arteries+veins - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30881-7.html\">30881-7</a></td><td>US.doppler Lower extremity vein</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39420-5.html\">39420-5</a></td><td>US.doppler Lower extremity vein - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39432-0.html\">39432-0</a></td><td>US.doppler Lower extremity vein - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39443-7.html\">39443-7</a></td><td>US.doppler Lower extremity vein - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42461-4.html\">42461-4</a></td><td>US.doppler Lower extremity vessel - left for graft</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/42462-2.html\">42462-2</a></td><td>US.doppler Lower extremity vessel - right for graft</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/44174-1.html\">44174-1</a></td><td>US.doppler Lower extremity vessels</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39422-1.html\">39422-1</a></td><td>US.doppler Lower extremity vessels - bilateral</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39431-2.html\">39431-2</a></td><td>US.doppler Lower extremity vessels - left</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39430-4.html\">39430-4</a></td><td>US.doppler Lower extremity vessels - left limited</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39442-9.html\">39442-9</a></td><td>US.doppler Lower extremity vessels - right</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/39441-1.html\">39441-1</a></td><td>US.doppler Lower extremity vessels - right limited</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/VTEReports",
+  "version": "0.1.0",
+  "name": "VTEReports",
+  "title": "Codes for reports about VTE Diagnosics",
+  "status": "active",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes identifying Diagnostics tests or results for VTE",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at LOINC/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "36850-6",
+            "display": "MRA Lower extremity veins - right WO and W contrast IV"
+          },
+          {
+            "code": "36416-6",
+            "display": "MRA Lower extremity veins WO and W contrast IV"
+          },
+          {
+            "code": "69162-6",
+            "display": "MRA Pulmonary artery - bilateral W contrast IA"
+          },
+          {
+            "code": "36803-5",
+            "display": "MRA Pulmonary vessels"
+          },
+          {
+            "code": "81596-9",
+            "display": "NM Lung Quantitative Views Ventilation and Perfusion"
+          },
+          {
+            "code": "39942-8",
+            "display": "NM Lung Ventilation and Perfusion"
+          },
+          {
+            "code": "39946-9",
+            "display": "NM Lung Ventilation and Perfusion and Differential"
+          },
+          {
+            "code": "30697-7",
+            "display": "NM Pulmonary system Ventilation and Perfusion"
+          },
+          {
+            "code": "24888-0",
+            "display": "NM Pulmonary system Ventilation and Perfusion W Xe-133 IH and W Tc-99m MAA IV"
+          },
+          {
+            "code": "39838-8",
+            "display": "SPECT Lung ventilation and perfusion"
+          },
+          {
+            "code": "69399-4",
+            "display": "US Femoral vein and Popliteal vein"
+          },
+          {
+            "code": "38134-3",
+            "display": "US Femoral vessels"
+          },
+          {
+            "code": "38128-5",
+            "display": "US Femoral vessels - bilateral"
+          },
+          {
+            "code": "38037-8",
+            "display": "US Femur - left"
+          },
+          {
+            "code": "38048-5",
+            "display": "US Femur - right"
+          },
+          {
+            "code": "43566-9",
+            "display": "US Hip and Thigh"
+          },
+          {
+            "code": "30709-0",
+            "display": "US Lower extremity"
+          },
+          {
+            "code": "38013-9",
+            "display": "US Lower extremity - bilateral"
+          },
+          {
+            "code": "38040-2",
+            "display": "US Lower extremity - left"
+          },
+          {
+            "code": "38039-4",
+            "display": "US Lower extremity - left limited"
+          },
+          {
+            "code": "38051-9",
+            "display": "US Lower extremity - right"
+          },
+          {
+            "code": "38050-1",
+            "display": "US Lower extremity - right limited"
+          },
+          {
+            "code": "46363-8",
+            "display": "US Lower extremity vein"
+          },
+          {
+            "code": "46364-6",
+            "display": "US Lower extremity vein - bilateral"
+          },
+          {
+            "code": "48692-8",
+            "display": "US Lower extremity vein - left"
+          },
+          {
+            "code": "48691-0",
+            "display": "US Lower extremity vein - right"
+          },
+          {
+            "code": "69385-3",
+            "display": "US Lower extremity veins - bilateral"
+          },
+          {
+            "code": "69392-9",
+            "display": "US Lower extremity veins - left"
+          },
+          {
+            "code": "80860-0",
+            "display": "US Lower extremity veins - unilateral limited"
+          },
+          {
+            "code": "24881-5",
+            "display": "US Popliteal space"
+          },
+          {
+            "code": "26262-6",
+            "display": "US Popliteal space - bilateral"
+          },
+          {
+            "code": "26263-4",
+            "display": "US Popliteal space - left"
+          },
+          {
+            "code": "26264-2",
+            "display": "US Popliteal space - right"
+          },
+          {
+            "code": "39498-1",
+            "display": "US.doppler Femoral vessels - left"
+          },
+          {
+            "code": "39504-6",
+            "display": "US.doppler Femoral vessels - right"
+          },
+          {
+            "code": "93604-7",
+            "display": "US.doppler Lower extremity arteries+veins - bilateral"
+          },
+          {
+            "code": "30881-7",
+            "display": "US.doppler Lower extremity vein"
+          },
+          {
+            "code": "39420-5",
+            "display": "US.doppler Lower extremity vein - bilateral"
+          },
+          {
+            "code": "39432-0",
+            "display": "US.doppler Lower extremity vein - left"
+          },
+          {
+            "code": "39443-7",
+            "display": "US.doppler Lower extremity vein - right"
+          },
+          {
+            "code": "42461-4",
+            "display": "US.doppler Lower extremity vessel - left for graft"
+          },
+          {
+            "code": "42462-2",
+            "display": "US.doppler Lower extremity vessel - right for graft"
+          },
+          {
+            "code": "44174-1",
+            "display": "US.doppler Lower extremity vessels"
+          },
+          {
+            "code": "39422-1",
+            "display": "US.doppler Lower extremity vessels - bilateral"
+          },
+          {
+            "code": "39431-2",
+            "display": "US.doppler Lower extremity vessels - left"
+          },
+          {
+            "code": "39430-4",
+            "display": "US.doppler Lower extremity vessels - left limited"
+          },
+          {
+            "code": "39442-9",
+            "display": "US.doppler Lower extremity vessels - right"
+          },
+          {
+            "code": "39441-1",
+            "display": "US.doppler Lower extremity vessels - right limited"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: X140080</p><p><b>meta</b>: </p><p><b>identifier</b>: id: X140080</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: SAINT LOIS HOSPITAL</p><p><b>address</b>: 355 RIDGE AVE EVANSTON IL 60202 USA (WORK)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: X140080</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: SAINT LOIS HOSPITAL</p><p><b>address</b>: 355 RIDGE AVE EVANSTON IL 60202 USA (WORK)</p></div>"
   },
   "identifier": [
     {

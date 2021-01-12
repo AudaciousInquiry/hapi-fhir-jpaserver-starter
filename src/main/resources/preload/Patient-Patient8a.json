@@ -3,7 +3,7 @@
   "id": "Patient8a",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Patient8a</p><p><b>identifier</b>: id: Pat334455</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1956-09-13</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Pat334455</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1956-09-13</p></div>"
   },
   "identifier": [
     {

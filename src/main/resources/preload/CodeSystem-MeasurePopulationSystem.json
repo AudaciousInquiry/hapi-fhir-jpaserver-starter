@@ -3,30 +3,38 @@
   "id": "MeasurePopulationSystem",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">numerator-complement<a name=\"MeasurePopulationSystem-numerator-complement\"> </a></td><td>Numerator Complement</td><td>Like a numerator, but expresses that part of the Denominator not present in the Numerator</td></tr><tr><td style=\"white-space:nowrap\">duration<a name=\"MeasurePopulationSystem-duration\"> </a></td><td>Duration</td><td>A Time Duration</td></tr><tr><td style=\"white-space:nowrap\">duration-squared<a name=\"MeasurePopulationSystem-duration-squared\"> </a></td><td>Duration Squared</td><td>The square of the time duration, useful for identifying variance</td></tr><tr><td style=\"white-space:nowrap\">supporting<a name=\"MeasurePopulationSystem-supporting\"> </a></td><td>Supporting</td><td>A population supporting computation, but not needed for reporting</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/saner/CodeSystem/MeasurePopulationSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">numerator-complement<a name=\"MeasurePopulationSystem-numerator-complement\"> </a></td><td>Numerator Complement</td><td>Like a numerator, but expresses that part of the Denominator not present in the Numerator</td></tr><tr><td style=\"white-space:nowrap\">duration<a name=\"MeasurePopulationSystem-duration\"> </a></td><td>Duration</td><td>A Time Duration</td></tr><tr><td style=\"white-space:nowrap\">duration-squared<a name=\"MeasurePopulationSystem-duration-squared\"> </a></td><td>Duration Squared</td><td>The square of the time duration, useful for identifying variance</td></tr><tr><td style=\"white-space:nowrap\">supporting<a name=\"MeasurePopulationSystem-supporting\"> </a></td><td>Supporting</td><td>A population supporting computation, but not needed for reporting</td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/CodeSystem/MeasurePopulationSystem",
+  "url": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasurePopulationSystem",
   "version": "0.1.0",
   "name": "MeasurePopulationSystem",
-  "title": "Situationa Awareness Measure Populations",
+  "title": "Situational Awareness Measure Populations",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -40,13 +48,13 @@
       ]
     }
   ],
-  "description": "A Code System for Situation Awareness Measure Populations defined by The SANER Project",
+  "description": "A Code System for Situation Awareness Measure Populations",
   "jurisdiction": [
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

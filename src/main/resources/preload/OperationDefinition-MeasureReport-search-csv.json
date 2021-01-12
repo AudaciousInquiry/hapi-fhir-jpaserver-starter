@@ -3,33 +3,40 @@
   "id": "MeasureReport-search-csv",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SearchinCSVFormat</h2><p>OPERATION: SearchinCSVFormat</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-search-csv</pre><div><p>Search Measure Report resources using the CSV Format. See <a href=\"CSV_Conversion.html\">CSV Conversion</a> for details.</p>\n</div><p>URL: [base]/MeasureReport/$search-csv</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_lastUpdated</td><td>0..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>date</td><td>0..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>map</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#composite\">composite</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure</td><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#uri\">uri</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure.title</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td/></tr><tr><td>IN</td><td>period</td><td>1..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject:Location.near</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#special\">special</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td/></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SearchinCSVFormat</h2><p>OPERATION: SearchinCSVFormat</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/saner/OperationDefinition/MeasureReport-search-csv</pre><div><p>Search Measure Report resources using the CSV Format. See <a href=\"CSV_Conversion.html\">CSV Conversion</a> for details.</p>\n</div><p>URL: [base]/MeasureReport/$search-csv</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_lastUpdated</td><td>0..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>date</td><td>0..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>map</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#composite\">composite</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure</td><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#uri\">uri</a>)</td><td/><td/></tr><tr><td>IN</td><td>measure.title</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#string\">string</a>)</td><td/><td/></tr><tr><td>IN</td><td>period</td><td>1..2</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>reporter:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject:Location.near</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#special\">special</a>)</td><td/><td/></tr><tr><td>IN</td><td>subject:identifier</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#token\">token</a>)</td><td/><td/></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td/></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/OperationDefinition/MeasureReport-search-csv",
+  "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/MeasureReport-search-csv",
   "version": "0.1.0",
   "name": "SearchinCSVFormat",
   "title": "Search in CSV Format",
   "status": "draft",
   "kind": "operation",
   "experimental": true,
-  "date": "2020-09-10T02:00:40-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -48,8 +55,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

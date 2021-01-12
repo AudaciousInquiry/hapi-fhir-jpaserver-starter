@@ -1,0 +1,219 @@
+{
+  "package": "hl7.fhir.uv.saner",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes",
+      "title": "Attributes describing a group of measures",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasurePopulationAlternateCriteria",
+      "title": "Alternate criteria for performing a measure",
+      "types": [
+        "Expression",
+        "Expression"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod",
+      "title": "Enables specification of proposed measure reporting",
+      "types": [
+        "Timing",
+        "Timing"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/measure-expectation",
+      "title": "MeasureExpection",
+      "types": [
+        "code",
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "AuditEvent": [
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventBase",
+        "title": "General Audit Event Requirements"
+      },
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventCreate",
+        "title": "Audit Event Create Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventDelete",
+        "title": "Audit Event Delete Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventRead",
+        "title": "Audit Event Read"
+      },
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventSearch",
+        "title": "Audit Event Search"
+      },
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventUpdate",
+        "title": "Audit Event Update Profile"
+      }
+    ],
+    "CapabilityStatement": [
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/CapabilityStatementWithSlices",
+        "title": "Capability Statements with Slices"
+      }
+    ],
+    "Measure": [
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasure",
+        "title": "Public Health Measure"
+      }
+    ],
+    "Library": [
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureLibrary",
+        "title": "Public Health Measure Library"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureReport",
+        "title": "Public Health Measure Report"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchInclude",
+      "CapabilityStatement.rest.resource.searchParam"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
+      "CapabilityStatement.rest.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "MeasureReport.group.population.count"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.differential.element.constraint",
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes": [
+      "Measure.group"
+    ],
+    "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasurePopulationAlternateCriteria": [
+      "Measure.group.population"
+    ],
+    "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod": [
+      "Measure"
+    ]
+  }
+}

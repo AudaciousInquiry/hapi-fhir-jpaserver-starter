@@ -3,14 +3,14 @@
   "id": "NHSNMeasureLibrary",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasureLibrary"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureLibrary"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: NHSNMeasureLibrary</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: NHSNMeasureLibrary</p><p><b>title</b>: NHSN Patient Impact and Hospital Capacity Measure Library</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type asset-collection}\">Asset Collection</span></p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: HL7 Public Health Workgroup: mailto:pher@lists.hl7.org</p><p><b>relatedArtifact</b>: , , , </p><p><b>content</b>: , , , , , , , </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Participants</h2><table class=\"grid\"><tr><td>Author</td><td>HL7 Public Health Workgroup</td><td><a href=\"mailto:mailto:pher@lists.hl7.org\">mailto:pher@lists.hl7.org</a></td></tr></table><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>documentation</td><td>NHSN COVID-19 Reporting</td><td>CDC/NHSN COVID-19 Patient Impact &amp; Hospital Capacity Module Home Page</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/acute-care-hospital/covid19/</td></tr><tr><td>documentation</td><td>How to import COVID-19 Summary Data</td><td>Importing COVID-19 Patient Module Denominator data for Patient Safety Component</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf</td></tr><tr><td>documentation</td><td>Table of Instructions</td><td>Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf</td></tr><tr><td>documentation</td><td>CSV File Template</td><td>CDC/NHSN COVID-19 Reporting CSV File Template</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/covid19-test-csv-import.csv</td></tr></table><h2>Contents</h2><p>C19HCC SARS coronavirus 2 Qualitative Detection Laboratory Tests: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109</a></code> (<code>application/fhir+xml</code>)</p><p>COVID_19 SNOMED CT (Disorders): <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124</a></code> (<code>application/fhir+xml</code>)</p><p>COVID_19 ICD-10 (Disorders): <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123</a></code> (<code>application/fhir+xml</code>)</p><p>Remdesivir: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir\">http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir</a></code> (<code>application/fhir+xml</code>)</p><p>COVID_19 (COVID_19 Exposure): <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203</a></code> (<code>application/fhir+xml</code>)</p><p>C19HCC Suspected COVID19 Infection: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.116\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.116</a></code> (<code>application/fhir+xml</code>)</p><p>Healthcare Service Location: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.192.16.840.1.113883.1.11.20275\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.192.16.840.1.113883.1.11.20275</a></code> (<code>application/fhir+xml</code>)</p><p>Patients on a Ventilator: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator\">http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator</a></code> (<code>application/fhir+xml</code>)</p></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary",
+  "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary",
   "version": "0.1.0",
   "name": "NHSNMeasureLibrary",
   "title": "NHSN Patient Impact and Hospital Capacity Measure Library",
@@ -24,24 +24,31 @@
       }
     ]
   },
-  "date": "2020-09-10T02:00:40-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -76,8 +83,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -141,7 +148,7 @@
     {
       "id": "Remdesivir",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/Remdesivir",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir",
       "title": "Remdesivir"
     },
     {
@@ -165,7 +172,7 @@
     {
       "id": "PatientsOnVentilator",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/PatientsOnVentilator",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator",
       "title": "Patients on a Ventilator"
     }
   ]

@@ -2,31 +2,39 @@
   "resourceType": "ValueSet",
   "id": "DecadeAgeBrackets",
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-IHE-ADX-agerange.html\"><code>http://profiles.ihe.net/fhir/CodeSystem/IHE_ADX_agerange</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P0Y--P20Y\">P0Y--P20Y</a></td><td>&lt; 20 Years</td><td>A age of less than 20 years old</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P20Y--P30Y\">P20Y--P30Y</a></td><td>20-30 Years</td><td>A age greater or equal to 20 and less than 30 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P30Y--P40Y\">P30Y--P40Y</a></td><td>30-40 Years</td><td>A age greater or equal to 30 and less than 40 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P40Y--P50Y\">P40Y--P50Y</a></td><td>40-50 Years</td><td>A age greater or equal to 40 and less than 50 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P50Y--P60Y\">P50Y--P60Y</a></td><td>50-60 Years</td><td>A age greater or equal to 50 and less than 60 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P60Y--P70Y\">P60Y--P70Y</a></td><td>60-70 Years</td><td>A age greater or equal to 60 and less than 70 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P70Y--P80Y\">P70Y--P80Y</a></td><td>70-80 Years</td><td>A age greater or equal to 70 and less than 80 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P80Y--P9999Y\">P80Y--P9999Y</a></td><td>80+ Years</td><td>A age greater or equal to 80 years</td></tr></table></li></ul></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-IHE-ADX-agerange.html\"><code>http://profiles.ihe.net/fhir/CodeSystem/IHE_ADX_agerange</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P0Y--P20Y\">P0Y--P20Y</a></td><td>&lt; 20 Years</td><td>A age of less than 20 years old</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P20Y--P30Y\">P20Y--P30Y</a></td><td>20-30 Years</td><td>A age greater or equal to 20 and less than 30 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P30Y--P40Y\">P30Y--P40Y</a></td><td>30-40 Years</td><td>A age greater or equal to 30 and less than 40 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P40Y--P50Y\">P40Y--P50Y</a></td><td>40-50 Years</td><td>A age greater or equal to 40 and less than 50 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P50Y--P60Y\">P50Y--P60Y</a></td><td>50-60 Years</td><td>A age greater or equal to 50 and less than 60 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P60Y--P70Y\">P60Y--P70Y</a></td><td>60-70 Years</td><td>A age greater or equal to 60 and less than 70 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P70Y--P80Y\">P70Y--P80Y</a></td><td>70-80 Years</td><td>A age greater or equal to 70 and less than 80 years</td></tr><tr><td><a href=\"CodeSystem-IHE-ADX-agerange.html#IHE-ADX-agerange-P80Y--P9999Y\">P80Y--P9999Y</a></td><td>80+ Years</td><td>A age greater or equal to 80 years</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/ValueSet/DecadeAgeBrackets",
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/DecadeAgeBrackets",
   "version": "0.1.0",
   "name": "DecadeAgeBrackets",
   "title": "Age Brackets By Decade",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -45,8 +53,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

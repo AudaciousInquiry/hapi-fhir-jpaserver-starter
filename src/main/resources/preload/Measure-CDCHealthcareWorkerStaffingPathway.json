@@ -4,16 +4,16 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Measure",
-      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasure"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasure"
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway\">http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>title</b>: COVID-19 Healthcare Worker Staffing Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Worker Staffing Pathway</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): mailto:nhsn@cdc.gov</p><p><b>relatedArtifact</b>: , , , , , </p><p><b>library</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type composite}\">Composite</span></p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues posshortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Enables specification of proposed measure reporting</b>: Do Once per 1 days</p><p><b>url</b>: <code>http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareWorkerStaffingPathway</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareWorkerStaffingPathway</p><p><b>title</b>: COVID-19 Healthcare Worker Staffing Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International Public Health Workgroup</p><p><b>contact</b>: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, <a href=\"mailto:pher@lists.hl7.org\">pher@lists.hl7.org</a>, HL7 Public Health Workgroup: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, Keith W. Boone: <a href=\"mailto:mailto:kboone@ainq.com\">mailto:kboone@ainq.com</a></p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Worker Staffing Pathway</p><h3>UseContexts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): <a href=\"mailto:mailto:nhsn@cdc.gov\">mailto:nhsn@cdc.gov</a></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><p><b>library</b>: <a href=\"http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type composite}\">Composite</span></p><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 45956004}\">Environmental services</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 106293008}\">Nurses</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 442867008}\">Respiratory therapists</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 46255001}\">Pharmacists and pharmacy techs</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 309343006}\">Physicians</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 405623001}\">Temporary physicians, nurses, respiratory therapists, and pharmacists</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 33738006}\">Other HCP</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 158965000}\">Other licensed independent practitioners</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}, {http://snomed.info/sct 106375005}\">Cleaning Staff</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortenvsvc}\">Front-line persons who clean patient rooms and all areas in a healthcare facility</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Front-line persons who clean patient rooms and all areas in a healthcare facility</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Nursing Staff</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortnurse}\">Registered nurses and licensed practical nurses</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Registered nurses and licensed practical nurses</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Registered nurses and licensed practical nurses</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Respiratory Specialists</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortrt}\">Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Certified medical professionals who specialize in knowledge and use of mechanical ventilation as well as other programs for respiratory care</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Pharmacy Specialists</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortphar}\">Pharmacists and pharmacy techs</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Pharmacists and pharmacy techs</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Pharmacists and pharmacy techs</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Attending Physicians</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortphys}\">Attending physicians, fellows</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Attending physicians, fellows</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Attending physicians, fellows</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Intermittent Staff</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshorttemp}\">'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - 'per diems', 'travelers', retired, or other seasonal or intermittently contracted persons</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Other Staff</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortoth}\">Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Persons who work in the facility, regardless of clinical responsibility or patient contact not included in categories above.</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Practitioner}\">Advanced Practice Nurse/Physician Assistant</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues posshortothlic}\">Advanced practice nurses, physician assistants</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values true}\">true</span></p><p><b>description</b>: YES - Advanced practice nurses, physician assistants</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/special-values false}\">false</span></p><p><b>description</b>: NO - Advanced practice nurses, physician assistants</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/saner/StructureDefinition/ReportingPeriod",
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod",
       "valueTiming": {
         "repeat": {
           "frequency": 1,
@@ -23,30 +23,37 @@
       }
     }
   ],
-  "url": "http://hl7.org/fhir/us/saner/Measure/CDCHealthcareWorkerStaffingPathway",
+  "url": "http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareWorkerStaffingPathway",
   "version": "0.1.0",
   "name": "CDCHealthcareWorkerStaffingPathway",
   "title": "COVID-19 Healthcare Worker Staffing Pathway",
   "status": "draft",
   "experimental": true,
   "date": "2020-04-27T07:08:50-04:00",
-  "publisher": "HL7 International",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -81,8 +88,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -143,7 +150,7 @@
     }
   ],
   "library": [
-    "http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary"
+    "http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary"
   ],
   "type": [
     {
@@ -215,13 +222,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortenvsvc"
           }
         ],
@@ -323,13 +330,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortnurse"
           }
         ],
@@ -431,13 +438,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortrt"
           }
         ],
@@ -539,13 +546,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortphar"
           }
         ],
@@ -647,13 +654,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortphys"
           }
         ],
@@ -755,13 +762,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shorttemp"
           }
         ],
@@ -863,13 +870,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortoth"
           }
         ],
@@ -971,13 +978,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "shortothlic"
           }
         ],
@@ -1078,13 +1085,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortenvsvc"
           }
         ],
@@ -1184,13 +1191,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortnurse"
           }
         ],
@@ -1290,13 +1297,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortrt"
           }
         ],
@@ -1396,13 +1403,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortphar"
           }
         ],
@@ -1502,13 +1509,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortphys"
           }
         ],
@@ -1608,13 +1615,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshorttemp"
           }
         ],
@@ -1714,13 +1721,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortoth"
           }
         ],
@@ -1820,13 +1827,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
             "code": "posshortothlic"
           }
         ],

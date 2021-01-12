@@ -4,16 +4,16 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Measure",
-      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasure"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasure"
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: CDCHealthcareSupplyPathway</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/Measure/CDCHealthcareSupplyPathway\">http://hl7.org/fhir/us/saner/Measure/CDCHealthcareSupplyPathway</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareSupplyPathway</p><p><b>title</b>: COVID-19 Healthcare Supply Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Supply Pathway</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): mailto:nhsn@cdc.gov</p><p><b>relatedArtifact</b>: , , , , , </p><p><b>library</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type composite}\">Composite</span></p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Ventilators}\">Ventilator Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues ventsupply}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues ventreuse}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues ventobtain}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem N95Masks}\">N95 Mask Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues n95masksupply}\">N95 masks - On-hand Supply</span></p><p><b>description</b>: N95 masks</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues n95maskreuse}\">N95 masks - Reusing or Extending Use</span></p><p><b>description</b>: N95 masks</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues n95maskobtain}\">N95 masks - Able to Obtain</span></p><p><b>description</b>: N95 masks</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem OtherRespirators}\">Other Respirator Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues othrespsupply}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues othrespreuse}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues othrespobtain}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem SurgicalMasks}\">Surgical Mask Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues surgmasksupply}\">Surgical masks - On-hand Supply</span></p><p><b>description</b>: Surgical masks</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues surgmaskreuse}\">Surgical masks - Reusing or Extending Use</span></p><p><b>description</b>: Surgical masks</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues surgmaskobtain}\">Surgical masks - Able to Obtain</span></p><p><b>description</b>: Surgical masks</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem EyeProtection}\">Eye Protection Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shieldsupply}\">Eye protection including face shields or goggles - On-hand Supply</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shieldreuse}\">Eye protection including face shields or goggles - Reusing or Extending Use</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues shieldobtain}\">Eye protection including face shields or goggles - Able to Obtain</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Gown}\">Gown Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues gownsupply}\">Gowns (single use) - On-hand Supply</span></p><p><b>description</b>: Gowns (single use)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues gownreuse}\">Gowns (single use) - Reusing or Extending Use</span></p><p><b>description</b>: Gowns (single use)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues gownobtain}\">Gowns (single use) - Able to Obtain</span></p><p><b>description</b>: Gowns (single use)</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem Glove}\">Glove Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues glovesupply}\">Gloves - On-hand Supply</span></p><p><b>description</b>: Gloves</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues glovereuse}\">Gloves - Reusing or Extending Use</span></p><p><b>description</b>: Gloves</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues gloveobtain}\">Gloves - Able to Obtain</span></p><p><b>description</b>: Gloves</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Enables specification of proposed measure reporting</b>: Do Once per 1 days</p><p><b>url</b>: <code>http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareSupplyPathway</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: CDCHealthcareSupplyPathway</p><p><b>title</b>: COVID-19 Healthcare Supply Pathway</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Apr 27, 2020, 7:08:50 AM</p><p><b>publisher</b>: HL7 International Public Health Workgroup</p><p><b>contact</b>: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, <a href=\"mailto:pher@lists.hl7.org\">pher@lists.hl7.org</a>, HL7 Public Health Workgroup: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, Keith W. Boone: <a href=\"mailto:mailto:kboone@ainq.com\">mailto:kboone@ainq.com</a></p><p><b>description</b>: SANER implementation of the CDC COVID-19 Healthcare Supply Pathway</p><h3>UseContexts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): <a href=\"mailto:mailto:nhsn@cdc.gov\">mailto:nhsn@cdc.gov</a></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><p><b>library</b>: <a href=\"http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary\">http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary</a></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type composite}\">Composite</span></p><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 706172005}\">Mechanical Ventilators</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation decrease}\">Decreased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Ventilators}\">Ventilator Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues ventsupply}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues ventreuse}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues ventobtain}\">any supplies, including flow sensors, tubing, connectors, valves, filters, etc</span></p><p><b>description</b>: any supplies, including flow sensors, tubing, connectors, valves, filters, etc</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 409532003}\">N95 Masks</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem N95Masks}\">N95 Mask Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues n95masksupply}\">N95 masks - On-hand Supply</span></p><p><b>description</b>: N95 masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues n95maskreuse}\">N95 masks - Reusing or Extending Use</span></p><p><b>description</b>: N95 masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues n95maskobtain}\">N95 masks - Able to Obtain</span></p><p><b>description</b>: N95 masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 277973009}\">Other Respirator Equipment</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem OtherRespirators}\">Other Respirator Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues othrespsupply}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues othrespreuse}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues othrespobtain}\">Other respirators such as PAPRs or elastomerics</span></p><p><b>description</b>: Other respirators such as PAPRs or elastomerics</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 409528009}\">Surgical Masks</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem SurgicalMasks}\">Surgical Mask Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues surgmasksupply}\">Surgical masks - On-hand Supply</span></p><p><b>description</b>: Surgical masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues surgmaskreuse}\">Surgical masks - Reusing or Extending Use</span></p><p><b>description</b>: Surgical masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues surgmaskobtain}\">Surgical masks - Able to Obtain</span></p><p><b>description</b>: Surgical masks</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 38126007}\">Eye Protection</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem EyeProtection}\">Eye Protection Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shieldsupply}\">Eye protection including face shields or goggles - On-hand Supply</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shieldreuse}\">Eye protection including face shields or goggles - Reusing or Extending Use</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues shieldobtain}\">Eye protection including face shields or goggles - Able to Obtain</span></p><p><b>description</b>: Eye protection including face shields or goggles</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 409527004}\">Gowns</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Gown}\">Gown Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues gownsupply}\">Gowns (single use) - On-hand Supply</span></p><p><b>description</b>: Gowns (single use)</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues gownreuse}\">Gowns (single use) - Reusing or Extending Use</span></p><p><b>description</b>: Gowns (single use)</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues gownobtain}\">Gowns (single use) - Able to Obtain</span></p><p><b>description</b>: Gowns (single use)</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Device}, {http://snomed.info/sct 52291003}\">Gloves</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: count</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Glove}\">Glove Supply Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues glovesupply}\">Gloves - On-hand Supply</span></p><p><b>description</b>: Gloves</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues glovereuse}\">Gloves - Reusing or Extending Use</span></p><p><b>description</b>: Gloves</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues gloveobtain}\">Gloves - Able to Obtain</span></p><p><b>description</b>: Gloves</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/saner/StructureDefinition/ReportingPeriod",
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod",
       "valueTiming": {
         "repeat": {
           "frequency": 1,
@@ -23,30 +23,37 @@
       }
     }
   ],
-  "url": "http://hl7.org/fhir/us/saner/Measure/CDCHealthcareSupplyPathway",
+  "url": "http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareSupplyPathway",
   "version": "0.1.0",
   "name": "CDCHealthcareSupplyPathway",
   "title": "COVID-19 Healthcare Supply Pathway",
   "status": "draft",
   "experimental": true,
   "date": "2020-04-27T07:08:50-04:00",
-  "publisher": "HL7 International",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -81,8 +88,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -143,7 +150,7 @@
     }
   ],
   "library": [
-    "http://hl7.org/fhir/us/saner/StructureDefinition/NHSNMeasureLibrary"
+    "http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary"
   ],
   "type": [
     {
@@ -214,13 +221,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Ventilators"
           }
         ],
@@ -231,7 +238,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "ventsupply"
               }
             ],
@@ -249,7 +256,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "ventreuse"
               }
             ],
@@ -267,7 +274,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "ventobtain"
               }
             ],
@@ -341,13 +348,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "N95Masks"
           }
         ],
@@ -358,7 +365,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "n95masksupply"
               }
             ]
@@ -375,7 +382,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "n95maskreuse"
               }
             ]
@@ -392,7 +399,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "n95maskobtain"
               }
             ]
@@ -465,13 +472,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "OtherRespirators"
           }
         ],
@@ -482,7 +489,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "othrespsupply"
               }
             ],
@@ -500,7 +507,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "othrespreuse"
               }
             ],
@@ -518,7 +525,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "othrespobtain"
               }
             ],
@@ -592,13 +599,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "SurgicalMasks"
           }
         ],
@@ -609,7 +616,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "surgmasksupply"
               }
             ]
@@ -626,7 +633,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "surgmaskreuse"
               }
             ]
@@ -643,7 +650,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "surgmaskobtain"
               }
             ]
@@ -716,13 +723,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "EyeProtection"
           }
         ],
@@ -733,7 +740,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "shieldsupply"
               }
             ]
@@ -750,7 +757,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "shieldreuse"
               }
             ]
@@ -767,7 +774,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "shieldobtain"
               }
             ]
@@ -840,13 +847,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Gown"
           }
         ],
@@ -857,7 +864,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "gownsupply"
               }
             ]
@@ -874,7 +881,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "gownreuse"
               }
             ]
@@ -891,7 +898,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "gownobtain"
               }
             ]
@@ -964,13 +971,13 @@
               "valueString": "count"
             }
           ],
-          "url": "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasureGroupSystem",
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
             "code": "Glove"
           }
         ],
@@ -981,7 +988,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "glovesupply"
               }
             ]
@@ -998,7 +1005,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "glovereuse"
               }
             ]
@@ -1015,7 +1022,7 @@
           "code": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/saner/CodeSystem/MeasuredValues",
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
                 "code": "gloveobtain"
               }
             ]

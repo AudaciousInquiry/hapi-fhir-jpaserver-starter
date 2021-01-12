@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: X140206</p><p><b>meta</b>: </p><p><b>identifier</b>: id: X140206</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: BRIN HOSPITAL</p><p><b>address</b>: 1044 N FRANCISCO AVE CHICAGO IL 60622 USA (WORK)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: X140206</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: BRIN HOSPITAL</p><p><b>address</b>: 1044 N FRANCISCO AVE CHICAGO IL 60622 USA (WORK)</p></div>"
   },
   "identifier": [
     {

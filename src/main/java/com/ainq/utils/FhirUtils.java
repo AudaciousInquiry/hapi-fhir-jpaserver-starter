@@ -17,6 +17,8 @@ import org.hl7.fhir.r4.model.codesystems.DataAbsentReason;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import ca.uhn.fhir.context.FhirContext;
+
 /**
  * The DomUtils class provides some utility functions for working with XML
  * documents.
@@ -30,7 +32,7 @@ public class FhirUtils {
             DATA_ABSENT_REASON = "http://hl7.org/fhir/StructureDefinition/data-absent-reason";
     public static final String
             ORIGINAL_TEXT = "http://hl7.org/fhir/StructureDefinition/originalText";
-
+    public static final FhirContext ctx = FhirContext.forR4();
 
     private FhirUtils() {
 
@@ -159,4 +161,13 @@ public class FhirUtils {
         }
         return i;
      }
+
+    public static boolean isResource(String resourceType) {
+        try {
+            ctx.getResourceDefinition(resourceType);
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
+    }
 }

@@ -3,7 +3,7 @@
   "id": "Observation33b",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Observation33b</p><p><b>identifier</b>: id: 999999-3</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19994-3}\">Oxygen/Inspired gas setting [Volume Fraction] Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient3b.html\">Generated Summary: id: Patient3b; id: Pat999999; gender: male; birthDate: 1949-12-07</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter3b.html\">Generated Summary: id: Encounter3b; id: Enc999999; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></a></p><p><b>effective</b>: 2020-09-09</p><p><b>value</b>: 100 %</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 999999-3</p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19994-3}\">Oxygen/Inspired gas setting [Volume Fraction] Ventilator</span></p><p><b>subject</b>: <a href=\"Patient-Patient3b.html\">Generated Summary: id: Pat999999; gender: male; birthDate: 1949-12-07</a></p><p><b>encounter</b>: <a href=\"Encounter-Encounter3b.html\">Generated Summary: id: Enc999999; status: in-progress; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; period: 2020-09-08 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></a></p><p><b>effective</b>: 2020-09-09</p><p><b>value</b>: 100 %</p></div>"
   },
   "identifier": [
     {

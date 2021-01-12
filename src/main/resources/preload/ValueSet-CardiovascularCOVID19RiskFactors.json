@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "CardiovascularCOVID19RiskFactors",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49601007\">49601007</a></td><td>Disorder of cardiovascular system (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42343007\">42343007</a></td><td>Congestive heart failure (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53741008\">53741008</a></td><td>Coronary arteriosclerosis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=85898001\">85898001</a></td><td>Cardiomyopathy (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/CardiovascularCOVID19RiskFactors",
+  "version": "0.1.0",
+  "name": "CardiovascularCOVID19RiskFactors",
+  "title": "Cardiovascular COVID-19 Risk Factors",
+  "status": "active",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes identifying COVID-19 Risk Factors/Comorbidities of Concern related to Cardiovascular disease",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "49601007",
+            "display": "Disorder of cardiovascular system (disorder)"
+          },
+          {
+            "code": "42343007",
+            "display": "Congestive heart failure (disorder)"
+          },
+          {
+            "code": "53741008",
+            "display": "Coronary arteriosclerosis (disorder)"
+          },
+          {
+            "code": "85898001",
+            "display": "Cardiomyopathy (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

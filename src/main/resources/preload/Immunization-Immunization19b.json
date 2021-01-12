@@ -3,7 +3,7 @@
   "id": "Immunization19b",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Immunization19b</p><p><b>identifier</b>: id: 667788</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 346524008}\">Influenza split virion vaccine</span></p><p><b>patient</b>: <a href=\"Patient-Patient9b.html\">Generated Summary: id: Patient9b; id: Pat667788; gender: female; birthDate: 1949-04-04</a></p><p><b>occurrence</b>: 2020-09-09</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 667788</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 346524008}\">Influenza split virion vaccine</span></p><p><b>patient</b>: <a href=\"Patient-Patient9b.html\">Generated Summary: id: Pat667788; gender: female; birthDate: 1949-04-04</a></p><p><b>occurrence</b>: 2020-09-09</p></div>"
   },
   "identifier": [
     {

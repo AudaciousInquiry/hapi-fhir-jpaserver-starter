@@ -3,33 +3,40 @@
   "id": "Measure-report-csv",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CreateorupdateaMeasureReportfromCSVFormat</h2><p>OPERATION: CreateorupdateaMeasureReportfromCSVFormat</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/us/saner/OperationDefinition/Measure-report-csv</pre><div><p>port from the CSV Format. If a report already exists for the subject and reporter for the given time period, it is updated.\nOtherwise, a new report is created. See <a href=\"CSV_Conversion.html\">CSV Conversion</a> for details.</p>\n</div><p>URL: [base]/Measure/[id]/$report-csv</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>input</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td><div><p>The input of the request is a CSV file with labeled columns containing the data in the report.</p>\n</div></td></tr><tr><td>IN</td><td>map</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#composite\">composite</a>)</td><td/><td><div><p>Each parameter is a composite of column to measure mappings</p>\n</div></td></tr><tr><td>IN</td><td>period-end</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td><div><p>The end of the reporting period.</p>\n</div></td></tr><tr><td>IN</td><td>period-start</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td><div><p>The start of the reporting period.</p>\n</div></td></tr><tr><td>IN</td><td>reporter</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>orter for the MeasureReport. If unspecified,\nthe server may determine the reporter based on business rules (e.g., based on the identity of the sender).</p>\n</div></td></tr><tr><td>IN</td><td>subject</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>ject for the MeasureReport. If unspecified,\nthe server may determine the subject based on business rules (e.g., based on the identity of the sender).</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The result of the reporting operation</p>\n</div></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CreateorupdateaMeasureReportfromCSVFormat</h2><p>OPERATION: CreateorupdateaMeasureReportfromCSVFormat</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/saner/OperationDefinition/Measure-report-csv</pre><div><p>Create or update a MeasureReport from the CSV Format. If a report already exists for the subject and reporter\nfor the given time period, it is updated. Otherwise, a new report is created. See <a href=\"CSV_Conversion.html\">CSV Conversion</a> for details.</p>\n</div><p>URL: [base]/Measure/[id]/$report-csv</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>input</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td><div><p>The input of the request is a CSV file with labeled columns containing the data in the report.</p>\n</div></td></tr><tr><td>IN</td><td>map</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#composite\">composite</a>)</td><td/><td><div><p>Each parameter is a composite of column to measure mappings</p>\n</div></td></tr><tr><td>IN</td><td>period-end</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td><div><p>The end of the reporting period.</p>\n</div></td></tr><tr><td>IN</td><td>period-start</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#date\">date</a>)</td><td/><td><div><p>The start of the reporting period.</p>\n</div></td></tr><tr><td>IN</td><td>reporter</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>A reference or identifier of the reporter for the MeasureReport. If unspecified, the server may determine the reporter based on business rules (e.g., based on the identity of the sender).</p>\n</div></td></tr><tr><td>IN</td><td>subject</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a><br/>(<a href=\"http://hl7.org/fhir/R4/search.html#reference\">reference</a>)</td><td/><td><div><p>A reference or identifier of the subject for the MeasureReport. If unspecified, the server may determine the subject based on business rules (e.g., based on the identity of the sender).</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The result of the reporting operation</p>\n</div></td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/OperationDefinition/Measure-report-csv",
+  "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/Measure-report-csv",
   "version": "0.1.0",
   "name": "CreateorupdateaMeasureReportfromCSVFormat",
   "title": "Create or update a MeasureReport from CSV Format",
   "status": "draft",
   "kind": "operation",
   "experimental": true,
-  "date": "2020-09-10T02:00:40-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -43,13 +50,13 @@
       ]
     }
   ],
-  "description": "port from the CSV Format. If a report already exists for the subject and reporter for the given time period, it is updated.\nOtherwise, a new report is created. See [CSV Conversion](CSV_Conversion.html) for details.",
+  "description": "Create or update a MeasureReport from the CSV Format. If a report already exists for the subject and reporter\nfor the given time period, it is updated. Otherwise, a new report is created. See [CSV Conversion](CSV_Conversion.html) for details.",
   "jurisdiction": [
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -102,7 +109,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "orter for the MeasureReport. If unspecified,\nthe server may determine the reporter based on business rules (e.g., based on the identity of the sender).",
+      "documentation": "A reference or identifier of the reporter for the MeasureReport. If unspecified, the server may determine the reporter based on business rules (e.g., based on the identity of the sender).",
       "type": "string",
       "searchType": "reference"
     },
@@ -111,7 +118,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "ject for the MeasureReport. If unspecified,\nthe server may determine the subject based on business rules (e.g., based on the identity of the sender).",
+      "documentation": "A reference or identifier of the subject for the MeasureReport. If unspecified, the server may determine the subject based on business rules (e.g., based on the identity of the sender).",
       "type": "string",
       "searchType": "reference"
     },

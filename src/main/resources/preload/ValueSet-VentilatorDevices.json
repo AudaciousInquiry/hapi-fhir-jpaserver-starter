@@ -3,30 +3,38 @@
   "id": "VentilatorDevices",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706172005\">706172005</a></td><td>Ventilator</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=257463002\">257463002</a></td><td>Ventilator outlet</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorDevices",
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorDevices",
   "version": "0.1.0",
   "name": "VentilatorDevices",
   "title": "Ventilator Devices",
   "status": "active",
-  "date": "2020-09-10T02:00:40-04:00",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -40,15 +48,32 @@
       ]
     }
   ],
-  "description": "Codes used for Ventilator Devices [Populate VentilatorDevices](#todo)",
+  "description": "Codes used for Ventilator Devices",
   "jurisdiction": [
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
-  ]
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "706172005",
+            "display": "Ventilator"
+          },
+          {
+            "code": "257463002",
+            "display": "Ventilator outlet"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -3,14 +3,14 @@
   "id": "ComputableNHSNMeasureLibrary",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/saner/StructureDefinition/PublicHealthMeasureLibrary"
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureLibrary"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: ComputableNHSNMeasureLibrary</p><p><b>meta</b>: </p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/saner/StructureDefinition/ComputableNHSNMeasureLibrary\">http://hl7.org/fhir/us/saner/StructureDefinition/ComputableNHSNMeasureLibrary</a></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: ComputableNHSNMeasureLibrary</p><p><b>title</b>: Computable NHSN Patient Impact and Hospital Capacity Measure Library</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/library-type asset-collection}\">Asset Collection</span></p><p><b>date</b>: Sep 10, 2020, 2:00:40 AM</p><p><b>publisher</b>: HL7 International</p><p><b>contact</b>: HL7 Patient Administration Workgroup: http://hl7.org/Special/committees/pafm/index.cfm, Audacious Inquiry: http://ainq.com, Keith W. Boone: mailto:kboone@ainq.com</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>author</b>: HL7 Public Health Workgroup: mailto:pher@lists.hl7.org</p><p><b>relatedArtifact</b>: , , , </p><p><b>content</b>: , , , , , , , , , , , , , , , , , , , , , , , , , , , </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Participants</h2><table class=\"grid\"><tr><td>Author</td><td>HL7 Public Health Workgroup</td><td><a href=\"mailto:mailto:pher@lists.hl7.org\">mailto:pher@lists.hl7.org</a></td></tr></table><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>documentation</td><td>NHSN COVID-19 Reporting</td><td>CDC/NHSN COVID-19 Patient Impact &amp; Hospital Capacity Module Home Page</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/acute-care-hospital/covid19/</td></tr><tr><td>documentation</td><td>How to import COVID-19 Summary Data</td><td>Importing COVID-19 Patient Module Denominator data for Patient Safety Component</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf</td></tr><tr><td>documentation</td><td>Table of Instructions</td><td>Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf</td></tr><tr><td>documentation</td><td>CSV File Template</td><td>CDC/NHSN COVID-19 Reporting CSV File Template</td><td>https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/covid19-test-csv-import.csv</td></tr></table><h2>Contents</h2><p>Bed Location Operational Status: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/BedLocationOperationalStatus\">http://hl7.org/fhir/uv/saner/ValueSet/BedLocationOperationalStatus</a></code> (<code>application/fhir+xml</code>)</p><p>Confirmed COVID-19 Diagnosis Values: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/ConfirmedCOVID19Diagnoses\">http://hl7.org/fhir/uv/saner/ValueSet/ConfirmedCOVID19Diagnoses</a></code> (<code>application/fhir+xml</code>)</p><p>Confirmed COVID-19 Diagnosis: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/PositiveResults\">http://hl7.org/fhir/uv/saner/ValueSet/PositiveResults</a></code> (<code>application/fhir+xml</code>)</p><p>COVID-19 Diagnostic Test: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/Covid19Labs\">http://hl7.org/fhir/uv/saner/ValueSet/Covid19Labs</a></code> (<code>application/fhir+xml</code>)</p><p>COVID-19 Not Detected: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/NegativeResults\">http://hl7.org/fhir/uv/saner/ValueSet/NegativeResults</a></code> (<code>application/fhir+xml</code>)</p><p>COVID19Antibody: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1155\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1155</a></code> (<code>application/fhir+xml</code>)</p><p>COVID19DXICD10: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123</a></code> (<code>application/fhir+xml</code>)</p><p>COVID19DXSNOMED: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124</a></code> (<code>application/fhir+xml</code>)</p><p>COVID19Exposures: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203</a></code> (<code>application/fhir+xml</code>)</p><p>COVID19Organism: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1143\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1143</a></code> (<code>application/fhir+xml</code>)</p><p>HealthcareServiceLocation: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275</a></code> (<code>application/fhir+xml</code>)</p><p>ICU Locations: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/ICULocations\">http://hl7.org/fhir/uv/saner/ValueSet/ICULocations</a></code> (<code>application/fhir+xml</code>)</p><p>Inpatient Locations: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/InpatientLocations\">http://hl7.org/fhir/uv/saner/ValueSet/InpatientLocations</a></code> (<code>application/fhir+xml</code>)</p><p>Measure Groups: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/MeasureGroups\">http://hl7.org/fhir/uv/saner/ValueSet/MeasureGroups</a></code> (<code>application/fhir+xml</code>)</p><p>Measure Populations: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/MeasurePopulations\">http://hl7.org/fhir/uv/saner/ValueSet/MeasurePopulations</a></code> (<code>application/fhir+xml</code>)</p><p>Measure Rate Aggregation Value Set: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/MeasureRateAggregationValues\">http://hl7.org/fhir/uv/saner/ValueSet/MeasureRateAggregationValues</a></code> (<code>application/fhir+xml</code>)</p><p>Measure Status Values: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/MeasureStatus\">http://hl7.org/fhir/uv/saner/ValueSet/MeasureStatus</a></code> (<code>application/fhir+xml</code>)</p><p>Observations for Patients on a Ventilator: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator\">http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator</a></code> (<code>application/fhir+xml</code>)</p><p>Patient Died: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/PatientDeaths\">http://hl7.org/fhir/uv/saner/ValueSet/PatientDeaths</a></code> (<code>application/fhir+xml</code>)</p><p>Remdesivir: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir\">http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir</a></code> (<code>application/fhir+xml</code>)</p><p>SARSCoV2 Genetic Labs: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/SARSCoV2GeneticLabs\">http://hl7.org/fhir/uv/saner/ValueSet/SARSCoV2GeneticLabs</a></code> (<code>application/fhir+xml</code>)</p><p>SARSCoV2Labs: <code><a href=\"http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109\">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109</a></code> (<code>application/fhir+xml</code>)</p><p>Suspected COVID-19 Diagnosis Values: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/SuspectedCOVID19Diagnoses\">http://hl7.org/fhir/uv/saner/ValueSet/SuspectedCOVID19Diagnoses</a></code> (<code>application/fhir+xml</code>)</p><p>Suspected Or Diagnosed COVID-19: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses\">http://hl7.org/fhir/uv/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses</a></code> (<code>application/fhir+xml</code>)</p><p>Ventilator Devices: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/VentilatorDevices\">http://hl7.org/fhir/uv/saner/ValueSet/VentilatorDevices</a></code> (<code>application/fhir+xml</code>)</p><p>Ventilator Observations: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/VentilatorObservations\">http://hl7.org/fhir/uv/saner/ValueSet/VentilatorObservations</a></code> (<code>application/fhir+xml</code>)</p><p>Ventilator Procedures: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/VentilatorProcedures\">http://hl7.org/fhir/uv/saner/ValueSet/VentilatorProcedures</a></code> (<code>application/fhir+xml</code>)</p><p>Codes for reports about VTE Diagnosics: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/VTEReports\">http://hl7.org/fhir/uv/saner/ValueSet/VTEReports</a></code> (<code>application/fhir+xml</code>)</p><p>All COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/AllCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/AllCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Neoplastic COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/NeoplasticCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/NeoplasticCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>COPD COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/COPDCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/COPDCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Tobacco COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/TobaccoCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/TobaccoCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Hypertension COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/HypertensionCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/HypertensionCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Cardiovascular COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/CardiovascularCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/CardiovascularCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Obesity COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/ObesityCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/ObesityCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Sickle Cell COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/SickleCellCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/SickleCellCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Kidney Disease COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/KidneyDiseaseCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/KidneyDiseaseCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Pregnancy COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/PregnancyCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/PregnancyCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>Diabetes COVID-19 Risk Factors: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/DiabetesCOVID19RiskFactors\">http://hl7.org/fhir/uv/saner/ValueSet/DiabetesCOVID19RiskFactors</a></code> (<code>application/fhir+xml</code>)</p><p>COVID-19 Isolation Precautions: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/IsolationPrecautions\">http://hl7.org/fhir/uv/saner/ValueSet/IsolationPrecautions</a></code> (<code>application/fhir+xml</code>)</p><p>COVID-19 Complications: <code><a href=\"http://hl7.org/fhir/uv/saner/ValueSet/COVID19Complications\">http://hl7.org/fhir/uv/saner/ValueSet/COVID19Complications</a></code> (<code>application/fhir+xml</code>)</p></div>"
   },
-  "url": "http://hl7.org/fhir/us/saner/StructureDefinition/ComputableNHSNMeasureLibrary",
+  "url": "http://hl7.org/fhir/uv/saner/Library/ComputableNHSNMeasureLibrary",
   "version": "0.1.0",
   "name": "ComputableNHSNMeasureLibrary",
   "title": "Computable NHSN Patient Impact and Hospital Capacity Measure Library",
@@ -24,24 +24,31 @@
       }
     ]
   },
-  "date": "2020-09-10T02:00:40-04:00",
-  "publisher": "HL7 International",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
   "contact": [
     {
-      "name": "HL7 Patient Administration Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/pafm/index.cfm"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
     {
-      "name": "Audacious Inquiry",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ainq.com"
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
         }
       ]
     },
@@ -76,8 +83,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
@@ -123,31 +130,31 @@
     {
       "id": "BedLocationOperationalStatus",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/BedLocationOperationalStatus",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/BedLocationOperationalStatus",
       "title": "Bed Location Operational Status"
     },
     {
       "id": "ConfirmedCOVID19Diagnoses",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/ConfirmedCOVID19Diagnoses",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/ConfirmedCOVID19Diagnoses",
       "title": "Confirmed COVID-19 Diagnosis Values"
     },
     {
       "id": "PositiveResults",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/PositiveResults",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/PositiveResults",
       "title": "Confirmed COVID-19 Diagnosis"
     },
     {
       "id": "Covid19Labs",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/Covid19Labs",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/Covid19Labs",
       "title": "COVID-19 Diagnostic Test"
     },
     {
       "id": "NegativeResults",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/NegativeResults",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/NegativeResults",
       "title": "COVID-19 Not Detected"
     },
     {
@@ -189,61 +196,61 @@
     {
       "id": "ICULocations",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/ICULocations",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/ICULocations",
       "title": "ICU Locations"
     },
     {
       "id": "InpatientLocations",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/InpatientLocations",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/InpatientLocations",
       "title": "Inpatient Locations"
     },
     {
       "id": "MeasureGroups",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/MeasureGroups",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureGroups",
       "title": "Measure Groups"
     },
     {
       "id": "MeasurePopulations",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/MeasurePopulations",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasurePopulations",
       "title": "Measure Populations"
     },
     {
       "id": "MeasureRateAggregationValues",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/MeasureRateAggregationValues",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureRateAggregationValues",
       "title": "Measure Rate Aggregation Value Set"
     },
     {
       "id": "MeasureStatus",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/MeasureStatus",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureStatus",
       "title": "Measure Status Values"
     },
     {
       "id": "PatientsOnVentilator",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/PatientsOnVentilator",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator",
       "title": "Observations for Patients on a Ventilator"
     },
     {
       "id": "PatientDeaths",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/PatientDeaths",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/PatientDeaths",
       "title": "Patient Died"
     },
     {
       "id": "Remdesivir",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/Remdesivir",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir",
       "title": "Remdesivir"
     },
     {
       "id": "SARSCoV2GeneticLabs",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/SARSCoV2GeneticLabs",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/SARSCoV2GeneticLabs",
       "title": "SARSCoV2 Genetic Labs"
     },
     {
@@ -255,38 +262,116 @@
     {
       "id": "SuspectedCOVID19Diagnoses",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/SuspectedCOVID19Diagnoses",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/SuspectedCOVID19Diagnoses",
       "title": "Suspected COVID-19 Diagnosis Values"
     },
     {
       "id": "SuspectedOrConfirmedCOVID19Diagnoses",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses",
       "title": "Suspected Or Diagnosed COVID-19"
     },
     {
       "id": "VentilatorDevices",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorDevices",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorDevices",
       "title": "Ventilator Devices"
-    },
-    {
-      "id": "VentilatorWithTracheostomyDevices",
-      "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorWithTracheostomyDevices",
-      "title": "Ventilator Devices when used with Tracheostomy"
     },
     {
       "id": "VentilatorObservations",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorObservations",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorObservations",
       "title": "Ventilator Observations"
     },
     {
       "id": "VentilatorProcedures",
       "contentType": "application/fhir+xml",
-      "url": "http://hl7.org/fhir/us/saner/ValueSet/VentilatorProcedures",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorProcedures",
       "title": "Ventilator Procedures"
+    },
+    {
+      "id": "VTEReports",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/VTEReports",
+      "title": "Codes for reports about VTE Diagnosics"
+    },
+    {
+      "id": "AllCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/AllCOVID19RiskFactors",
+      "title": "All COVID-19 Risk Factors"
+    },
+    {
+      "id": "NeoplasticCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/NeoplasticCOVID19RiskFactors",
+      "title": "Neoplastic COVID-19 Risk Factors"
+    },
+    {
+      "id": "COPDCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/COPDCOVID19RiskFactors",
+      "title": "COPD COVID-19 Risk Factors"
+    },
+    {
+      "id": "TobaccoCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/TobaccoCOVID19RiskFactors",
+      "title": "Tobacco COVID-19 Risk Factors"
+    },
+    {
+      "id": "HypertensionCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/HypertensionCOVID19RiskFactors",
+      "title": "Hypertension COVID-19 Risk Factors"
+    },
+    {
+      "id": "CardiovascularCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/CardiovascularCOVID19RiskFactors",
+      "title": "Cardiovascular COVID-19 Risk Factors"
+    },
+    {
+      "id": "ObesityCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/ObesityCOVID19RiskFactors",
+      "title": "Obesity COVID-19 Risk Factors"
+    },
+    {
+      "id": "SickleCellCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/SickleCellCOVID19RiskFactors",
+      "title": "Sickle Cell COVID-19 Risk Factors"
+    },
+    {
+      "id": "KidneyDiseaseCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/KidneyDiseaseCOVID19RiskFactors",
+      "title": "Kidney Disease COVID-19 Risk Factors"
+    },
+    {
+      "id": "PregnancyCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/PregnancyCOVID19RiskFactors",
+      "title": "Pregnancy COVID-19 Risk Factors"
+    },
+    {
+      "id": "DiabetesCOVID19RiskFactors",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/DiabetesCOVID19RiskFactors",
+      "title": "Diabetes COVID-19 Risk Factors"
+    },
+    {
+      "id": "IsolationPrecautions",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/IsolationPrecautions",
+      "title": "COVID-19 Isolation Precautions"
+    },
+    {
+      "id": "COVID19Complications",
+      "contentType": "application/fhir+xml",
+      "url": "http://hl7.org/fhir/uv/saner/ValueSet/COVID19Complications",
+      "title": "COVID-19 Complications"
     }
   ]
 }

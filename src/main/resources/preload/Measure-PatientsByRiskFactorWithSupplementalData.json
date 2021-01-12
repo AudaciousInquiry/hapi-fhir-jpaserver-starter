@@ -1,0 +1,490 @@
+{
+  "resourceType": "Measure",
+  "id": "PatientsByRiskFactorWithSupplementalData",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasure"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Enables specification of proposed measure reporting</b>: Do Once per 1 days</p><p><b>url</b>: <code>http://hl7.org/fhir/uv/saner/Measure/PatientsByRiskFactorWithSupplementalData</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PatientsByRiskFactor</p><p><b>title</b>: COVID-19 Patients By Risk Factor</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Jan 11, 2021, 9:45:51 AM</p><p><b>publisher</b>: HL7 International Public Health Workgroup</p><p><b>contact</b>: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, <a href=\"mailto:pher@lists.hl7.org\">pher@lists.hl7.org</a>, HL7 Public Health Workgroup: <a href=\"http://hl7.org/Special/committees/pher/index.cfm\">http://hl7.org/Special/committees/pher/index.cfm</a>, Keith W. Boone: <a href=\"mailto:mailto:kboone@ainq.com\">mailto:kboone@ainq.com</a></p><h3>UseContexts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>author</b>: Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN): <a href=\"mailto:mailto:nhsn@cdc.gov\">mailto:nhsn@cdc.gov</a></p><h3>RelatedArtifacts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table><p><b>library</b>: <a href=\"http://hl7.org/fhir/uv/saner/Library/ComputableNHSNMeasureLibrary\">http://hl7.org/fhir/uv/saner/Library/ComputableNHSNMeasureLibrary</a></p><blockquote><p><b>group</b></p><blockquote><p><b>Attributes describing a group of measures</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Encounter}, {http://snomed.info/sct 398284004}\">Patient in room</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/PublicHealthMeasureScoring queue-length}\">Queue Length</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type structure}\">Structure</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation decrease}\">Decreased score indicates improvement</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: point-in-time</p></blockquote><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem Encounters}\">Hospital COVID-19 Patient Encounters Reporting</span></p><blockquote><p><b>population</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues confirmedC19Pats}, {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Patients with confirmed COVID-19 in any location.</span></p><p><b>description</b>: Active encounters where the encounter diagnosis is suspected or confirmed COVID-19,\nor a Condition of confirmed COVID-19 was created during that encounter.  This includes the patients with laboratory-confirmed\nor clinically diagnosed COVID-19.</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title=\"Codes: \">By Risk Factor</span></p><p><b>description</b>: Stratifies the population by Condition/RiskFactor</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Encounter}\">Encounter</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: The patient encounter</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\">Patient</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: The patient</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Location}\">Location</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: The patient location</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Condition}\">Condition</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: The encounter and other diagnosis</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types MedicationRequest}, {http://hl7.org/fhir/resource-types MedicationAdministration}, {http://hl7.org/fhir/resource-types Immunization}\">MedicationRequest</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: Medications/Immunizations given during the encounter</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Observation}\">Observation</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: COVID-19 Lab Results</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types DiagnosticReport}, {http://hl7.org/fhir/resource-types DocumentReference}, {http://hl7.org/fhir/resource-types Observation}, {http://hl7.org/fhir/resource-types ServiceRequest}\">DiagnosticReport</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: VTE Diagnostic Results</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>supplementalData</b></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/resource-types Procedure}, {http://hl7.org/fhir/resource-types ServiceRequest}\">Procedure</span></p><p><b>usage</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-data-usage supplemental-data}\">Supplemental Data</span></p><p><b>description</b>: Isolation Precautions</p><h3>Criteria</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod",
+      "valueTiming": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/saner/Measure/PatientsByRiskFactorWithSupplementalData",
+  "version": "0.1.0",
+  "name": "PatientsByRiskFactor",
+  "title": "COVID-19 Patients By Risk Factor",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "840539006",
+            "display": "COVID-19"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "author": [
+    {
+      "name": "Centers for Disease Control/National Healthcare Safety Network (CDC/NHSN)",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:nhsn@cdc.gov"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "label": "NHSN COVID-19 Reporting",
+      "display": "CDC/NHSN COVID-19 Patient Impact & Hospital Capacity Module Home Page",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/acute-care-hospital/covid19/"
+    },
+    {
+      "type": "documentation",
+      "label": "How to import COVID-19 Summary Data",
+      "display": "Importing COVID-19 Patient Module Denominator data for Patient Safety Component",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf"
+    },
+    {
+      "type": "documentation",
+      "label": "Table of Instructions",
+      "display": "Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf"
+    },
+    {
+      "type": "documentation",
+      "label": "CSV File Template",
+      "display": "CDC/NHSN COVID-19 Reporting CSV File Template",
+      "url": "https://web.archive.org/web/20200501215043/https://www.cdc.gov/nhsn/pdfs/covid19/covid19-test-csv-import.csv"
+    }
+  ],
+  "library": [
+    "http://hl7.org/fhir/uv/saner/Library/ComputableNHSNMeasureLibrary"
+  ],
+  "group": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "subject",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/resource-types",
+                    "code": "Encounter"
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "398284004",
+                    "display": "Patient in room"
+                  }
+                ],
+                "text": "Patient in room"
+              }
+            },
+            {
+              "url": "scoring",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/uv/saner/CodeSystem/PublicHealthMeasureScoring",
+                    "code": "queue-length"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+                    "code": "structure"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "improvementNotation",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                    "code": "decrease"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "rateAggregation",
+              "valueString": "point-in-time"
+            }
+          ],
+          "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
+            "code": "Encounters",
+            "display": "Encounters"
+          }
+        ],
+        "text": "Hospital COVID-19 Patient Encounters Reporting"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
+                "code": "confirmedC19Pats",
+                "display": "All Confirmed COVID-19 Patients"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ],
+            "text": "Patients with confirmed COVID-19 in any location."
+          },
+          "description": "Active encounters where the encounter diagnosis is suspected or confirmed COVID-19,\nor a Condition of confirmed COVID-19 was created during that encounter.  This includes the patients with laboratory-confirmed\nor clinically diagnosed COVID-19.",
+          "criteria": {
+            "description": "This expression finds encounters that were active or finished in the reporting period, and their referenced Patient, Condition\nand Observation resources. It filters these based on cases where Encounter reports a reason or condition in the\nConfirmedCOVID19Diagnoses value set, or where a positive lab test from the Covid19Labs valueset, or where the patient\nhas any such associated Condition or Observation resources in the prior two weeks.",
+            "name": "ConfirmedC19Pats",
+            "language": "text/fhirpath",
+            "expression": "All('Encounter',\n    including('subject','condition','reasonReference'),\n    with('status').equalTo('in-progress'|'finished'),\n    with('date').within(%ReportingPeriod)\n ).onServers(%Base).\n where(\n   iif(myMemberOf((Encounter.reasonCode | Condition.code), %ConfirmedCOVID19Diagnoses.url) |\n       Observation.where((myMemberOf(code, %Covid19Labs.url) and myMemberOf(value, %PositiveResults.url))\n     ), true,\n     iif(\n       Patient.distinct()\n          .whereExists('Observation',\n            for('patient', $this),\n            with('status').equalTo(\n                'registered' | 'preliminary' | 'final' | 'amended' | 'corrected'),\n            with('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n            with('code').in(%CovidLabs),\n            with('value-concept).in(%PositiveResults)\n       ).onServers(%Base), true,\n       Patient.distinct()\n          .whereExists('Condition',\n            for('patient', $this),\n            with('verification-status').notEqualTo('refuted'|'entered-in-error').\n            with('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n            with('code').in(%ConfirmedCOVID19Diagnoses.url)\n       ).exists()\n     )\n  )\n)\n.distinct()\n.aggregate(\n  iif($total.subject contains $this.subject, $total, $total | $this )\n)"
+          }
+        }
+      ],
+      "stratifier": [
+        {
+          "code": {
+            "text": "By Risk Factor"
+          },
+          "description": "Stratifies the population by Condition/RiskFactor",
+          "criteria": {
+            "language": "text/fhirpath",
+            "expression": "findAll('Condition',\n\tfor('patient', $this.subject),\n\twith('code').in(%AllCOVID19RiskFactors.url)\n       with('date').greaterThan(%ReportingPeriod.start - 1 'year')\n   ).onServers(%Base).select(\n   \tiif(code, memberOf(%NeoplasticCOVID19RiskFactors.url), 'Neoplastic Disease', {}) |\n   \tiif(code, memberOf(%COPDCOVID19RiskFactors.url), 'COPD', {}) |\n   \tiif(code, memberOf(%TobaccoCOVID19RiskFactors.url), 'Tobacco User', {}) |\n   \tiif(code, memberOf(%HypertensionCOVID19RiskFactors.url), 'Hypertension', {}) |\t// Calling out Hypertension separately for reasons\n   \tiif(code, memberOf(%CardiovascularCOVID19RiskFactors.url), 'Cardiovascular Disease', {}) |\t// Even though it isa Cardiovascular disease\n   \tiif(code, memberOf(%ObesityCOVID19RiskFactors.url), 'Obesity', {}) |\n   \tiif(code, memberOf(%SickleCellCOVID19RiskFactors.url), 'Sickle cell Disease', {}) |\n   \tiif(code, memberOf(%KidneyDiseaseCOVID19RiskFactors.url), 'Chronic Kidney Disease', {}) |\n   \tiif(code, memberOf(%PregnancyCOVID19RiskFactors.url), 'Pregnant', {}) |\n   \tiif(code, memberOf(%DiabetesCOVID19RiskFactors.url), 'Diabetes', {})\n   )"
+          }
+        }
+      ]
+    }
+  ],
+  "supplementalData": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Encounter"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "The patient encounter",
+      "criteria": {
+        "description": "Encounter dates, reason (e.g., Chief Complaint), discharge disposition",
+        "name": "Encounter",
+        "language": "text/fhirpath",
+        "expression": "Encounter"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "The patient",
+      "criteria": {
+        "description": "The Patient, including sex, dob, race and ethnicity",
+        "name": "Patient",
+        "language": "text/fhirpath",
+        "expression": "Encounter.subject.resolve()"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Location"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "The patient location",
+      "criteria": {
+        "description": "The Patient Location",
+        "name": "PatientLocation",
+        "language": "text/fhirpath",
+        "expression": "Encounter.location.location.resolve()"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Condition"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "The encounter and other diagnosis",
+      "criteria": {
+        "description": "Retrieves all conditions associated with the encounter",
+        "name": "EncounterDiagnosis",
+        "language": "text/fhirpath",
+        "expression": "(Encounter.reasonReference|Encounter.diagnosis.condition).resolve() |\nfindAll('Condition',\n\tfor('patient', $this.subject),\n\twith('encounter').equalTo($this.id)\n)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "MedicationRequest"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "MedicationAdministration"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Immunization"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "Medications/Immunizations given during the encounter",
+      "criteria": {
+        "description": "Retrieves all medications/immunizations associated with the encounter",
+        "name": "EncounterMeds",
+        "language": "text/fhirpath",
+        "expression": "findAll('MedicationRequest',\n\tfor('patient', $this.subject),\n\twith('encounter').equalTo($this.id)  // alternately, this could be within encounter dates\n) |\nfindAll('MedicationAdministration',\n\tfor('patient', $this.subject),\n\twith('encounter').equalTo($this.id)\n) |\nfindAll('Immunization',\n\tfor('patient', $this.subject),\n\twith('encounter').equalTo($this.id)\n)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Observation"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "COVID-19 Lab Results",
+      "criteria": {
+        "description": "Retrieves all Observations associated with COVID-19 Labs",
+        "name": "COVID19Labs",
+        "language": "text/fhirpath",
+        "expression": "findAll('Observation',\n\tfor('patient', $this.subject),\n\twith('code').in(%Covid19Labs.url),\n\twith('date').greaterThan(%ReportingPeriod.start - 1 'year')\n)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "DiagnosticReport"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "DocumentReference"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Observation"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "ServiceRequest"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "VTE Diagnostic Results",
+      "criteria": {
+        "description": "Retrieves diagnostics associated with VTE",
+        "name": "VTEDiagnostics",
+        "language": "text/fhirpath",
+        "expression": "findAll('DiagnosticReport',\n\tfor('patient', $this.subject),\n\tincluding('result', 'media'), // what else?\n\twith('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n\twith('code').in(%VTEReports.url)\n) |\nfindAll('DocumentReference',\n\tfor('patient', $this.subject),\n\tincluding('related'), // what else?\n\twith('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n\twith('code').in(%VTEReports.url)\n) |\nfindAll('Observation',\n\tfor('patient', $this.subject),\n\tincluding('based-on'), // what else?\n\twith('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n\twith('code').in(%VTEReports.url)\n) |\nfindAll('ServiceRequest',\n\tfor('patient', $this.subject),\n\tincluding('based-on'), // what else?\n\twith('date').greaterThan(%ReportingPeriod.start - 1 'year'),\n\twith('code').in(%VTEReports.url)\n)"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Procedure"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "ServiceRequest"
+          }
+        ]
+      },
+      "usage": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+              "code": "supplemental-data"
+            }
+          ]
+        }
+      ],
+      "description": "Isolation Precautions",
+      "criteria": {
+        "description": "Retrieves orders or procedures associated with Isolation Precautions",
+        "name": "IsolationPrecautions",
+        "language": "text/fhirpath",
+        "expression": "findAll('ServiceRequest',\n\tfor('patient', $this.subject),\n\tfor('encounter', $this.id),\n\twith('code').in(%IsolationPrecautions.url)\n) |\nfindAll('Procedure',\n\tfor('patient', $this.subject),\n\tfor('encounter', $this.id),\n\twith('code').in(%IsolationPrecautions.url)\n)"
+      }
+    }
+  ]
+}

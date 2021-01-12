@@ -3,7 +3,7 @@
   "id": "Condition1b",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Condition1b</p><p><b>identifier</b>: id: Con222222</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 67782005}\">Adult respiratory distress syndrome</span></p><p><b>subject</b>: <a href=\"Patient-Patient1b.html\">Generated Summary: id: Patient1b; id: Pat222222; gender: female; birthDate: 1967-08-23</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: Con222222</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 67782005}\">Adult respiratory distress syndrome</span></p><p><b>subject</b>: <a href=\"Patient-Patient1b.html\">Generated Summary: id: Pat222222; gender: female; birthDate: 1967-08-23</a></p></div>"
   },
   "identifier": [
     {

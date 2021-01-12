@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "id": "IsolationPrecautions",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409524006\">409524006</a></td><td>Airborne precautions (procedure)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409525007\">409525007</a></td><td>Respiratory secretion precautions (procedure)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409529001\">409529001</a></td><td>Contact precautions (procedure)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409583003\">409583003</a></td><td>Transmission-based precautions (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/uv/saner/ValueSet/IsolationPrecautions",
+  "version": "0.1.0",
+  "name": "IsolationPrecautions",
+  "title": "COVID-19 Isolation Precautions",
+  "status": "active",
+  "date": "2021-01-11T09:45:51-05:00",
+  "publisher": "HL7 International Public Health Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pher@lists.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Public Health Workgroup",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "Codes identifying Isolation Precaution Orders or Procedures",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "409524006",
+            "display": "Airborne precautions (procedure)"
+          },
+          {
+            "code": "409525007",
+            "display": "Respiratory secretion precautions (procedure)"
+          },
+          {
+            "code": "409529001",
+            "display": "Contact precautions (procedure)"
+          },
+          {
+            "code": "409583003",
+            "display": "Transmission-based precautions (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

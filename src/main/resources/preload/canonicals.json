@@ -1,0 +1,870 @@
+[
+  {
+    "id": "SARSCoV2Labs",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.109",
+    "version": "0.1.0",
+    "name": "SARSCoV2Labs"
+  },
+  {
+    "id": "COVID19DXICD10",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1123",
+    "version": "0.1.0",
+    "name": "COVID19DXICD10"
+  },
+  {
+    "id": "COVID19DXSNOMED",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1124",
+    "version": "0.1.0",
+    "name": "COVID19DXSNOMED"
+  },
+  {
+    "id": "COVID19Organism",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1143",
+    "version": "0.1.0",
+    "name": "COVID19Organism"
+  },
+  {
+    "id": "COVID19Antibody",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1155",
+    "version": "0.1.0",
+    "name": "COVID19Antibody"
+  },
+  {
+    "id": "COVID19Exposures",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1203",
+    "version": "0.1.0",
+    "name": "COVID19Exposures"
+  },
+  {
+    "id": "HealthcareServiceLocation",
+    "type": "ValueSet",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275",
+    "version": "0.1.0",
+    "name": "HealthcareServiceLocation"
+  },
+  {
+    "id": "DataSource",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/DataSource",
+    "version": "0.1.0",
+    "name": "DataSource"
+  },
+  {
+    "id": "DataSource-ComputeMeasure",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/DataSource-ComputeMeasure",
+    "version": "0.1.0",
+    "name": "DataSource_ComputeMeasure"
+  },
+  {
+    "id": "MeasureComputer",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureComputer",
+    "version": "0.1.0",
+    "name": "MeasureComputer"
+  },
+  {
+    "id": "MeasureComputer-ComputeMeasure",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureComputer-ComputeMeasure",
+    "version": "0.1.0",
+    "name": "MeasureComputer_ComputeMeasure"
+  },
+  {
+    "id": "MeasureConsumer-Aggregate",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-Aggregate",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_Aggregate"
+  },
+  {
+    "id": "MeasureConsumer-CSV-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-CSV-Pull",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_CSV_Pull"
+  },
+  {
+    "id": "MeasureConsumer-CSV-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-CSV-Push",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_CSV_Push"
+  },
+  {
+    "id": "MeasureConsumer-ProduceMeasure-CSV-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-ProduceMeasure-CSV-Push",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_ProduceMeasure_CSV_Push"
+  },
+  {
+    "id": "MeasureConsumer-ProduceMeasure-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-ProduceMeasure-Push",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_ProduceMeasure_Push"
+  },
+  {
+    "id": "MeasureConsumer-ProduceMeasure-SupplementalData",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-ProduceMeasure-SupplementalData",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_ProduceMeasure_SupplementalData"
+  },
+  {
+    "id": "MeasureConsumer-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-Pull",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_Pull"
+  },
+  {
+    "id": "MeasureConsumer-Pull-Questionnaire",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-Pull-Questionnaire",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_Pull_Questionnaire"
+  },
+  {
+    "id": "MeasureConsumer-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-Push",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_Push"
+  },
+  {
+    "id": "MeasureConsumer-QueryMeasure-CSV-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-QueryMeasure-CSV-Pull",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_QueryMeasure_CSV_Pull"
+  },
+  {
+    "id": "MeasureConsumer-QueryMeasure-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-QueryMeasure-Pull",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_QueryMeasure_Pull"
+  },
+  {
+    "id": "MeasureConsumer-QueryMeasure-Pull-Questionnaire",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-QueryMeasure-Pull-Questionnaire",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_QueryMeasure_Pull_Questionnaire"
+  },
+  {
+    "id": "MeasureConsumer-SupplementalData",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureConsumer-SupplementalData",
+    "version": "0.1.0",
+    "name": "MeasureConsumer_SupplementalData"
+  },
+  {
+    "id": "MeasureDefinitionConsumer",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureDefinitionConsumer",
+    "version": "0.1.0",
+    "name": "MeasureDefinitionConsumer"
+  },
+  {
+    "id": "MeasureDefinitionConsumer-QueryMeasureDefinition",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureDefinitionConsumer-QueryMeasureDefinition",
+    "version": "0.1.0",
+    "name": "MeasureDefinitionConsumer_QueryMeasureDefinition"
+  },
+  {
+    "id": "MeasureDefinitionSource",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureDefinitionSource",
+    "version": "0.1.0",
+    "name": "MeasureDefinitionSource"
+  },
+  {
+    "id": "MeasureDefinitionSource-QueryMeasureDefinition",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureDefinitionSource-QueryMeasureDefinition",
+    "version": "0.1.0",
+    "name": "MeasureDefinitionSource_QueryMeasureDefinition"
+  },
+  {
+    "id": "MeasureSource-Aggregate",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-Aggregate",
+    "version": "0.1.0",
+    "name": "MeasureSource_Aggregate"
+  },
+  {
+    "id": "MeasureSource-CSV-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-CSV-Pull",
+    "version": "0.1.0",
+    "name": "MeasureSource_CSV_Pull"
+  },
+  {
+    "id": "MeasureSource-CSV-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-CSV-Push",
+    "version": "0.1.0",
+    "name": "MeasureSource_CSV_Push"
+  },
+  {
+    "id": "MeasureSource-ProduceMeasure-CSV-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-ProduceMeasure-CSV-Push",
+    "version": "0.1.0",
+    "name": "MeasureSource_ProduceMeasure_CSV_Push"
+  },
+  {
+    "id": "MeasureSource-ProduceMeasure-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-ProduceMeasure-Push",
+    "version": "0.1.0",
+    "name": "MeasureSource_ProduceMeasure_Push"
+  },
+  {
+    "id": "MeasureSource-ProduceMeasure-SupplementalData",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-ProduceMeasure-SupplementalData",
+    "version": "0.1.0",
+    "name": "MeasureSource_ProduceMeasure_SupplementalData"
+  },
+  {
+    "id": "MeasureSource-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-Pull",
+    "version": "0.1.0",
+    "name": "MeasureSource_Pull"
+  },
+  {
+    "id": "MeasureSource-Pull-Questionnaire",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-Pull-Questionnaire",
+    "version": "0.1.0",
+    "name": "MeasureSource_Pull_Questionnaire"
+  },
+  {
+    "id": "MeasureSource-Push",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-Push",
+    "version": "0.1.0",
+    "name": "MeasureSource_Push"
+  },
+  {
+    "id": "MeasureSource-QueryMeasure-CSV-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-QueryMeasure-CSV-Pull",
+    "version": "0.1.0",
+    "name": "MeasureSource_QueryMeasure_CSV_Pull"
+  },
+  {
+    "id": "MeasureSource-QueryMeasure-Pull",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-QueryMeasure-Pull",
+    "version": "0.1.0",
+    "name": "MeasureSource_QueryMeasure_Pull"
+  },
+  {
+    "id": "MeasureSource-QueryMeasure-Pull-Questionnaire",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-QueryMeasure-Pull-Questionnaire",
+    "version": "0.1.0",
+    "name": "MeasureSource_QueryMeasure_Pull_Questionnaire"
+  },
+  {
+    "id": "MeasureSource-SupplementalData",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/saner/CapabilityStatement/MeasureSource-SupplementalData",
+    "version": "0.1.0",
+    "name": "MeasureSource_SupplementalData"
+  },
+  {
+    "id": "MeasureGroupSystem",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureGroupSystem",
+    "version": "0.1.0",
+    "name": "MeasureGroupSystem"
+  },
+  {
+    "id": "MeasurePopulationSystem",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasurePopulationSystem",
+    "version": "0.1.0",
+    "name": "MeasurePopulationSystem"
+  },
+  {
+    "id": "MeasureRateAggregation",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasureRateAggregation",
+    "version": "0.1.0",
+    "name": "MeasureRateAggregation"
+  },
+  {
+    "id": "MeasuredValues",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/saner/CodeSystem/MeasuredValues",
+    "version": "0.1.0",
+    "name": "MeasuredValues"
+  },
+  {
+    "id": "PublicHealthMeasureScoring",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/saner/CodeSystem/PublicHealthMeasureScoring",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasureScoring"
+  },
+  {
+    "id": "HAvBED2toFHIR",
+    "type": "ConceptMap",
+    "url": "http://hl7.org/fhir/uv/saner/ConceptMap/HAvBED2toFHIR",
+    "version": "0.1.0",
+    "name": "HAvBED2toFHIR"
+  },
+  {
+    "id": "hl7.fhir.uv.saner",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/uv/saner/ImplementationGuide/hl7.fhir.uv.saner",
+    "version": "0.1.0",
+    "name": "SituationalAwarenessforNovelEpidemicResponse"
+  },
+  {
+    "id": "ComputableNHSNMeasureLibrary",
+    "type": "Library",
+    "url": "http://hl7.org/fhir/uv/saner/Library/ComputableNHSNMeasureLibrary",
+    "version": "0.1.0",
+    "name": "ComputableNHSNMeasureLibrary"
+  },
+  {
+    "id": "CDCHealthcareSupplyPathway",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareSupplyPathway",
+    "version": "0.1.0",
+    "name": "CDCHealthcareSupplyPathway"
+  },
+  {
+    "id": "CDCHealthcareWorkerStaffingPathway",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/CDCHealthcareWorkerStaffingPathway",
+    "version": "0.1.0",
+    "name": "CDCHealthcareWorkerStaffingPathway"
+  },
+  {
+    "id": "CDCPatientImpactAndHospitalCapacity",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/CDCPatientImpactAndHospitalCapacity",
+    "version": "0.1.0",
+    "name": "CDCPatientImpactAndHospitalCapacity"
+  },
+  {
+    "id": "ComputableCDCPatientImpactAndHospitalCapacity",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/ComputableCDCPatientImpactAndHospitalCapacity",
+    "version": "0.1.0",
+    "name": "ComputableCDCPatientImpactAndHospitalCapacity"
+  },
+  {
+    "id": "FEMADailyHospitalCOVID19Reporting",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/FEMADailyHospitalCOVID19Reporting",
+    "version": "0.1.0",
+    "name": "FEMADailyHospitalCOVID19Reporting"
+  },
+  {
+    "id": "PatientsByRiskFactorWithSupplementalData",
+    "type": "Measure",
+    "url": "http://hl7.org/fhir/uv/saner/Measure/PatientsByRiskFactorWithSupplementalData",
+    "version": "0.1.0",
+    "name": "PatientsByRiskFactor"
+  },
+  {
+    "id": "Measure-evaluate-measure",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/Measure-evaluate-measure",
+    "version": "0.1.0",
+    "name": "Evaluatethemeasure"
+  },
+  {
+    "id": "Measure-report-csv",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/Measure-report-csv",
+    "version": "0.1.0",
+    "name": "CreateorupdateaMeasureReportfromCSVFormat"
+  },
+  {
+    "id": "MeasureReport-aggregate",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/MeasureReport-aggregate",
+    "version": "0.1.0",
+    "name": "Aggregate"
+  },
+  {
+    "id": "MeasureReport-read-csv",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/MeasureReport-read-csv",
+    "version": "0.1.0",
+    "name": "ReadinCSVFormat"
+  },
+  {
+    "id": "MeasureReport-search-csv",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/OperationDefinition/MeasureReport-search-csv",
+    "version": "0.1.0",
+    "name": "SearchinCSVFormat"
+  },
+  {
+    "id": "SearchParameter-code",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/saner/SearchParameter/SearchParameter-code",
+    "version": "0.1.0",
+    "name": "code"
+  },
+  {
+    "id": "SearchParameter-definition-text",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/saner/SearchParameter/SearchParameter-definition-text",
+    "version": "0.1.0",
+    "name": "definition-text"
+  },
+  {
+    "id": "SearchParameter-disposition",
+    "type": "SearchParameter",
+    "url": "http://hl7.org/fhir/uv/saner/SearchParameter/SearchParameter-disposition",
+    "version": "0.1.0",
+    "name": "disposition"
+  },
+  {
+    "id": "AuditEventBase",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventBase",
+    "version": "0.1.0",
+    "name": "AuditEventBase"
+  },
+  {
+    "id": "AuditEventCreate",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventCreate",
+    "version": "0.1.0",
+    "name": "AuditEventCreate"
+  },
+  {
+    "id": "AuditEventDelete",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventDelete",
+    "version": "0.1.0",
+    "name": "AuditEventDelete"
+  },
+  {
+    "id": "AuditEventRead",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventRead",
+    "version": "0.1.0",
+    "name": "AuditEventRead"
+  },
+  {
+    "id": "AuditEventSearch",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventSearch",
+    "version": "0.1.0",
+    "name": "AuditEventSearch"
+  },
+  {
+    "id": "AuditEventUpdate",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/AuditEventUpdate",
+    "version": "0.1.0",
+    "name": "AuditEventUpdate"
+  },
+  {
+    "id": "CapabilityStatementWithSlices",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/CapabilityStatementWithSlices",
+    "version": "0.1.0",
+    "name": "CapabilityStatementWithSlices"
+  },
+  {
+    "id": "FEMAMeasureLibrary",
+    "type": "Library",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/FEMAMeasureLibrary",
+    "version": "0.1.0",
+    "name": "FEMAMeasureLibrary"
+  },
+  {
+    "id": "MeasureCriteria",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureCriteria",
+    "version": "0.1.0",
+    "name": "MeasureCriteria"
+  },
+  {
+    "id": "MeasureGroupAttributes",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes",
+    "version": "0.1.0",
+    "name": "MeasureGroupAttributes"
+  },
+  {
+    "id": "MeasurePopulationAlternateCriteria",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasurePopulationAlternateCriteria",
+    "version": "0.1.0",
+    "name": "MeasurePopulationAlternateCriteria"
+  },
+  {
+    "id": "MeasureReportingTiming",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureReportingTiming",
+    "version": "0.1.0",
+    "name": "MeasureReportingTiming"
+  },
+  {
+    "id": "MeasuredItemDescription",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasuredItemDescription",
+    "version": "0.1.0",
+    "name": "MeasuredItemDescription"
+  },
+  {
+    "id": "NHSNMeasureLibrary",
+    "type": "Library",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/NHSNMeasureLibrary",
+    "version": "0.1.0",
+    "name": "NHSNMeasureLibrary"
+  },
+  {
+    "id": "PreciseDateTime",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PreciseDateTime",
+    "version": "0.1.0",
+    "name": "PreciseDateTime"
+  },
+  {
+    "id": "PublicHealthMeasure",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasure",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasure"
+  },
+  {
+    "id": "PublicHealthMeasureLibrary",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureLibrary",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasureLibrary"
+  },
+  {
+    "id": "PublicHealthMeasureMetadataAttachment",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureMetadataAttachment",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasureMetadataAttachment"
+  },
+  {
+    "id": "PublicHealthMeasureReport",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/PublicHealthMeasureReport",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasureReport"
+  },
+  {
+    "id": "ReportingPeriod",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/ReportingPeriod",
+    "version": "0.1.0",
+    "name": "ReportingPeriod"
+  },
+  {
+    "id": "measure-expectation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/measure-expectation",
+    "version": "0.1.0",
+    "name": "MeasureExpection"
+  },
+  {
+    "id": "AllCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/AllCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "AllCOVID19RiskFactors"
+  },
+  {
+    "id": "BedLocationOperationalStatus",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/BedLocationOperationalStatus",
+    "version": "0.1.0",
+    "name": "BedLocationOperationalStatus"
+  },
+  {
+    "id": "COPDCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/COPDCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "COPDCOVID19RiskFactors"
+  },
+  {
+    "id": "COVID19Complications",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/COVID19Complications",
+    "version": "0.1.0",
+    "name": "COVID19Complications"
+  },
+  {
+    "id": "CardiovascularCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/CardiovascularCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "CardiovascularCOVID19RiskFactors"
+  },
+  {
+    "id": "ConfirmedCOVID19Diagnoses",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/ConfirmedCOVID19Diagnoses",
+    "version": "0.1.0",
+    "name": "ConfirmedCOVID19Diagnoses"
+  },
+  {
+    "id": "Covid19Labs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/Covid19Labs",
+    "version": "0.1.0",
+    "name": "Covid19Labs"
+  },
+  {
+    "id": "DecadeAgeBrackets",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/DecadeAgeBrackets",
+    "version": "0.1.0",
+    "name": "DecadeAgeBrackets"
+  },
+  {
+    "id": "DiabetesCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/DiabetesCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "DiabetesCOVID19RiskFactors"
+  },
+  {
+    "id": "EventContext",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/EventContext",
+    "version": "0.1.0",
+    "name": "EventContext"
+  },
+  {
+    "id": "HypertensionCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/HypertensionCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "HypertensionCOVID19RiskFactors"
+  },
+  {
+    "id": "ICULocations",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/ICULocations",
+    "version": "0.1.0",
+    "name": "ICULocations"
+  },
+  {
+    "id": "InpatientLocations",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/InpatientLocations",
+    "version": "0.1.0",
+    "name": "InpatientLocations"
+  },
+  {
+    "id": "IsolationPrecautions",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/IsolationPrecautions",
+    "version": "0.1.0",
+    "name": "IsolationPrecautions"
+  },
+  {
+    "id": "KidneyDiseaseCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/KidneyDiseaseCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "KidneyDiseaseCOVID19RiskFactors"
+  },
+  {
+    "id": "MeasureGroups",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureGroups",
+    "version": "0.1.0",
+    "name": "MeasureGroups"
+  },
+  {
+    "id": "MeasurePopulations",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasurePopulations",
+    "version": "0.1.0",
+    "name": "MeasurePopulations"
+  },
+  {
+    "id": "MeasureRateAggregationValues",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureRateAggregationValues",
+    "version": "0.1.0",
+    "name": "MeasureRateAggregationValues"
+  },
+  {
+    "id": "MeasureScoring",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureScoring",
+    "version": "0.1.0",
+    "name": "MeasureScoring"
+  },
+  {
+    "id": "MeasureStatus",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/MeasureStatus",
+    "version": "0.1.0",
+    "name": "MeasureStatus"
+  },
+  {
+    "id": "NegativeResults",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/NegativeResults",
+    "version": "0.1.0",
+    "name": "NegativeResults"
+  },
+  {
+    "id": "NeoplasticCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/NeoplasticCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "NeoplasticCOVID19RiskFactors"
+  },
+  {
+    "id": "ObesityCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/ObesityCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "ObesityCOVID19RiskFactors"
+  },
+  {
+    "id": "PatientDeaths",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/PatientDeaths",
+    "version": "0.1.0",
+    "name": "PatientDeaths"
+  },
+  {
+    "id": "PatientsOnVentilator",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/PatientsOnVentilator",
+    "version": "0.1.0",
+    "name": "PatientsOnVentilator"
+  },
+  {
+    "id": "PositiveResults",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/PositiveResults",
+    "version": "0.1.0",
+    "name": "PositiveResults"
+  },
+  {
+    "id": "PregnancyCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/PregnancyCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "PregnancyCOVID19RiskFactors"
+  },
+  {
+    "id": "PublicHealthMeasureAttachmentTypes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/PublicHealthMeasureAttachmentTypes",
+    "version": "0.1.0",
+    "name": "PublicHealthMeasureAttachmentTypes"
+  },
+  {
+    "id": "Remdesivir",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/Remdesivir",
+    "version": "0.1.0",
+    "name": "Remdesivir"
+  },
+  {
+    "id": "SARSCoV2GeneticLabs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/SARSCoV2GeneticLabs",
+    "version": "0.1.0",
+    "name": "SARSCoV2GeneticLabs"
+  },
+  {
+    "id": "ScoreAgeBrackets",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/ScoreAgeBrackets",
+    "version": "0.1.0",
+    "name": "ScoreAgeBrackets"
+  },
+  {
+    "id": "SickleCellCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/SickleCellCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "SickleCellCOVID19RiskFactors"
+  },
+  {
+    "id": "SuspectedCOVID19Diagnoses",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/SuspectedCOVID19Diagnoses",
+    "version": "0.1.0",
+    "name": "SuspectedCOVID19Diagnoses"
+  },
+  {
+    "id": "SuspectedOrConfirmedCOVID19Diagnoses",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/SuspectedOrConfirmedCOVID19Diagnoses",
+    "version": "0.1.0",
+    "name": "SuspectedOrConfirmedCOVID19Diagnoses"
+  },
+  {
+    "id": "TobaccoCOVID19RiskFactors",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/TobaccoCOVID19RiskFactors",
+    "version": "0.1.0",
+    "name": "TobaccoCOVID19RiskFactors"
+  },
+  {
+    "id": "VTEReports",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/VTEReports",
+    "version": "0.1.0",
+    "name": "VTEReports"
+  },
+  {
+    "id": "VentilatorDevices",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorDevices",
+    "version": "0.1.0",
+    "name": "VentilatorDevices"
+  },
+  {
+    "id": "VentilatorObservations",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorObservations",
+    "version": "0.1.0",
+    "name": "VentilatorObservations"
+  },
+  {
+    "id": "VentilatorProcedures",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/saner/ValueSet/VentilatorProcedures",
+    "version": "0.1.0",
+    "name": "VentilatorProcedures"
+  },
+  {
+    "id": "IHE-ADX-agerange",
+    "type": "CodeSystem",
+    "url": "http://profiles.ihe.net/fhir/CodeSystem/IHE_ADX_agerange",
+    "version": "0.1.0",
+    "name": "IHE_ADX_agerange"
+  }
+]
