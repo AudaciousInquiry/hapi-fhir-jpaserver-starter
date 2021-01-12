@@ -10,12 +10,17 @@ import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hl7.fhir.r4.model.Bundle;
+import org.hl7.fhir.r4.model.CodeSystem;
+import org.hl7.fhir.r4.model.Library;
+import org.hl7.fhir.r4.model.Measure;
 import org.hl7.fhir.r4.model.Resource;
+import org.hl7.fhir.r4.model.ValueSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -179,6 +184,22 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
      * @param base  The resource to store
      */
     private void createResource(DaoRegistry dao, Resource base) {
+        if (base instanceof Measure ||
+            base instanceof ValueSet ||
+            base instanceof CodeSystem ||
+            base instanceof Library) {
+            // These resources are defined by their url, not their id
+            String url = FhirUtils.getPrimitiveValue(base, "url");
+            List<? extends Resource> l = JpaUtils.lookupAllByUrl(dao, url, base.getClass());
+            for (Resource r: l) {
+                try {
+                    LOGGER.info("Deleting pre-existing resource {} with same url {}", r.getId(), url);
+                    JpaUtils.delete(dao, r);
+                } catch (Exception e) {
+                    LOGGER.warn("Error deleting existing resource with url = {}", url);
+                }
+            }
+        }
         try {
             JpaUtils.create(dao, base);
         } catch (UnprocessableEntityException upe) {

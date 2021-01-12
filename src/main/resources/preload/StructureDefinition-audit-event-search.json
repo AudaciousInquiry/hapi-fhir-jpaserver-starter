@@ -15,7 +15,7 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "http://hl7.org/fhir/us/saner/StructureDefinition/audit-event-search",
+  "url": "http://hl7.org/fhir/uv/saner/StructureDefinition/audit-event-search",
   "version": "0.1.0",
   "name": "AuditEventSearch",
   "title": "Audit Event Search",
@@ -97,7 +97,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "AuditEvent",
-  "baseDefinition": "http://hl7.org/fhir/us/saner/StructureDefinition/audit-event",
+  "baseDefinition": "http://hl7.org/fhir/uv/saner/StructureDefinition/audit-event",
   "derivation": "constraint",
   "snapshot": {
     "element": [

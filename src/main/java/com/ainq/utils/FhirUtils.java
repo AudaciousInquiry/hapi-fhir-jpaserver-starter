@@ -1,8 +1,10 @@
 package com.ainq.utils;
 
 import java.util.Calendar;
+import java.util.stream.Stream;
 
 import org.apache.commons.lang3.StringUtils;
+import org.hl7.fhir.r4.model.Base;
 import org.hl7.fhir.r4.model.BaseDateTimeType;
 import org.hl7.fhir.r4.model.CodeType;
 import org.hl7.fhir.r4.model.DecimalType;
@@ -12,6 +14,7 @@ import org.hl7.fhir.r4.model.IntegerType;
 import org.hl7.fhir.r4.model.Property;
 import org.hl7.fhir.r4.model.Quantity;
 import org.hl7.fhir.r4.model.Reference;
+import org.hl7.fhir.r4.model.Resource;
 import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.codesystems.DataAbsentReason;
 import org.slf4j.Logger;
@@ -169,5 +172,25 @@ public class FhirUtils {
         } catch (Exception ex) {
             return false;
         }
+    }
+
+    public static Stream<String> getPrimitiveValues(Base base, String field) {
+        String firstField = StringUtils.substringBefore(field, ".");
+        Property p = base.getNamedProperty(firstField);
+        if (!p.hasValues()) {
+            return null;
+        }
+        if (firstField.length() < field.length()) {
+            return p.getValues().stream().flatMap(v -> getPrimitiveValues(base, StringUtils.substringAfter(field, ".")));
+        }
+        return p.getValues().stream().map(v -> v.primitiveValue());
+    }
+
+    public static String getPrimitiveValue(Base base, String field) {
+        return getPrimitiveValues(base, field).findFirst().orElse(null);
+    }
+
+    public static String[] getPrimitiveValueArray(Base base, String field) {
+        return getPrimitiveValues(base, field).toArray(i -> new String[i]);
     }
 }

@@ -28,24 +28,20 @@
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-api</artifactId>
-            <version>${jetty_version}</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
             <artifactId>websocket-client</artifactId>
-            <version>${jetty_version}</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.16</version>
-        </dependency>
+            </dependency>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.9</version>
-        </dependency>
+            </dependency>
 
         <!-- Needed for Email subscriptions -->
         <dependency>
@@ -155,43 +151,35 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
-            <version>3.3.7</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>Eonasdan-bootstrap-datetimepicker</artifactId>
-            <version>4.17.43</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>font-awesome</artifactId>
-            <version>5.8.2</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars.bower</groupId>
             <artifactId>awesome-bootstrap-checkbox</artifactId>
-            <version>1.0.1</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jstimezonedetect</artifactId>
-            <version>1.0.6</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>select2</artifactId>
-            <version>4.0.3</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars.bower</groupId>
             <artifactId>jquery</artifactId>
-            <version>3.3.1</version>
-        </dependency>
+            </dependency>
         <dependency>
             <groupId>org.webjars.bower</groupId>
             <artifactId>moment</artifactId>
-            <version>2.15.1</version>
-        </dependency>
+            </dependency>
 
         <!-- Adding support for CSV file manipulation -->
         <dependency>
@@ -298,8 +286,7 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-					 <version>${jetty_version}</version>
-                <configuration>
+					 <configuration>
                     <webApp>
                         <contextPath>/hapi-fhir-jpaserver</contextPath>
                         <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>

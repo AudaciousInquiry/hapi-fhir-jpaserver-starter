@@ -1,10 +1,13 @@
 package com.ainq.utils;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.IdType;
 import org.hl7.fhir.r4.model.OperationOutcome;
+import org.hl7.fhir.r4.model.Resource;
+
 import ca.uhn.fhir.jpa.dao.DaoRegistry;
 import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
 import ca.uhn.fhir.rest.api.server.IBundleProvider;
@@ -87,6 +90,28 @@ public class JpaUtils {
     }
 
     /**
+     * Handles the retrieval operation for lookup of all matching resources.
+     * @param <T>   The type of resource to find.
+     * @param type  The class for the type of resource
+     * @param theParams The search paramaters for finding the resource.
+     * @return  The located resources
+     */
+    public static <T extends org.hl7.fhir.r4.model.Resource> List<T> lookupAll(DaoRegistry dao, Class<T> type, SearchParameterMap theParams) {
+        IBundleProvider p = dao.getResourceDao(type).search(theParams);
+        if (p.isEmpty()) {
+            throw new ResourceNotFoundException("No resources match");
+        }
+
+        if (p.isEmpty()) {
+            return Collections.emptyList();
+        }
+        @SuppressWarnings("unchecked")
+        List<T> l = (List<T>) p.getResources(0, p.size());
+        return l;
+    }
+
+
+    /**
      * Given the identifier for a location or organization, go find it.  If there's more
      * than one with the same name, report an exception.  If it's not found, also
      * report an exception.
@@ -116,6 +141,20 @@ public class JpaUtils {
         SearchParameterMap theParams = new SearchParameterMap();
         theParams.add("url", new UriParam(url));
         return lookup(dao, type, theParams);
+    }
+
+    /**
+     * Given the url for a definitional resource, go find any matching one.
+     *
+     * @param <T>   The type of resource to find.
+     * @param url The identifier of the resource.
+     * @param type  The class for the type of resource
+     * @return  The located resources
+     */
+    public static <T extends org.hl7.fhir.r4.model.Resource> List<T> lookupAllByUrl(DaoRegistry dao, String url, Class<T> type) {
+        SearchParameterMap theParams = new SearchParameterMap();
+        theParams.add("url", new UriParam(url));
+        return lookupAll(dao, type, theParams);
     }
 
     /**
@@ -156,6 +195,15 @@ public class JpaUtils {
      */
     public static <T extends org.hl7.fhir.r4.model.Resource> T validateResource(DaoRegistry dao, String reference, Class<T> type) {
         return validateResource(dao, new IdType(reference), type);
+    }
+
+    /**
+     * Delete an existing resource
+     * @param dao   The Dao Registry
+     * @param r The resource to delete
+     */
+    public static void delete(DaoRegistry dao, Resource r) {
+        dao.getResourceDao(r.getClass()).delete(r.getIdElement());
     }
 
 }

@@ -58,7 +58,7 @@
     <xsl:param name="csvInputData" select="unparsed-text('file:C:/temp/CRISP.csv')"/>
 
     <!-- Set the BASE URL for saner IG artifacts (we changed it once) -->
-    <xsl:variable name="base" select="'http://hl7.org/fhir/us/saner/'"/>
+    <xsl:variable name="base" select="'http://hl7.org/fhir/uv/saner/'"/>
 
     <!-- Load up the mapping file and convert to XML for XSLT processing -->
     <xsl:param name="map">
@@ -444,7 +444,7 @@
     </xsl:template>
 
     <xsl:template
-        match='f:extension[@url = "http://hl7.org/fhir/us/saner/StructureDefinition/MeasureGroupAttributes"]'
+        match='f:extension[@url = "http://hl7.org/fhir/uv/saner/StructureDefinition/MeasureGroupAttributes"]'
         mode="copyMeasureToReport">
         <!-- Skip this extension, it's not needed in the report, just the measure -->
     </xsl:template>
@@ -472,7 +472,7 @@
                 <!-- If this is a group|population, we may need to output a measure score|count -->
                 <xsl:if test="self::f:group | self::f:population">
                     <xsl:variable name="score"
-                        select="f:code/f:coding[starts-with(f:system/@value, 'http://hl7.org/fhir/us/saner/CodeSystem/Measure')]/f:code/@value"/>
+                        select="f:code/f:coding[starts-with(f:system/@value, 'http://hl7.org/fhir/uv/saner/CodeSystem/Measure')]/f:code/@value"/>
                     <xsl:variable name="mappedScore"
                         select="$map/map/*[local-name() = $score]/@value"/>
                     <!--xsl:message>From: <xsl:value-of select="$score"/> -> To: <xsl:value-of
