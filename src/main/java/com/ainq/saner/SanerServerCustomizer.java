@@ -215,6 +215,11 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
         }
     }
 
+    /**
+     * Delete the specified list of resources.
+     * @param dao   The Data Access Object Registry used to perform the deletion.
+     * @param l The list of reesources to delete.
+     */
     private void deleteResources(DaoRegistry dao, List<IBaseResource> l) {
         for (IBaseResource r: l) {
             try {
