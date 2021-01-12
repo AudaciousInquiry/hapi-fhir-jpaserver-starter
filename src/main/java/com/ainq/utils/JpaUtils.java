@@ -96,7 +96,7 @@ public class JpaUtils {
      * @param theParams The search paramaters for finding the resource.
      * @return  The located resources
      */
-    public static <T extends org.hl7.fhir.r4.model.Resource> List<T> lookupAll(DaoRegistry dao, Class<T> type, SearchParameterMap theParams) {
+    public static List<IBaseResource> lookupAll(DaoRegistry dao, Class<? extends IBaseResource> type, SearchParameterMap theParams) {
         IBundleProvider p = dao.getResourceDao(type).search(theParams);
         if (p.isEmpty()) {
             throw new ResourceNotFoundException("No resources match");
@@ -105,9 +105,7 @@ public class JpaUtils {
         if (p.isEmpty()) {
             return Collections.emptyList();
         }
-        @SuppressWarnings("unchecked")
-        List<T> l = (List<T>) p.getResources(0, p.size());
-        return l;
+        return p.getResources(0, p.size());
     }
 
 
@@ -151,7 +149,7 @@ public class JpaUtils {
      * @param type  The class for the type of resource
      * @return  The located resources
      */
-    public static <T extends org.hl7.fhir.r4.model.Resource> List<T> lookupAllByUrl(DaoRegistry dao, String url, Class<T> type) {
+    public static <T extends org.hl7.fhir.r4.model.Resource> List<IBaseResource> lookupAllByUrl(DaoRegistry dao, String url, Class<T> type) {
         SearchParameterMap theParams = new SearchParameterMap();
         theParams.add("url", new UriParam(url));
         return lookupAll(dao, type, theParams);
@@ -202,7 +200,7 @@ public class JpaUtils {
      * @param dao   The Dao Registry
      * @param r The resource to delete
      */
-    public static void delete(DaoRegistry dao, Resource r) {
+    public static void delete(DaoRegistry dao, IBaseResource r) {
         dao.getResourceDao(r.getClass()).delete(r.getIdElement());
     }
 

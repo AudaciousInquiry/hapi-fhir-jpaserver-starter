@@ -15,6 +15,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import org.apache.commons.lang3.StringUtils;
+import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.CodeSystem;
 import org.hl7.fhir.r4.model.Library;
@@ -190,10 +191,10 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
             base instanceof Library) {
             // These resources are defined by their url, not their id
             String url = FhirUtils.getPrimitiveValue(base, "url");
-            List<? extends Resource> l = JpaUtils.lookupAllByUrl(dao, url, base.getClass());
-            for (Resource r: l) {
+            List<IBaseResource> l = JpaUtils.lookupAllByUrl(dao, url, base.getClass());
+            for (IBaseResource r: l) {
                 try {
-                    LOGGER.info("Deleting pre-existing resource {} with same url {}", r.getId(), url);
+                    LOGGER.info("Deleting pre-existing resource {} with same url {}", r.getIdElement().getIdPart(), url);
                     JpaUtils.delete(dao, r);
                 } catch (Exception e) {
                     LOGGER.warn("Error deleting existing resource with url = {}", url);
