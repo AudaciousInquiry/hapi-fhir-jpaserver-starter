@@ -97,15 +97,19 @@ public class JpaUtils {
      * @return  The located resources
      */
     public static List<IBaseResource> lookupAll(DaoRegistry dao, Class<? extends IBaseResource> type, SearchParameterMap theParams) {
-        IBundleProvider p = dao.getResourceDao(type).search(theParams);
-        if (p.isEmpty()) {
-            throw new ResourceNotFoundException("No resources match");
-        }
+        try {
+            IBundleProvider p = dao.getResourceDao(type).search(theParams);
+            if (p.isEmpty()) {
+                throw new ResourceNotFoundException("No resources match");
+            }
 
-        if (p.isEmpty()) {
+            if (p.isEmpty()) {
+                return Collections.emptyList();
+            }
+            return p.getResources(0, p.size());
+        } catch (ResourceNotFoundException ex) {
             return Collections.emptyList();
         }
-        return p.getResources(0, p.size());
     }
 
 

@@ -195,6 +195,12 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
             String url = FhirUtils.getPrimitiveValue(base, "url");
             List<IBaseResource> l = JpaUtils.lookupAllByUrl(dao, url, base.getClass());
             deleteResources(dao, l);
+
+            // Delete all the old us/saner stuff, since it was replaced by uv/saner stuff
+            SearchParameterMap theParams = new SearchParameterMap();
+            theParams.add("url:below", new UriParam("http://hl7.org/fhir/us/saner"));
+            l = JpaUtils.lookupAll(dao, base.getClass(), theParams);
+            deleteResources(dao, l);
         }
         try {
             JpaUtils.create(dao, base);
