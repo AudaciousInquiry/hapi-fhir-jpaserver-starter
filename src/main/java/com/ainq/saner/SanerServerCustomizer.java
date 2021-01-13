@@ -5,6 +5,7 @@ import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
 import ca.uhn.fhir.parser.DataFormatException;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.rest.param.UriParam;
+import ca.uhn.fhir.rest.param.UriParamQualifierEnum;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.UnprocessableEntityException;
 import ca.uhn.fhir.spring.boot.autoconfigure.FhirRestfulServerCustomizer;
@@ -198,7 +199,7 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
 
             // Delete all the old us/saner stuff, since it was replaced by uv/saner stuff
             SearchParameterMap theParams = new SearchParameterMap();
-            theParams.add("url:below", new UriParam("http://hl7.org/fhir/us/saner"));
+            theParams.add("url", new UriParam("http://hl7.org/fhir/us/saner").setQualifier(UriParamQualifierEnum.BELOW));
             l = JpaUtils.lookupAll(dao, base.getClass(), theParams);
             deleteResources(dao, l);
         }
