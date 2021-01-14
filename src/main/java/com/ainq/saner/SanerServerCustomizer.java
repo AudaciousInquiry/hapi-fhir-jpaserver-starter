@@ -108,10 +108,6 @@ public class SanerServerCustomizer implements FhirRestfulServerCustomizer {
 
             for (org.springframework.core.io.Resource res : r.getResources(resources = "/preload/*.xml")) {
                 String name = res.getFilename();
-                // Skip non-bundle xml files.
-                if (!name.contains("-bundle-")) {
-                    continue;
-                }
                 loadFile(xmlParser, dao, res);
             }
             for (org.springframework.core.io.Resource res : r.getResources(resources = "/preload/*.zip")) {
