@@ -1,0 +1,42 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="778587622-JAN21"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2021-01-03T18:50:03.117+00:00"/>
+    <source value="#To0Zs2QJ80ZERcbf"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1001000119102"/>
+      <display value="Pulmonary embolism with pulmonary infarction (disorder)"/>
+    </coding>
+    <text value="Pulmonary embolism with pulmonary infarction (disorder)"/>
+  </code>
+  <subject>
+    <reference value="Patient/33342133-JAN21"/>
+    <display value="CASSIE COVID"/>
+  </subject>
+  <onsetDateTime value="2021-01-03T10:30:35-06:00"/>
+  <recordedDate value="2021-01-03T10:30:35-06:00"/>
+</Condition>

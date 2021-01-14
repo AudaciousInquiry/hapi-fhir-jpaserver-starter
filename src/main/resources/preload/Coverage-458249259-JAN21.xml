@@ -1,0 +1,33 @@
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="458249259-JAN21" />
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/ActCode" />
+      <code value="HSAPOL" />
+      <display value="health spending account" />
+    </coding>
+  </type>
+  <policyHolder>
+    <reference value="Patient/82742748-JAN21" />
+  </policyHolder>
+  <subscriber>
+    <reference value="Patient/82742748-JAN21" />
+  </subscriber>
+  <beneficiary>
+    <reference value="Patient/82742748-JAN21" />
+  </beneficiary>
+  <dependent value="0" />
+  <relationship>
+    <coding>
+      <code value="self" />
+    </coding>
+  </relationship>
+  <period>
+    <start value="2020-05-23" />
+    <end value="2021-05-23" />
+  </period>
+  <payor>
+    <reference value="Organization/889797887-JAN21" />
+  </payor>
+</Coverage>

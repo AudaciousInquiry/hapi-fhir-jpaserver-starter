@@ -1,0 +1,159 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="76953195-JAN21" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-12-08T22:28:36.613+00:00" />
+    <source value="#ZRow3SyVZVCevcnH" />
+  </meta>
+  <identifier>
+    <use value="usual" />
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/319" />
+        <code value="1077" />
+        <display value="FIN NBR" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="AN" />
+        <display value="Account number" />
+        <userSelected value="false" />
+      </coding>
+      <text value="FIN NBR" />
+    </type>
+    <system>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown" />
+      </extension>
+    </system>
+    <value value="16048" />
+  </identifier>
+  <status value="finished" />
+  <class>
+    <system value="http://hl7.org/fhir/v3/ActCode" />
+    <code value="ACUTE" />
+    <display value="inpatient acute" />
+    <userSelected value="false" />
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="183452005" />
+      <display value="Emergency hospital admission (procedure)" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Emergency" />
+  </type>
+  <serviceType>
+    <coding>
+      <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/34" />
+      <code value="313017" />
+      <display value="Pulmonology" />
+      <userSelected value="true" />
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="722174002" />
+      <display value="Pulmonary medicine service (qualifier value)" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Pulmonology" />
+  </serviceType>
+  <priority>
+    <coding>
+      <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/3" />
+      <code value="309203" />
+      <display value="Emergency" />
+      <userSelected value="true" />
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority" />
+      <code value="EM" />
+      <display value="emergency" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Emergency" />
+  </priority>
+  <subject>
+    <reference value="Patient/82742195-JAN21" />
+    <display value="COVID, MAX" />
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1116" />
+        <display value="Admitting Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="ADM" />
+        <display value="admitter" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Admitting Physician" />
+    </type>
+    <period>
+      <start value="2021-01-04T05:00:00.000Z" />
+      <end value="2021-01-08T05:00:00.000Z" />
+    </period>
+    <individual>
+      <reference value="Practitioner/11817978-JAN21" />
+      <display value="Carter, Kristin" />
+    </individual>
+  </participant>
+  <period>
+    <start value="2021-01-01T05:00:00.000Z" />
+    <end value="2021-01-08T05:00:00.000Z" />
+  </period>
+  <reasonCode>
+    <text value="Cough, Covid-19 rule out" />
+  </reasonCode>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/11712780-JAN21" />
+    </condition>
+    <rank value="1" />
+  </diagnosis>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/12712780-JAN21" />
+    </condition>
+    <rank value="2" />
+  </diagnosis>
+  <hospitalization>
+    <admitSource>
+      <!-- Cerner's internal code system being commented out -->
+      <!-- <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/2" />
+        <code value="309191" />
+        <display value="Clinic or Physician Office Referral" />
+        <userSelected value="true" />
+      </coding> -->
+      <!-- code from ValueSet needed for Measure -->
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="25711000087100" />
+        <display value="Assisted living facility (environment)" />
+        <userSelected value="true" />
+      </coding>
+      <!-- standard preferred ValueSet for US Core Encounter admitSource -->
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source" />
+        <code value="nursing" />
+        <display value="From nursing home" />
+        <userSelected value="false" />
+      </coding>
+      <text value="The patient has been transferred from a nursing home." />
+    </admitSource>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/29598629-JAN21" />
+      <display value="Model Hospital, MX Hospital, ICU" />
+    </location>
+    <status value="active" />
+  </location>
+</Encounter>

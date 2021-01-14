@@ -1,0 +1,43 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="5589898983823-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="38341003"/>
+      <display value="lisinopril 30 MG Oral"/>
+    </coding>
+    <text value="lisinopril 30 MG Oral"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/25042188-JAN21"/>
+    <display value="COLIN COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/22053122-JAN21"/>
+    <display value="Inpatient encounter for COLIN COVID"/>
+  </encounter>
+  <authoredOn value="2021-01-03"/>
+  
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route (qualifier value)"/>
+      </coding>
+      <text value="Oral route (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="30"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

@@ -1,0 +1,309 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="66953841-JAN21" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-01-03T22:28:36.613+00:00" />
+    <source value="#ZRow3SyVZVCevcnH" />
+  </meta>
+  <identifier>
+    <use value="usual" />
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/319" />
+        <code value="1077" />
+        <display value="FIN NBR" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="AN" />
+        <display value="Account number" />
+        <userSelected value="false" />
+      </coding>
+      <text value="FIN NBR" />
+    </type>
+    <system>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown" />
+      </extension>
+    </system>
+    <value value="16048" />
+  </identifier>
+  <status value="finished" />
+  <class>
+    <system value="http://hl7.org/fhir/v3/ActCode" />
+    <code value="IMP" />
+    <display value="inpatient encounter" />
+    <userSelected value="false" />
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="32485007" />
+      <display value="Inpatient" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Inpatient" />
+  </type>
+  <serviceType>
+    <coding>
+      <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/34" />
+      <code value="313017" />
+      <display value="Pulmonology" />
+      <userSelected value="true" />
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="722174002" />
+      <display value="Pulmonary medicine service (qualifier value)" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Pulmonology" />
+  </serviceType>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority" />
+      <code value="EM" />
+      <display value="emergency" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Emergency" />
+  </priority>
+  <subject>
+    <reference value="Patient/82742748-JAN21" />
+    <display value="COVID, ALLISON" />
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1116" />
+        <display value="Admitting Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="ADM" />
+        <display value="admitter" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Admitting Physician" />
+    </type>
+    <period>
+      <start value="2021-01-03T05:00:00.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/11817978-JAN21"/>
+                        <display value="Carter, Kristin"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1119" />
+        <display value="Attending Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="ATND" />
+        <display value="attender" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Attending Physician" />
+    </type>
+    <period>
+      <start value="2021-01-03T05:00:00.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/11817978-JAN21"/>
+                        <display value="Carter, Kristin"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1121" />
+        <display value="Consulting Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="CON" />
+        <display value="consultant" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Consulting Physician" />
+    </type>
+    <period>
+      <start value="2021-01-03T21:32:00.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/4122625"/>
+                        <display value="Cerner Test, Physician - Cardiovascular Cerner"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1121" />
+        <display value="Consulting Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="CON" />
+        <display value="consultant" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Consulting Physician" />
+    </type>
+    <period>
+      <start value="2021-01-28T19:47:00.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/4122622"/>
+                        <display value="Cerner Test, Physician - Hospitalist Cerner"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1125" />
+        <display value="Registered Nurse" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="SPRF" />
+        <display value="secondary performer" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Registered Nurse" />
+    </type>
+    <period>
+      <start value="2021-01-03T13:56:00.000Z" />
+      <end value="2021-01-04T06:01:53.000Z" />
+    </period>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1125" />
+        <display value="Registered Nurse" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="SPRF" />
+        <display value="secondary performer" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Registered Nurse" />
+    </type>
+    <period>
+      <start value="2021-01-03T18:11:50.000Z" />
+      <end value="2021-01-04T11:01:38.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/607928"/>
+                        <display value="Cerner Test, Nurse Cerner"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="1126" />
+        <display value="Referring Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="REF" />
+        <display value="referrer" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Referring Physician" />
+    </type>
+    <period>
+      <start value="2021-01-03T05:00:00.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/11938004"/>
+                        <display value="Bradford, MD, Michael Cerner"/>
+                    </individual>-->
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/333" />
+        <code value="18883355" />
+        <display value="Covering Physician" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="PPRF" />
+        <display value="primary performer" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Covering Physician" />
+    </type>
+    <period>
+      <start value="2021-01-03T18:08:42.000Z" />
+    </period>
+    <!--<individual>
+                        <reference value="Practitioner/12742575"/>
+                        <display value="Torres, Drew"/>
+                    </individual>-->
+  </participant>
+  <period>
+    <start value="2021-01-03T05:00:00.000Z" />
+  </period>
+  <reasonCode>
+    <text value="Covid-19 rule out" />
+  </reasonCode>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/23412789-JAN21" />
+    </condition>
+    <rank value="1" />
+  </diagnosis>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/2" />
+        <code value="309191" />
+        <display value="Clinic or Physician Office Referral" />
+        <userSelected value="true" />
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/admit-source" />
+        <code value="gp" />
+        <display value="General Practitioner referral" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Clinic or Physician Office Referral" />
+    </admitSource>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/29598629-JAN21"/>
+    </location>
+    <physicalType>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="309904001" />
+        <display value="Intensive care unit (environment)" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Intensive care unit"/>
+    </physicalType>
+  </location>
+</Encounter>

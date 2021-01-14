@@ -1,0 +1,44 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="25439354-JAN21"/>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category value="food"/>
+  <criticality value="high"/>
+  <!--    subtance, coded from RxNorm    -->
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="53041004"/>
+      <display value="Alcohol (substance)"/>
+    </coding>
+  </code>
+  <!--    the patient that actually has the risk of adverse reaction    -->
+  <patient>
+    <reference value="Patient/20242202-JAN21"/>
+    <display value="KENZ COVID"/>
+  </patient>
+  <!--    the date that this entry was recorded    -->
+  <recordedDate value="2021-01-02"/>
+  
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="247472004"/>
+        <display value="Hives"/>
+      </coding>
+    </manifestation>
+  </reaction>
+</AllergyIntolerance>

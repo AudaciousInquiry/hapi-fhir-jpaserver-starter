@@ -1,0 +1,28 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="889797887-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+  </meta>
+ 
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="pay"/>
+      <display value="Payer"/>
+    </coding>
+  </type>
+  <name value="Payer Org A"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(+1) 734-677-7777"/>
+  </telecom>
+  <address>
+    <line value="3300 Washtenaw Avenue, Suite 227"/>
+    <city value="Amherst"/>
+    <state value="MA"/>
+    <postalCode value="01002"/>
+    <country value="USA"/>
+  </address>
+</Organization>

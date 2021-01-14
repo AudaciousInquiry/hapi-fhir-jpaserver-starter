@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="86140673-JAN21"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2021-01-03T18:50:03.117+00:00"/>
+    <source value="#To0Zs2QJ80ZERcbf"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="414916001"/>
+      <display value="Obesity (disorder)"/>
+    </coding>
+    <text value="Obesity (disorder)"/>
+  </code>
+  <subject>
+    <reference value="Patient/81142122-JAN21"/>
+    <display value="JEFF COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/32053122-JAN21"/>
+  </encounter>
+  <onsetDateTime value="1988-12-03T10:30:35-06:00"/>
+  <recordedDate value="2012-01-03T10:30:35-06:00"/>
+</Condition>

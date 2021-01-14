@@ -1,0 +1,43 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="1139210547-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1719646"/>
+      <display value="1 ML haloperidol 5 MG/ML Injection"/>
+    </coding>
+    <text value="1 ML haloperidol 5 MG/ML Injection"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/56842101-JAN21"/>
+    <display value="JORDAN GERMAPHOBIA"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/62053122-JAN21"/>
+    <display value="Inpatient encounter for JORDAN GERMAPHOBIA"/>
+  </encounter>
+  <authoredOn value="2021-01-01"/>
+  
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route (qualifier value)"/>
+      </coding>
+      <text value="Oral route (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="MG/ML"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

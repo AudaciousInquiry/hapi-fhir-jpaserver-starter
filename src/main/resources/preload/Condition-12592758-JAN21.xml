@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="12592758-JAN21"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2021-01-03T18:50:03.117+00:00"/>
+    <source value="#To0Zs2QJ80ZERcbf"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="675003"/>
+      <display value="Torsion of intestine (disorder)"/>
+    </coding>
+    <text value="Torsion of intestine"/>
+  </code>
+  <subject>
+    <reference value="Patient/82742198-JAN21"/>
+    <display value="JAMES COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/66953198-JAN21"/>
+  </encounter>
+  <onsetDateTime value="2020-01-03T10:30:35-06:00"/>
+  <recordedDate value="2021-01-03T10:30:35-06:00"/>
+</Condition>

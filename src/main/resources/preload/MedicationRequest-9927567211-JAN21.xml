@@ -1,0 +1,38 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="9927567211-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="completed"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="359144"/>
+      <display value="2 HR albuterol 4 MG Extended Release Oral Tablet"/>
+    </coding>
+    <text value="2 HR albuterol 4 MG Extended Release Oral Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/73742177-JAN21"/>
+    <display value="CHARLES COVID"/>
+  </subject>
+  <authoredOn value="2021-01-03"/>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="260617000"/>
+        <display value="Intranasal approach (qualifier value)"/>
+      </coding>
+      <text value="Intranasal approach (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="100"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

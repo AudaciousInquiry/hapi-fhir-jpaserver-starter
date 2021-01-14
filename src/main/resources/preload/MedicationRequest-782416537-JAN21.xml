@@ -1,0 +1,42 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="782416537-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1009058"/>
+      <display value="folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12"/>
+    </coding>
+    <text value="folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/81842166-JAN21"/>
+    <display value="KATHY COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/42053122-JAN21"/>
+    <display value="Inpatient encounter for KATHY COVID"/>
+  </encounter>
+  <authoredOn value="2020-09-01"/>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route (qualifier value)"/>
+      </coding>
+      <text value="Oral route (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="4"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

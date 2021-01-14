@@ -1,0 +1,51 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="785844402-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55231-5"/>
+      <display value="Electrolytes panel - Blood"/>
+    </coding>
+    <text value="Electrolytes panel - Blood"/>
+  </code>
+  <subject>
+    <reference value="Patient/81842166-JAN21"/>
+    <display value="KATHY COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/42053122-JAN21"/>
+    <display value="Inpatient encounter for KATHY COVID"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-02"/>
+  <hasMember>
+    <reference value="Observation/1321454325-JAN21" />
+    <display value="Sodium [Moles/volume] in Blood" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/658355767-JAN21" />
+    <display value="Potassium [Moles/volume] in Blood" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/658355767-JAN21" />
+    <display value="Chloride [Moles/volume] in Blood" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/1123439504-JAN21" />
+    <display value="Carbon dioxide, total [Moles/volume] in Blood" />
+  </hasMember>
+</Observation>

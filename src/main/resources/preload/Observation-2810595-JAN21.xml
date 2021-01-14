@@ -1,0 +1,43 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="2810595-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="94500-6"/>
+      <display value="(SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection)"/>
+    </coding>
+    <text value="(SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection)"/>
+  </code>
+  <subject>
+    <reference value="Patient/25042188-JAN21"/>
+    <display value="COLIN COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/22053122-JAN21"/>
+    <display value="Inpatient encounter for COLIN COVID"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-03"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="260373001"/>
+      <display value="(Positive SARS-CoV-2)"/>
+    </coding>
+    <text value="(Positive SARS-CoV-2)"/>
+  </valueCodeableConcept>
+</Observation>

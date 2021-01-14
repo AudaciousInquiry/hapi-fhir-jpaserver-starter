@@ -1,0 +1,38 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="881027462-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="870592005"/>
+      <display value="remdesivir 100 MG Injection"/>
+    </coding>
+    <text value="remdesivir"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/73742177-JAN21"/>
+    <display value="CHARLES COVID"/>
+  </subject>
+  <authoredOn value="2021-01-03"/>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Intravenous route (qualifier value)"/>
+      </coding>
+      <text value="Intravenous route (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="100"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

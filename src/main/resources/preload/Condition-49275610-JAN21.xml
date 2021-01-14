@@ -1,0 +1,45 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="49275610-JAN21"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2021-01-03T18:50:03.117+00:00"/>
+    <source value="#To0Zs2QJ80ZERcbf"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1240541000000107"/>
+      <display value="Infection of upper respiratory tract caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+    </coding>
+    <text value="Infection of upper respiratory tract caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+  </code>
+  <subject>
+    <reference value="Patient/73742177-JAN21"/>
+    <display value="CHARLES COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/12053122-JAN21"/>
+  </encounter>
+  <onsetDateTime value="2021-01-03T10:30:35-06:00"/>
+  <recordedDate value="2021-01-03T10:30:35-06:00"/>
+</Condition>

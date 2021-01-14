@@ -1,0 +1,41 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="78695587-JAN21" />
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest" />
+  </meta>
+  <status value="completed" />
+  <intent value="order" />
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+      <code value="903736" />
+      <display value="levothyroxine sodium 0.075 MG by mouth daily" />
+    </coding>
+    <text value="levothyroxine sodium 0.075 MG by mouth daily" />
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/33342133-JAN21" />
+    <display value="CASSIE COVID" />
+  </subject>
+  <authoredOn value="2021-01-02" />
+  <!--<requester>
+        <reference value="Practitioner/1180299"/>
+        <display value="abc xyz, MD"/>
+    </requester>-->
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="26643006" />
+        <display value="Oral route (qualifier value)" />
+      </coding>
+      <text value="Oral route (qualifier value)" />
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="0.075" />
+        <unit value="MG" />
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

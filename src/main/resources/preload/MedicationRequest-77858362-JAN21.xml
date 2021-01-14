@@ -1,0 +1,43 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="77858362-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="completed"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="617311"/>
+      <display value="atorvastatin 40 MG Oral Tablet"/>
+    </coding>
+    <text value="atorvastatin 40 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/81142122-JAN21"/>
+    <display value="JEFF COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/32053122-JAN21"/>
+    <display value="Inpatient encounter for JEFF COVID"/>
+  </encounter>
+  <authoredOn value="2021-01-03"/>
+
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route (qualifier value)"/>
+      </coding>
+      <text value="Oral route (qualifier value)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="40"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

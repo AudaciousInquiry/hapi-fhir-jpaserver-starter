@@ -1,0 +1,44 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="0001595-JAN21" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="vital-signs" />
+      <display value="Vital Signs" />
+    </coding>
+    <text value="Vital Signs" />
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="85353-1" />
+      <display
+        value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel" />
+    </coding>
+    <text value="Vital signs Panel" />
+  </code>
+  <subject>
+    <reference value="Patient/25042188-JAN21" />
+  </subject>
+  <effectiveDateTime value="2021-01-02" />
+  <hasMember>
+    <reference value="Observation/0002595-JAN21" />
+    <display value="Respiratory Rate" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/0003595-JAN21" />
+    <display value="Heart Rate" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/0004595-JAN21" />
+    <display value="Blood Pressure" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/0005595-JAN21" />
+    <display value="Body Weight" />
+  </hasMember>
+</Observation>

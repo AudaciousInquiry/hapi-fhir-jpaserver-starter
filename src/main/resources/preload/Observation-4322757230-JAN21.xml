@@ -1,0 +1,43 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="4322757230-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="96094-8"/>
+      <display value="SARS-CoV-2 (COVID-19) and SARS-related CoV RNA panel - Respiratory specimen by NAA with probe detection"/>
+    </coding>
+    <text value="SARS-CoV-2 (COVID-19) and SARS-related CoV RNA panel - Respiratory specimen by NAA with probe detection"/>
+  </code>
+  <subject>
+    <reference value="Patient/56842101-JAN21"/>
+    <display value="JORDAN GERMAPHOBIA"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/62053122-JAN21"/>
+    <display value="Inpatient encounter for JORDAN GERMAPHOBIA"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-04"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="260385009"/>
+      <display value="Negative (qualifier value)"/>
+    </coding>
+    <text value="Negative (qualifier value)"/>
+  </valueCodeableConcept>
+</Observation>

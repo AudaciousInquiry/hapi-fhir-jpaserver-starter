@@ -1,0 +1,41 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="78511045-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="38483-4"/>
+      <display value="Creatinine [Mass/volume] in Blood"/>
+    </coding>
+    <text value="Creatinine [Mass/volume] in Blood"/>
+  </code>
+  <subject>
+    <reference value="Patient/81842166-JAN21"/>
+    <display value="KATHY COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/42053122-JAN21"/>
+    <display value="Inpatient encounter for KATHY COVID"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-02"/>
+  <valueQuantity>
+    <value value="1" />
+    <unit value="mg/dL" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="mg/dL" />
+  </valueQuantity>
+</Observation>

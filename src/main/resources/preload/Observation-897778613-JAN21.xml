@@ -1,0 +1,42 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="897778613-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72166-2"/>
+      <display value="Tobacco smoking status NHIS"/>
+    </coding>
+    <text value="Tobacco smoking status NHIS"/>
+  </code>
+  <subject>
+    <reference value="Patient/73742177-JAN21"/>
+    <display value="CHARLES COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/12053122-JAN21"/>
+    <display value="Inpatient encounter for CHARLES COVID"/>
+  </encounter>
+  <issued value="2021-01-03T00:00:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="449868002"/>
+      <display value="Current every day smoker"/>
+    </coding>
+    <text value="Current every day smoker"/>
+  </valueCodeableConcept>
+</Observation>

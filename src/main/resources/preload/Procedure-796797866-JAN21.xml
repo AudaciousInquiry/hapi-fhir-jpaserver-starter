@@ -1,0 +1,24 @@
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="796797866-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="409529001"/>
+      <display value="Contact precautions (procedure)"/>
+    </coding>
+    <text value="Contact precautions (procedure)"/>
+  </code>
+  <subject>
+    <reference value="Patient/33342133-JAN21"/>
+    <display value="CASSIE COVID"/>
+  </subject>
+  <performedDateTime value="2021-01-06"/>
+  <reasonReference>
+    <reference value="Condition/98712780-JAN21"/>
+  </reasonReference>
+</Procedure>

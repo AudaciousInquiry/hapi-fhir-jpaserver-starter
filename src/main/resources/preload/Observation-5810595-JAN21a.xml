@@ -1,0 +1,43 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="5810595-JAN21a"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="94563-4"/>
+      <display value="(SARS-CoV-2 (COVID19) IgG Ab [Presence] in Serum or Plasma by Immunoassay)"/>
+    </coding>
+    <text value="(SARS-CoV-2 (COVID19) IgG Ab [Presence] in Serum or Plasma by Immunoassay)"/>
+  </code>
+  <subject>
+    <reference value="Patient/33342133-JAN21"/>
+    <display value="CASSIE COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/72053122-JAN21"/>
+    <display value="Inpatient encounter for CASSIE COVID"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-02"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="(Positive)"/>
+    </coding>
+    <text value="(Positive)"/>
+  </valueCodeableConcept>
+</Observation>

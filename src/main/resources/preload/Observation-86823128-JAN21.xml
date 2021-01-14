@@ -1,0 +1,43 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="86823128-JAN21"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-12-08T22:21:20.507+00:00"/>
+    <source value="#AdjudbsL5d4WOZVD"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+    <text value="Laboratory"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="94509-7"/>
+      <display value="SARS-related coronavirus E gene [Cycle Threshold #] in Unspecified specimen by NAA with probe detection"/>
+    </coding>
+    <text value="SARS-related coronavirus E gene [Cycle Threshold #] in Unspecified specimen by NAA with probe detection"/>
+  </code>
+  <subject>
+    <reference value="Patient/82742198-JAN21"/>
+    <display value="JAMES COVID"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/66953198-JAN21"/>
+    <display value="Inpatient encounter for JAMES COVID"/>
+  </encounter>
+  <effectiveDateTime value="2021-01-03"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive (qualifier value)"/>
+    </coding>
+    <text value="Positive (qualifier value)"/>
+  </valueCodeableConcept>
+</Observation>

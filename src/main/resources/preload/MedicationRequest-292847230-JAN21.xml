@@ -1,0 +1,42 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="292847230-JAN21"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1926818"/>
+      <display value="C1 esterase inhibitor (human) 2000 UNT Injection"/>
+    </coding>
+    <text value="C1 esterase inhibitor (human) 2000 UNT Injection"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/11142199-JAN21"/>
+    <display value="LUKE UNTESTED"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/82053122-JAN21"/>
+    <display value="Inpatient encounter for LUKE UNTESTED"/>
+  </encounter>
+  <authoredOn value="2021-01-03"/>
+  <dosageInstruction>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="740685003"/>
+        <display value="Inject (administration method)"/>
+      </coding>
+      <text value="Inject (administration method)"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="4"/>
+        <unit value="MG"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

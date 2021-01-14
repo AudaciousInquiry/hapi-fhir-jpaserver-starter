@@ -1,0 +1,37 @@
+<Location xmlns="http://hl7.org/fhir">
+  <id value="29598629-JAN21"/> 
+  <identifier> 
+    <value value="ICU-location-1"/> 
+  </identifier> 
+  <status value="active"/> 
+  <name value="Intensive Care Unit (environment)"/> 
+  <description value="1st floor ICU"/> 
+  <mode value="instance"/>
+  <type>
+    <coding> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="309904001"/> 
+      <display value="Intensive care unit (environment)"/>      
+    </coding> 
+  </type>
+  <telecom> 
+    <system value="phone"/> 
+    <value value="555-555-5555"/> 
+    <use value="work"/> 
+  </telecom> 
+  <address> 
+    <use value="work"/> 
+    <line value="101 Main St."/> 
+    <city value="Denver"/> 
+    <state value="CO" />
+    <postalCode value="9105 PZ"/> 
+    <country value="US"/> 
+  </address> 
+  <physicalType> 
+    <coding> 
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/> 
+      <code value="wi"/> 
+      <display value="Wing"/>      
+    </coding> 
+  </physicalType> 
+</Location> 
